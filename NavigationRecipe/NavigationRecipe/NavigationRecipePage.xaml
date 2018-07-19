@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+	 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	 xmlns:local="clr-namespace:NavigationRecipe"
+	 x:Class="NavigationRecipe.NavigationRecipePage">
+    <TabbedPage.Children>
+        <NavigationPage Title="Tab 1">
+            <x:Arguments>
+                <local:MyFirstTabPage Title="Tab 1 Title"/>
+            </x:Arguments>
+        </NavigationPage>
+                <NavigationPage Title="Tab 2">
+            <x:Arguments>
+                <local:MySecondTabPage Title="Tab 2 Title"/>
+            </x:Arguments>
+        </NavigationPage>
+    </TabbedPage.Children>
+</TabbedPage>
