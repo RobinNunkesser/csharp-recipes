@@ -1,13 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectFrameBounds">
+  <component name="ChangeListManager">
+    <list default="true" id="2936b3c2-86b7-4168-b71f-4fd24d70a669" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Droid/Assets/AboutAssets.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Droid/MainActivity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Droid/NavigationRecipe.Droid.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Droid/Properties/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Droid/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Droid/Resources/AboutResources.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Droid/Resources/Resource.designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Droid/Resources/drawable-hdpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Droid/Resources/drawable-xhdpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Droid/Resources/drawable-xxhdpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Droid/Resources/drawable/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Droid/Resources/layout/Tabbar.axml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Droid/Resources/layout/Toolbar.axml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Droid/Resources/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Droid/packages.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NavigationRecipe.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NavigationRecipe/App.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NavigationRecipe/App.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NavigationRecipe/MyFirstTabPage.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NavigationRecipe/MyFirstTabPage.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NavigationRecipe/MySecondTabPage.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NavigationRecipe/MySecondTabPage.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NavigationRecipe/NavigationRecipe.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NavigationRecipe/NavigationRecipePage.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NavigationRecipe/NavigationRecipePage.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NavigationRecipe/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NavigationRecipe/packages.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOS/AppDelegate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOS/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOS/Assets.xcassets/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOS/Entitlements.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOS/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOS/LaunchScreen.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOS/Main.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOS/NavigationRecipe.iOS.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOS/packages.config" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="styles.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Droid/Resources/values/styles.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NavigationRecipePage.xaml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NavigationRecipe/NavigationRecipePage.xaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="86" lean-forward="true" selection-start-line="4" selection-start-column="86" selection-end-line="4" selection-end-column="86" />
+              <folding>
+                <marker date="1532263082211" expanded="true" signature="39:851" ph="&lt;&lt;TabbedPage.Children&gt;&#10;        &lt;NavigationPage Title=&quot;Tab 1&quot;&gt;&#10;            &lt;x:Arguments&gt;&#10;                &lt;local:MyFirstTabPage Title=&quot;Tab 1 Title&quot; /&gt;&#10;            &lt;/x:Arguments&gt;&#10;        &lt;/NavigationPage&gt;&#10;        &lt;NavigationPage Title=&quot;Tab 2&quot;&gt;&#10;            &lt;x:Arguments&gt;&#10;                &lt;local:MySecondTabPage Title=&quot;Tab 2 Title&quot; /&gt;&#10;            &lt;/x:Arguments&gt;&#10;        &lt;/NavigationPage&gt;&#10;    &lt;/TabbedPage.Children&gt;.../&gt;" />
+                <marker date="1532263082211" expanded="true" signature="430:837" ph="&lt;&lt;NavigationPage Title=&quot;Tab 1&quot;&gt;&#10;            &lt;x:Arguments&gt;&#10;                &lt;local:MyFirstTabPage Title=&quot;Tab 1 Title&quot; /&gt;&#10;            &lt;/x:Arguments&gt;&#10;        &lt;/NavigationPage&gt; &lt;NavigationPage Title=&quot;Tab 2&quot;&gt;&#10;            &lt;x:Arguments&gt;&#10;                &lt;local:MySecondTabPage Title=&quot;Tab 2 Title&quot; /&gt;&#10;            &lt;/x:Arguments&gt;&#10;        &lt;/NavigationPage&gt;.../&gt;" />
+                <marker date="1532263082211" expanded="true" signature="460:630" ph="&lt;&lt;x:Arguments&gt;&#10;                &lt;local:MyFirstTabPage Title=&quot;Tab 1 Title&quot; /&gt;&#10;            &lt;/x:Arguments&gt;.../&gt;" />
+                <marker date="1532263082211" expanded="true" signature="503:604" ph="&lt;&lt;local:MyFirstTabPage Title=&quot;Tab 1 Title&quot; /&gt;.../&gt;" />
+                <marker date="1532263082211" expanded="true" signature="639:810" ph="&lt;&lt;x:Arguments&gt;&#10;                &lt;local:MySecondTabPage Title=&quot;Tab 2 Title&quot; /&gt;&#10;            &lt;/x:Arguments&gt;.../&gt;" />
+                <marker date="1532263082211" expanded="true" signature="682:784" ph="&lt;&lt;local:MySecondTabPage Title=&quot;Tab 2 Title&quot; /&gt;.../&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/NavigationRecipe/NavigationRecipePage.xaml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/NavigationRecipe/NavigationRecipePage.xaml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="777" />
   </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="NavigationRecipe (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="NavigationRecipe (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="NavigationRecipe" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="NavigationRecipe (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="NavigationRecipe.Droid" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="NavigationRecipe (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="NavigationRecipe.Droid" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="References" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="NavigationRecipe (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="NavigationRecipe.Droid" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="References" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Projects" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="NavigationRecipe (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="NavigationRecipe.Droid" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Resources" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="NavigationRecipe (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="NavigationRecipe.Droid" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Resources" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="values" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Xamarin.Android.Android Default">
     <configuration name="Android Default" type="XamarinAndroidProject" factoryName="Xamarin.Android">
@@ -29,5 +197,92 @@
       <item itemvalue="Xamarin.Android.Android Default" />
       <item itemvalue="Xamarin.iOS.iOS Default" />
     </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2936b3c2-86b7-4168-b71f-4fd24d70a669" name="Default" comment="" />
+      <created>1532009667901</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1532009667901</updated>
+      <workItem from="1532009669896" duration="1372000" />
+      <workItem from="1532263180233" duration="707000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2079000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="2" y="25" width="1280" height="777" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Unit Tests" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32859176" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.32859176" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.40703124" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32859176" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Droid/Resources/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NavigationRecipe/NavigationRecipePage.xaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="86" lean-forward="true" selection-start-line="4" selection-start-column="86" selection-end-line="4" selection-end-column="86" />
+          <folding>
+            <marker date="1532263082211" expanded="true" signature="39:851" ph="&lt;&lt;TabbedPage.Children&gt;&#10;        &lt;NavigationPage Title=&quot;Tab 1&quot;&gt;&#10;            &lt;x:Arguments&gt;&#10;                &lt;local:MyFirstTabPage Title=&quot;Tab 1 Title&quot; /&gt;&#10;            &lt;/x:Arguments&gt;&#10;        &lt;/NavigationPage&gt;&#10;        &lt;NavigationPage Title=&quot;Tab 2&quot;&gt;&#10;            &lt;x:Arguments&gt;&#10;                &lt;local:MySecondTabPage Title=&quot;Tab 2 Title&quot; /&gt;&#10;            &lt;/x:Arguments&gt;&#10;        &lt;/NavigationPage&gt;&#10;    &lt;/TabbedPage.Children&gt;.../&gt;" />
+            <marker date="1532263082211" expanded="true" signature="430:837" ph="&lt;&lt;NavigationPage Title=&quot;Tab 1&quot;&gt;&#10;            &lt;x:Arguments&gt;&#10;                &lt;local:MyFirstTabPage Title=&quot;Tab 1 Title&quot; /&gt;&#10;            &lt;/x:Arguments&gt;&#10;        &lt;/NavigationPage&gt; &lt;NavigationPage Title=&quot;Tab 2&quot;&gt;&#10;            &lt;x:Arguments&gt;&#10;                &lt;local:MySecondTabPage Title=&quot;Tab 2 Title&quot; /&gt;&#10;            &lt;/x:Arguments&gt;&#10;        &lt;/NavigationPage&gt;.../&gt;" />
+            <marker date="1532263082211" expanded="true" signature="460:630" ph="&lt;&lt;x:Arguments&gt;&#10;                &lt;local:MyFirstTabPage Title=&quot;Tab 1 Title&quot; /&gt;&#10;            &lt;/x:Arguments&gt;.../&gt;" />
+            <marker date="1532263082211" expanded="true" signature="503:604" ph="&lt;&lt;local:MyFirstTabPage Title=&quot;Tab 1 Title&quot; /&gt;.../&gt;" />
+            <marker date="1532263082211" expanded="true" signature="639:810" ph="&lt;&lt;x:Arguments&gt;&#10;                &lt;local:MySecondTabPage Title=&quot;Tab 2 Title&quot; /&gt;&#10;            &lt;/x:Arguments&gt;.../&gt;" />
+            <marker date="1532263082211" expanded="true" signature="682:784" ph="&lt;&lt;local:MySecondTabPage Title=&quot;Tab 2 Title&quot; /&gt;.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

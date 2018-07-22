@@ -75,7 +75,29 @@
         </e>
       </e>
       <e p="NavigationRecipe.sln" t="IncludeFlat" />
-      <e p="packages" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive">
+        <e p="Xamarin.Android.Arch.Lifecycle.Runtime.1.0.3.1/proguard" t="Include">
+          <e p="proguard.txt" t="Include" />
+        </e>
+        <e p="Xamarin.Android.Support.Animated.Vector.Drawable.27.0.2.1/proguard" t="Include">
+          <e p="proguard.txt" t="Include" />
+        </e>
+        <e p="Xamarin.Android.Support.Core.UI.27.0.2.1/proguard" t="Include">
+          <e p="proguard.txt" t="Include" />
+        </e>
+        <e p="Xamarin.Android.Support.Design.27.0.2.1/proguard" t="Include">
+          <e p="proguard.txt" t="Include" />
+        </e>
+        <e p="Xamarin.Android.Support.Media.Compat.27.0.2.1/proguard" t="Include">
+          <e p="proguard.txt" t="Include" />
+        </e>
+        <e p="Xamarin.Android.Support.Transition.27.0.2.1/proguard" t="Include">
+          <e p="proguard.txt" t="Include" />
+        </e>
+        <e p="Xamarin.Android.Support.v7.RecyclerView.27.0.2.1/proguard" t="Include">
+          <e p="proguard.txt" t="Include" />
+        </e>
+      </e>
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_NavigationRecipe.1526504891.00" t="ExcludeRecursive" />
   </component>

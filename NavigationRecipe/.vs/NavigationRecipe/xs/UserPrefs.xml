@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{5ED8B8A0-20FF-4EBB-870E-721BC16EF0B3}|Default">
+  <MonoDevelop.Ide.ItemProperties.NavigationRecipe.Droid PreferredExecutionTarget="Android.Nexus_5X_API_25" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NavigationRecipe/NavigationRecipePage.xaml">
+    <Files>
+      <File FileName="NavigationRecipe/NavigationRecipePage.xaml" Line="10" Column="26" />
+      <File FileName="NavigationRecipe/MyFirstTabPage.xaml" Line="8" Column="1" />
+      <File FileName="NavigationRecipe/MyFirstTabPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="NavigationRecipe/MySecondTabPage.xaml" Line="8" Column="1" />
+      <File FileName="NavigationRecipe/MySecondTabPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="NavigationRecipe/NavigationRecipePage.xaml.cs" Line="5" Column="59" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.NavigationRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E475FF84-FD91-4DE8-AA20-4AB19977D7F6">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.NavigationRecipe.iOS>
+  <MultiItemStartupConfigurations />
+</Properties>
