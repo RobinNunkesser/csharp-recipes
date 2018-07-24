@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{2E619762-446F-460F-B771-0A81CB443D56}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="JSONRecipe/JSONService.cs">
+    <Files>
+      <File FileName="JSONRecipe/App.xaml" Line="9" Column="1" />
+      <File FileName="JSONRecipe/App.xaml.cs" Line="10" Column="31" />
+      <File FileName="JSONRecipe/JSONService.cs" Line="32" Column="2" />
+      <File FileName="JSONRecipe/JSONRecipePage.xaml.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.JSONRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.45783100-2338-4A29-BBE0-B158F1355801">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.JSONRecipe.iOS>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
