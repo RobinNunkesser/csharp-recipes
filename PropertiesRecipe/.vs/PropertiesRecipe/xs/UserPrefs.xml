@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{FF306AA0-DCD5-400F-82B1-229D14EA0882}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PropertiesRecipe/Resources.resx">
+    <Files>
+      <File FileName="PropertiesRecipe/Resources.resx" Line="25" Column="3" />
+      <File FileName="PropertiesRecipe/App.xaml" Line="9" Column="1" />
+      <File FileName="PropertiesRecipe/App.xaml.cs" Line="1" Column="1" />
+      <File FileName="PropertiesRecipe/PropertiesRecipePage.xaml.cs" Line="22" Column="1" />
+      <File FileName="PropertiesRecipe/Resources.Designer.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.PropertiesRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E475FF84-FD91-4DE8-AA20-4AB19977D7F6" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
