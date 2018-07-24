@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+     xmlns:local="clr-namespace:TableRecipe"
+     x:Class="TableRecipe.TableRecipeSearchPage">
+    <ListView x:Name="listView" BindingContext="{local:TableRecipeViewModel}"
+         ItemsSource="{Binding items}">
+        <ListView.Header>
+            <SearchBar x:Name="searchbar" Placeholder="Name"/>
+        </ListView.Header>
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding text}" Detail="{Binding detail}" />
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>        
+</ContentPage>

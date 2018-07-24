@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+     xmlns:local="clr-namespace:TableRecipe" x:Class="TableRecipe.MenuPage">
+    <TableView Intent="Menu">
+        <TableRoot>
+            <TableSection>
+                <TextCell Text="Simple Table"
+                     Command="{Binding NavigateCommand}"
+                     CommandParameter="{x:Type local:TableRecipePage}" />
+                <TextCell Text="Simple Table with Search"
+                     Command="{Binding NavigateCommand}"
+                     CommandParameter="{x:Type local:TableRecipeSearchPage}" />
+            </TableSection>
+        </TableRoot>
+    </TableView>
+</ContentPage>
