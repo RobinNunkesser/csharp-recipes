@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{1D1C4864-F26E-4E37-BACA-163EB3A58855}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LicenseRecipe/LicenseRecipePage.xaml.cs">
+    <Files>
+      <File FileName="LicenseRecipe/LicenseRecipePage.xaml.cs" Line="15" Column="59" />
+      <File FileName="LicenseRecipe/LicenseRecipePage.xaml" Line="8" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.LicenseRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.45783100-2338-4A29-BBE0-B158F1355801">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.LicenseRecipe.iOS>
+</Properties>
