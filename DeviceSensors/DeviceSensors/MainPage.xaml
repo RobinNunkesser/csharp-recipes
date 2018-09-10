@@ -7,18 +7,6 @@
         <ProgressBar Progress="{Binding AccValues[0]}" Margin="10, 0"/>
         <ProgressBar Progress="{Binding AccValues[1]}" Margin="10, 0"/>
         <ProgressBar Progress="{Binding AccValues[2]}" Margin="10, 0"/>
-        <Label Text="{Binding Accelerometer}"/>
-        
-        <Label Text="Gyroscope" />
-        <ProgressBar Progress="{Binding GyrValues[0]}" Margin="10, 0"/>
-        <ProgressBar Progress="{Binding GyrValues[1]}" Margin="10, 0"/>
-        <ProgressBar Progress="{Binding GyrValues[2]}" Margin="10, 0"/>
-        <Label Text="{Binding Gyroscope}"/>
-        
-        <Label Text="Magnetometer" />        
-        <ProgressBar Progress="{Binding MagValues[0]}" Margin="10, 0" />
-        <ProgressBar Progress="{Binding MagValues[1]}" Margin="10, 0" />
-        <ProgressBar Progress="{Binding MagValues[2]}" Margin="10, 0" />
-        <Label Text="{Binding Magnetometer}"/>
+        <Label Text="{Binding Accelerometer}" VerticalOptions="EndAndExpand"/>        
     </StackLayout>
 </ContentPage>

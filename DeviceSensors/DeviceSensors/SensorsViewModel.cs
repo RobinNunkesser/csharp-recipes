@@ -6,19 +6,11 @@ namespace DeviceSensors
 {
     public class SensorsViewModel : INotifyPropertyChanged
     {
-        string accelerometer, gyroscope, magnetometer;
+        string accelerometer;
 
         double[] accValues = new double[3];
         double accScale = 20;
         double accShift = 10;
-
-        double[] gyrValues = new double[3];
-        double gyrScale = 0.01;
-        double gyrShift = 0.01;
-
-        double[] magValues = new double[3];
-        double magScale = 100;
-        double magShift = 50;
 
         public double[] AccValues
         {
@@ -33,32 +25,6 @@ namespace DeviceSensors
             }
         }
 
-        public double[] GyrValues
-        {
-            get => gyrValues.Select(x => (x + gyrShift) / gyrScale).ToArray();
-            set
-            {
-                if (gyrValues != value)
-                {
-                    gyrValues = value;
-                    OnPropertyChanged("GyrValues");
-                }
-            }
-        }
-
-        public double[] MagValues
-        {
-            get => magValues.Select(x => (x + magShift) / magScale).ToArray();
-            set
-            {
-                if (magValues != value)
-                {
-                    magValues = value;
-                    OnPropertyChanged("MagValues");
-                }
-            }
-        }
-
         public string Accelerometer
         {
             get => accelerometer;
@@ -68,32 +34,6 @@ namespace DeviceSensors
                 {
                     accelerometer = value;
                     OnPropertyChanged("Accelerometer");
-                }
-            }
-        }
-
-        public string Gyroscope
-        {
-            get => gyroscope;
-            set
-            {
-                if (gyroscope != value)
-                {
-                    gyroscope = value;
-                    OnPropertyChanged("Gyroscope");
-                }
-            }
-        }
-
-        public string Magnetometer
-        {
-            get => magnetometer;
-            set
-            {
-                if (magnetometer != value)
-                {
-                    magnetometer = value;
-                    OnPropertyChanged("Magnetometer");
                 }
             }
         }
