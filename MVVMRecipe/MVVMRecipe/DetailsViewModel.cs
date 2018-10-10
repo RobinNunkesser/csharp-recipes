@@ -36,14 +36,10 @@ namespace MVVMRecipe
             }
         }
 
+        #region INotifyPropertyChanged implementation
         public event PropertyChangedEventHandler PropertyChanged;
-        protected virtual void OnPropertyChanged(string propertyName)
-        {
-            var changed = PropertyChanged;
-            if (changed != null)
-            {
-                PropertyChanged(this,new PropertyChangedEventArgs(propertyName));
-            }
-        }
+        public void OnPropertyChanged([CallerMemberName]string name = "") =>
+          PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+        #endregion
     }
 }
