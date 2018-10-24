@@ -3,15 +3,15 @@
     <Files>
       <File FileName="JSONRecipe/App.xaml" Line="9" Column="1" />
       <File FileName="JSONRecipe/App.xaml.cs" Line="10" Column="31" />
-      <File FileName="JSONRecipe/JSONService.cs" Line="32" Column="2" />
-      <File FileName="JSONRecipe/JSONRecipePage.xaml.cs" Line="1" Column="1" />
+      <File FileName="JSONRecipe/JSONService.cs" Line="27" Column="16" />
+      <File FileName="JSONRecipe/JSONRecipePage.xaml.cs" Line="10" Column="31" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.JSONRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.45783100-2338-4A29-BBE0-B158F1355801">
+  <MonoDevelop.Ide.ItemProperties.JSONRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.EA9FD8AD-B65C-484D-A20B-0F64D487E17C">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.JSONRecipe.iOS>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

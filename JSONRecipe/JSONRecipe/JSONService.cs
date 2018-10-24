@@ -24,7 +24,7 @@ namespace JSONRecipe
                              ""collectionName"":""In Between Dreams"",
                              ""trackName"":""Better Together"",
                              ""trackNumber"":1}";
-            JObject jsonObject = JObject.Parse(example);
+            var jsonObject = JObject.Parse(example);
             var jsonString = jsonObject.ToString();
             var track = JsonConvert.DeserializeObject<Track>(jsonString);
             Debug.WriteLine(track);

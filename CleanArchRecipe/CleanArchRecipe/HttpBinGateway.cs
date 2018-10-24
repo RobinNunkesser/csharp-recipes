@@ -9,20 +9,16 @@ namespace CleanArchRecipe
     public class HttpBinGateway
     {
         const string Url = "https://httpbin.org/get";
-        private HttpClient GetClient()
-        {
-            HttpClient client = new HttpClient();
-            var media = new MediaTypeWithQualityHeaderValue("application/json");
-            client.DefaultRequestHeaders.Accept.Add(media);
-            return client;
-        }
 
         public async Task<Response<ResponseEntity>> Get()
         {
-            HttpClient client = GetClient();
+            var client = new HttpClient();
+            var media = new MediaTypeWithQualityHeaderValue("application/json");
+            client.DefaultRequestHeaders.Accept.Add(media);
+
             try
             {
-                HttpResponseMessage httpResponse = await client.GetAsync(Url);
+                var httpResponse = await client.GetAsync(Url);
                 httpResponse.EnsureSuccessStatusCode();
                 var content = await httpResponse.Content.ReadAsStringAsync();
                 var result = 

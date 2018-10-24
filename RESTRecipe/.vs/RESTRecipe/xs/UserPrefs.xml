@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{08870398-CC17-4982-819F-EF9515DE2C81}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="RESTRecipe/RESTRecipePage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RESTRecipe/iTunesService.cs">
     <Files>
-      <File FileName="RESTRecipe/iTunesService.cs" Line="31" Column="56" />
+      <File FileName="RESTRecipe/iTunesService.cs" Line="18" Column="13" />
       <File FileName="RESTRecipe/App.xaml" Line="9" Column="1" />
       <File FileName="RESTRecipe/App.xaml.cs" Line="11" Column="1" />
       <File FileName="RESTRecipe/RESTRecipePage.xaml" Line="7" Column="1" />
@@ -9,7 +9,7 @@
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.RESTRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E475FF84-FD91-4DE8-AA20-4AB19977D7F6">
+  <MonoDevelop.Ide.ItemProperties.RESTRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.EA9FD8AD-B65C-484D-A20B-0F64D487E17C">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.RESTRecipe.iOS>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
