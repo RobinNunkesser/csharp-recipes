@@ -21,15 +21,12 @@ namespace CleanArchRecipe
 
         public void Receive(Response<ResponseEntity> response)
         {
-            if (response.Failure == null)
-            {                
-                Debug.WriteLine(response.Success);
-            }
-            else
-            {
+            response.Match(success => {
+                Debug.WriteLine(success);
+            }, failure => {
                 // Handle Errpr
-                
-            }
+                Debug.WriteLine(failure);
+            });
         }
 
     }

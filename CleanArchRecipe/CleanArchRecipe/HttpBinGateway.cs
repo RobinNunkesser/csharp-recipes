@@ -23,17 +23,11 @@ namespace CleanArchRecipe
                 var content = await httpResponse.Content.ReadAsStringAsync();
                 var result = 
                     JsonConvert.DeserializeObject<ResponseEntity>(content);
-                return new Response<ResponseEntity>()
-                {
-                    Success = result
-                };
+                return new Response<ResponseEntity>(result);
             }
             catch (System.Exception ex)
             {
-                return new Response<ResponseEntity>()
-                {
-                    Failure = ex
-                };
+                return new Response<ResponseEntity>(ex);
             }
             finally
             {
