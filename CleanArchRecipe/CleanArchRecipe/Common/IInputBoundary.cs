@@ -1,8 +1,7 @@
 ﻿namespace CleanArchRecipe.Common
 {
-    public interface IInputBoundary<T>
+    public interface IInputBoundary<Request, Response>
     {
-        void Send(IOutputBoundary<T> outputBoundary, Request request = null);
+        void Send(Request request, IOutputBoundary<Response> outputBoundary);
     }
-
 }

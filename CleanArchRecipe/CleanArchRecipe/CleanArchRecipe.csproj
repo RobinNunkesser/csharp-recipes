@@ -14,5 +14,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Common\Union.cs" />
+    <Compile Remove="Common\Request.cs" />
   </ItemGroup>
 </Project>
