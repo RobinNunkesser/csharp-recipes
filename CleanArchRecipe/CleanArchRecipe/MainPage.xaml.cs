@@ -6,7 +6,7 @@ namespace CleanArchRecipe
 {
     public partial class MainPage : ContentPage, IDisplayer<string>
     {
-        private IUseCase<object, string> inputBoundary = new GetHttpRequestInteractor(new HttpRequestPresenter());
+        private IUseCase<object, string> inputBoundary = new GetHttpRequestInteractor(new HttpBinGateway(), new HttpRequestPresenter());
 
         public MainPage()
         {
