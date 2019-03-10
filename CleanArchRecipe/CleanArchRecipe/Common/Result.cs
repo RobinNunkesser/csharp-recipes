@@ -1,14 +1,14 @@
 ﻿using System;
 namespace CleanArchRecipe.Common
 {
-    public class Response<T>
+    public class Result<T>
     {
         int tag;
         T value;
         Exception error;
 
-        public Response(T value) { this.value = value; tag = 1; }
-        public Response(Exception error) { this.error = error; tag = 2; }
+        public Result(T value) { this.value = value; tag = 1; }
+        public Result(Exception error) { this.error = error; tag = 2; }
 
         public virtual void Match(
             Action<T> successHandler,
@@ -28,7 +28,7 @@ namespace CleanArchRecipe.Common
             }
         }
 
-        private static object Case(Response<T> u)
+        private static object Case(Result<T> u)
         {
             switch (u.tag)
             {

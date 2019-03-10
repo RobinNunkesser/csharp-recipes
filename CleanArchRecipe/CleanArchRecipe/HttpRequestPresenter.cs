@@ -3,9 +3,9 @@ using TuneSearch.Common;
 
 namespace CleanArchRecipe
 {
-    public class ResponsePresenter : IPresenter<ResponseEntity,String>
+    public class HttpRequestPresenter : IPresenter<HttpRequestModel,String>
     {
-        public string present(ResponseEntity entity)
+        public string present(HttpRequestModel entity)
         {
             return $"origin: {entity.origin}, url: {entity.url}";
         }

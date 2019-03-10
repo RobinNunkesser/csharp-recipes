@@ -4,9 +4,9 @@ using Xamarin.Forms;
 
 namespace CleanArchRecipe
 {
-    public partial class MainPage : ContentPage, IOutputBoundary<string>
+    public partial class MainPage : ContentPage, IDisplayer<string>
     {
-        private IInputBoundary<object, string> inputBoundary = new Interactor();
+        private IUseCase<object, string> inputBoundary = new GetHttpRequestInteractor();
 
         public MainPage()
         {
@@ -16,10 +16,10 @@ namespace CleanArchRecipe
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            inputBoundary.Send(null,this);
+            inputBoundary.Execute(null,this);
         }
 
-        public void Receive(Response<string> response)
+        public void Display(Result<string> response)
         {
             response.Match(success => {
                 Debug.WriteLine(success);

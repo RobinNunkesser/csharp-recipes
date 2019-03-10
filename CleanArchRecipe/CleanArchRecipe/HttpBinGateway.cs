@@ -10,7 +10,7 @@ namespace CleanArchRecipe
     {
         const string Url = "https://httpbin.org/get";
 
-        public async Task<Response<ResponseEntity>> Get()
+        public async Task<Result<HttpRequestModel>> Get()
         {
             var client = new HttpClient();
             var media = new MediaTypeWithQualityHeaderValue("application/json");
@@ -22,12 +22,12 @@ namespace CleanArchRecipe
                 httpResponse.EnsureSuccessStatusCode();
                 var content = await httpResponse.Content.ReadAsStringAsync();
                 var result = 
-                    JsonConvert.DeserializeObject<ResponseEntity>(content);
-                return new Response<ResponseEntity>(result);
+                    JsonConvert.DeserializeObject<HttpRequestModel>(content);
+                return new Result<HttpRequestModel>(result);
             }
             catch (System.Exception ex)
             {
-                return new Response<ResponseEntity>(ex);
+                return new Result<HttpRequestModel>(ex);
             }
             finally
             {
