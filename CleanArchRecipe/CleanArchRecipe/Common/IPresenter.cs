@@ -1,5 +1,4 @@
-﻿using System;
-namespace TuneSearch.Common
+﻿namespace CleanArchRecipe.Common
 {
     public interface IPresenter<Entity,ViewModel>
     {
