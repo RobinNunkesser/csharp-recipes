@@ -1,5 +1,5 @@
 ﻿using System.Diagnostics;
-using CleanArchRecipe.Common;
+using BasicCleanArch;
 using Xamarin.Forms;
 
 namespace CleanArchRecipe

@@ -1,5 +1,5 @@
 ﻿using System;
-using CleanArchRecipe.Common;
+using BasicCleanArch;
 
 namespace CleanArchRecipe
 {
