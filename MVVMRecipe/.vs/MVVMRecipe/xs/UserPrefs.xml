@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{D6ABF1E4-F839-4AEE-91E9-FBC77CD0964D}|Default">
+  <MonoDevelop.Ide.ItemProperties.MVVMRecipe.Droid AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MonoDevelop.Ide.ItemProperties.MVVMRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5B88AB7D-5F28-49E8-8B44-ED319688B1BE">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.MVVMRecipe.iOS>
+  <MonoDevelop.Ide.Workbench ActiveDocument="MVVMRecipe/DetailsViewModel.cs">
+    <Files>
+      <File FileName="MVVMRecipe/DetailsPage.xaml" Line="8" Column="64" />
+      <File FileName="MVVMRecipe/DetailsPage.xaml.cs" Line="25" Column="1" />
+      <File FileName="MVVMRecipe/App.xaml.cs" Line="11" Column="39" />
+      <File FileName="MVVMRecipe/DetailsViewModel.cs" Line="46" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MVVMRecipe" expanded="True">
+            <Node name="MVVMRecipe" expanded="True">
+              <Node name="DetailsViewModel.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
