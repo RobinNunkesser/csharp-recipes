@@ -13,32 +13,28 @@ namespace CleanArchRecipe
         private const string Url = "https://httpbin.org";
         private const string MediaTypeJSON = "application/json";
 
-        private HttpClient Client
+        private HttpClient GetClient()
         {
-            get
-            {
-                var client = new HttpClient();
-                var media = new MediaTypeWithQualityHeaderValue(MediaTypeJSON);
-                client.DefaultRequestHeaders.Accept.Add(media);
-                return client;
-            }
+            var client = new HttpClient();
+            var media = new MediaTypeWithQualityHeaderValue(MediaTypeJSON);
+            client.DefaultRequestHeaders.Accept.Add(media);
+            return client;
         }
 
         public async Task<Result<HttpBinResponseModel>> Get()
         {
-            try
+            using (var client = GetClient())
             {
-                var response = await Client.GetAsync($"{Url}/get");
-                var result = await responseToModel(response);
-                return new Result<HttpBinResponseModel>(result);
-            }
-            catch (Exception ex)
-            {
-                return new Result<HttpBinResponseModel>(ex);
-            }
-            finally
-            {
-                Client.Dispose();
+                try
+                {
+                    var response = await client.GetAsync($"{Url}/get");
+                    var result = await responseToModel(response);
+                    return new Result<HttpBinResponseModel>(result);
+                }
+                catch (Exception ex)
+                {
+                    return new Result<HttpBinResponseModel>(ex);
+                }
             }
         }
 
@@ -46,20 +42,19 @@ namespace CleanArchRecipe
         {
             var parametersContent =
                 new StringContent(parameters, Encoding.UTF8, MediaTypeJSON);
-            try
+            using (var client = GetClient())
             {
-                var response =
-                    await Client.PostAsync($"{Url}/post", parametersContent);
-                var result = await responseToModel(response);
-                return new Result<HttpBinResponseModel>(result);
-            }
-            catch (Exception ex)
-            {
-                return new Result<HttpBinResponseModel>(ex);
-            }
-            finally
-            {
-                Client.Dispose();
+                try
+                {
+                    var response = await client.PostAsync($"{Url}/post",
+                        parametersContent);
+                    var result = await responseToModel(response);
+                    return new Result<HttpBinResponseModel>(result);
+                }
+                catch (Exception ex)
+                {
+                    return new Result<HttpBinResponseModel>(ex);
+                }
             }
         }
 
