@@ -6,7 +6,9 @@ namespace CleanArchRecipe
 {
     public partial class MainPage : ContentPage, IDisplayer<string>
     {
-        private IUseCase<object, string> inputBoundary = new GetHttpRequestInteractor(new HttpBinGateway(), new HttpRequestPresenter());
+        private IUseCase<object, string> interactor = 
+            new HttpBinGetInteractor(new HttpBinGateway(), 
+                                         new HttpBinResponsePresenter());
 
         public MainPage()
         {
@@ -16,7 +18,7 @@ namespace CleanArchRecipe
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            inputBoundary.Execute(null,this);
+            interactor.Execute(null,this);
         }
 
         public void Display(Result<string> response)
