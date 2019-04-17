@@ -10,17 +10,17 @@ namespace CleanArchRecipe
 {
     public class HttpBinGateway
     {
-        const string Url = "https://httpbin.org";
-        const string MediaTypeJSON = "application/json";
+        private const string Url = "https://httpbin.org";
+        private const string MediaTypeJSON = "application/json";
 
         private HttpClient Client
         {
             get
             {
-                var _client = new HttpClient();
+                var client = new HttpClient();
                 var media = new MediaTypeWithQualityHeaderValue(MediaTypeJSON);
-                _client.DefaultRequestHeaders.Accept.Add(media);
-                return _client;
+                client.DefaultRequestHeaders.Accept.Add(media);
+                return client;
             }
         }
 
@@ -28,14 +28,11 @@ namespace CleanArchRecipe
         {
             try
             {
-                var httpResponse = await Client.GetAsync($"{Url}/get");
-                httpResponse.EnsureSuccessStatusCode();
-                var content = await httpResponse.Content.ReadAsStringAsync();
-                var result =
-                    JsonConvert.DeserializeObject<HttpBinResponseModel>(content);
+                var response = await Client.GetAsync($"{Url}/get");
+                var result = await responseToModel(response);
                 return new Result<HttpBinResponseModel>(result);
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
                 return new Result<HttpBinResponseModel>(ex);
             }
@@ -47,17 +44,16 @@ namespace CleanArchRecipe
 
         public async Task<Result<HttpBinResponseModel>> Post(string parameters)
         {
-            var parametersContent = new StringContent(parameters, Encoding.UTF8, MediaTypeJSON);
+            var parametersContent =
+                new StringContent(parameters, Encoding.UTF8, MediaTypeJSON);
             try
             {
-                var httpResponse = await Client.PostAsync($"{Url}/post", parametersContent);
-                httpResponse.EnsureSuccessStatusCode();
-                var content = await httpResponse.Content.ReadAsStringAsync();
-                var result =
-                    JsonConvert.DeserializeObject<HttpBinResponseModel>(content);
+                var response =
+                    await Client.PostAsync($"{Url}/post", parametersContent);
+                var result = await responseToModel(response);
                 return new Result<HttpBinResponseModel>(result);
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
                 return new Result<HttpBinResponseModel>(ex);
             }
@@ -65,7 +61,14 @@ namespace CleanArchRecipe
             {
                 Client.Dispose();
             }
+        }
 
+        private async Task<HttpBinResponseModel> responseToModel(
+            HttpResponseMessage response)
+        {
+            response.EnsureSuccessStatusCode();
+            var content = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<HttpBinResponseModel>(content);
         }
     }
 }
