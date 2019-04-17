@@ -1,6 +1,8 @@
 ﻿using System;
 using BasicCleanArch;
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration;
+using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 
 namespace CleanArchRecipe
 {
@@ -17,6 +19,7 @@ namespace CleanArchRecipe
         public MainPage()
         {
             InitializeComponent();
+            On<iOS>().SetUseSafeArea(true);
         }
 
         public void Display(Result<string> response)
