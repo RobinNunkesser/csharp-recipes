@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+﻿using System;
 using BasicCleanArch;
 using Xamarin.Forms;
 
@@ -6,8 +6,12 @@ namespace CleanArchRecipe
 {
     public partial class MainPage : ContentPage, IDisplayer<string>
     {
-        private readonly IUseCase<object, string> interactor =
+        private readonly IUseCase<object, string> _getInteractor =
             new HttpBinGetInteractor(new HttpBinGateway(),
+                new HttpBinResponsePresenter());
+
+        private readonly IUseCase<HttpBinPostRequest, string> _postInteractor =
+            new HttpBinPostInteractor(new HttpBinGateway(),
                 new HttpBinResponsePresenter());
 
         public MainPage()
@@ -17,17 +21,20 @@ namespace CleanArchRecipe
 
         public void Display(Result<string> response)
         {
-            response.Match(success => { Debug.WriteLine(success); }, failure =>
-            {
-                // Handle Error
-                Debug.WriteLine(failure);
-            });
+            response.Match(success => ResultLabel.Text = success,
+                async failure =>
+                    await DisplayAlert("Fehler", failure.Message, "OK"));
         }
 
-        protected override void OnAppearing()
+        private void Get_Button_OnClicked(object sender, EventArgs e)
         {
-            base.OnAppearing();
-            interactor.Execute(null, this);
+            _getInteractor.Execute(null, this);
+        }
+
+        private void Post_Button_OnClicked(object sender, EventArgs e)
+        {
+            _postInteractor.Execute(
+                new HttpBinPostRequest {term = ParameterEntry.Text}, this);
         }
     }
 }
