@@ -1,4 +1,3 @@
-using System;
 using Xunit;
 
 namespace CleanArchRecipe.Tests
@@ -8,11 +7,10 @@ namespace CleanArchRecipe.Tests
         [Fact]
         public void TestPresent()
         {
-            var presenter = new HttpRequestPresenter();
-            var model = new HttpRequestModel
+            var presenter = new HttpBinResponsePresenter();
+            var model = new HttpBinResponseModel
             {
-                origin = "origin",
-                url = "url"
+                origin = "origin", url = "url"
             };
             var viewModel = presenter.present(model);
             Assert.Equal("origin: origin, url: url", viewModel);

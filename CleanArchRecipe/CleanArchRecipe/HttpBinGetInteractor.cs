@@ -1,34 +1,20 @@
-﻿using System;
-using BasicCleanArch;
+﻿using BasicCleanArch;
 
 namespace CleanArchRecipe
 {
-    public class HttpBinGetInteractor : 
-        MustInitialize<IPresenter<HttpBinResponseModel, String>>, 
+    public class HttpBinGetInteractor : HttpBinInteractor,
         IUseCase<object, string>
     {
-        IPresenter<HttpBinResponseModel, String> _presenter;
-        HttpBinGateway _gateway;
-
-        public HttpBinGetInteractor(HttpBinGateway gateway, 
-            IPresenter<HttpBinResponseModel, string> presenter) : base(presenter)
+        public HttpBinGetInteractor(HttpBinGateway gateway,
+            IPresenter<HttpBinResponseModel, string> presenter) : base(gateway,
+            presenter)
         {
-            _presenter = presenter;
-            _gateway = gateway;
         }
 
-        public async void Execute(object request, 
-                                IDisplayer<string> outputBoundary)
+        public async void Execute(object request, IDisplayer<string> displayer)
         {
             var gatewayResponse = await _gateway.Get();
-            gatewayResponse.Match(success =>
-            {
-                var viewModel = _presenter.present(success);
-                outputBoundary.Display(new Result<string>(viewModel));
-            }, failure =>
-            {
-                outputBoundary.Display(new Result<string>(failure));
-            });
+            processResult(gatewayResponse, displayer);
         }
     }
 }

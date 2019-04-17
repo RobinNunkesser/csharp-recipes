@@ -1,36 +1,23 @@
-﻿using System;
-using BasicCleanArch;
+﻿using BasicCleanArch;
 using Newtonsoft.Json;
 
 namespace CleanArchRecipe
 {
-    public class HttpBinPostInteractor :
-        MustInitialize<IPresenter<HttpBinResponseModel, String>>,
+    public class HttpBinPostInteractor : HttpBinInteractor,
         IUseCase<HttpBinPostRequest, string>
     {
-        IPresenter<HttpBinResponseModel, String> _presenter;
-        HttpBinGateway _gateway;
-
         public HttpBinPostInteractor(HttpBinGateway gateway,
-            IPresenter<HttpBinResponseModel, string> presenter) : base(presenter)
+            IPresenter<HttpBinResponseModel, string> presenter) : base(gateway,
+            presenter)
         {
-            _presenter = presenter;
-            _gateway = gateway;
         }
 
         public async void Execute(HttpBinPostRequest request,
-                                IDisplayer<string> outputBoundary)
+            IDisplayer<string> displayer)
         {
             var json = JsonConvert.SerializeObject(request);
             var gatewayResponse = await _gateway.Post(json);
-            gatewayResponse.Match(success =>
-            {
-                var viewModel = _presenter.present(success);
-                outputBoundary.Display(new Result<string>(viewModel));
-            }, failure =>
-            {
-                outputBoundary.Display(new Result<string>(failure));
-            });
+            processResult(gatewayResponse, displayer);
         }
     }
 }
