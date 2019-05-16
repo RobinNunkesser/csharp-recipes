@@ -22,19 +22,22 @@
     <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.v7.recyclerview/27.0.2/proguard" t="Include">
       <e p="proguard.txt" t="Include" />
     </e>
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.reporters.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="CleanArchRecipe" t="IncludeRecursive">
         <e p="App.xaml" t="Include" />
         <e p="App.xaml.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="CleanArchRecipe.csproj" t="IncludeRecursive" />
-        <e p="Common" t="Include">
-          <e p="IInputBoundary.cs" t="Include" />
-          <e p="IOutputBoundary.cs" t="Include" />
-          <e p="Request.cs" t="Include" />
-        </e>
         <e p="HttpBinGateway.cs" t="Include" />
-        <e p="Interactor.cs" t="Include" />
+        <e p="HttpBinGetInteractor.cs" t="Include" />
+        <e p="HttpBinInteractor.cs" t="Include" />
+        <e p="HttpBinPostInteractor.cs" t="Include" />
+        <e p="HttpBinPostRequest.cs" t="Include" />
+        <e p="HttpBinResponseModel.cs" t="Include" />
+        <e p="HttpBinResponsePresenter.cs" t="Include" />
         <e p="MainPage.xaml" t="Include" />
         <e p="MainPage.xaml.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
@@ -44,7 +47,6 @@
             </e>
           </e>
         </e>
-        <e p="ResponseEntity.cs" t="Include" />
       </e>
       <e p="CleanArchRecipe.Android" t="IncludeRecursive">
         <e p="Assets" t="Include">
@@ -100,6 +102,19 @@
           </e>
         </e>
       </e>
+      <e p="CleanArchRecipe.Console" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CleanArchRecipe.Console.csproj" t="IncludeRecursive" />
+        <e p="MainView.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="CleanArchRecipe.Console.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
       <e p="CleanArchRecipe.iOS" t="IncludeRecursive">
         <e p="AppDelegate.cs" t="Include" />
         <e p="Assets.xcassets" t="Include">
@@ -134,9 +149,25 @@
         </e>
       </e>
       <e p="CleanArchRecipe.sln" t="IncludeFlat" />
+      <e p="CleanArchRecipe.Tests" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CleanArchRecipe.Tests.csproj" t="IncludeRecursive" />
+        <e p="HttpBinGatewayTests.cs" t="Include" />
+        <e p="HttpRequestPresenterTests.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="CleanArchRecipe.Tests.AssemblyInfo.cs" t="Include" />
+              <e p="CleanArchRecipe.Tests.Program.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>
-    <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_CleanArchRecipe.1006456151.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Android/sdk/platforms/android-27/data/res" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Android/sdk/sources/android-27" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_CleanArchRecipe.1006456151.00" t="ExcludeRecursive" />
   </component>
 </project>
