@@ -19,7 +19,7 @@ namespace CleanArchRecipe.Console
             System.Console.WriteLine("Term to post? ");
             var term = System.Console.ReadLine();
             _interactor.Execute(new HttpBinPostRequest {term = term}, this);
-            System.Console.WriteLine("\nAsync operation running. Press key to abort");
+            System.Console.WriteLine("\nAsync operation. Press key to abort");
             var key = System.Console.ReadKey();
         }
     }

@@ -15,8 +15,7 @@ namespace MinimalCleanArch
         public void Execute(object request, IDisplayer<string> displayer)
         {
             var viewModel = _presenter.present(42);
-            var result = new Result<string>(viewModel);
-            displayer.Display(result);
+            displayer.Display(new Result<string>(viewModel));
         }
     }
 }
