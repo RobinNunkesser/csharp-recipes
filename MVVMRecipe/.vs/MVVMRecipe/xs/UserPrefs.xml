@@ -8,13 +8,14 @@
       <File FileName="MVVMRecipe/DetailsPage.xaml" Line="8" Column="64" />
       <File FileName="MVVMRecipe/DetailsPage.xaml.cs" Line="25" Column="1" />
       <File FileName="MVVMRecipe/App.xaml.cs" Line="11" Column="39" />
-      <File FileName="MVVMRecipe/DetailsViewModel.cs" Line="46" Column="2" />
+      <File FileName="MVVMRecipe/DetailsViewModel.cs" Line="35" Column="47" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MVVMRecipe" expanded="True">
             <Node name="MVVMRecipe" expanded="True">
+              <Node name="DetailsPage.xaml" expanded="True" />
               <Node name="DetailsViewModel.cs" selected="True" />
             </Node>
           </Node>

@@ -1,18 +1,35 @@
 ﻿<Properties StartupConfiguration="{FF306AA0-DCD5-400F-82B1-229D14EA0882}|Default">
+  <MonoDevelop.Ide.ItemProperties.PropertiesRecipe.Droid AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
   <MonoDevelop.Ide.Workbench ActiveDocument="PropertiesRecipe/Resources.resx">
     <Files>
-      <File FileName="PropertiesRecipe/Resources.resx" Line="25" Column="3" />
+      <File FileName="PropertiesRecipe/Resources.resx" Line="27" Column="17" />
       <File FileName="PropertiesRecipe/App.xaml" Line="9" Column="1" />
       <File FileName="PropertiesRecipe/App.xaml.cs" Line="1" Column="1" />
-      <File FileName="PropertiesRecipe/PropertiesRecipePage.xaml.cs" Line="22" Column="1" />
+      <File FileName="PropertiesRecipe/PropertiesRecipePage.xaml.cs" Line="21" Column="41" />
       <File FileName="PropertiesRecipe/Resources.Designer.cs" Line="1" Column="1" />
+      <File FileName="iOS/Main.cs" Line="17" Column="29" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PropertiesRecipe" expanded="True">
+            <Node name="PropertiesRecipe" expanded="True">
+              <Node name="Properties" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
+              <Node name="PropertiesRecipePage.xaml" expanded="True" />
+              <Node name="Resources.resx" expanded="True" selected="True" />
+            </Node>
+            <Node name="PropertiesRecipe.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.PropertiesRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5B88AB7D-5F28-49E8-8B44-ED319688B1BE" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.PropertiesRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E475FF84-FD91-4DE8-AA20-4AB19977D7F6" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>

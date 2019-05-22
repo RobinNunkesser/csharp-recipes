@@ -1,20 +1,33 @@
 ﻿<Properties StartupConfiguration="{E32393FA-8120-4DFA-86BE-2249AB9E0F7E}|Default">
+  <MonoDevelop.Ide.ItemProperties.SettingsRecipe.Droid AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
   <MonoDevelop.Ide.Workbench ActiveDocument="SettingsRecipe/SettingsRecipeViewModel.cs">
     <Files>
       <File FileName="packages/Xam.Plugins.Settings.3.1.1/readme.txt" Line="19" Column="1" />
-      <File FileName="SettingsRecipe/Settings.cs" Line="30" Column="34" />
-      <File FileName="SettingsRecipe/SettingsRecipePage.xaml" Line="17" Column="15" />
-      <File FileName="SettingsRecipe/SettingsRecipeViewModel.cs" Line="37" Column="31" />
+      <File FileName="SettingsRecipe/Settings.cs" Line="14" Column="1" />
+      <File FileName="SettingsRecipe/SettingsRecipePage.xaml" Line="7" Column="58" />
+      <File FileName="SettingsRecipe/SettingsRecipeViewModel.cs" Line="22" Column="36" />
       <File FileName="SettingsRecipe/SettingsRecipePage.xaml.cs" Line="1" Column="1" />
+      <File FileName="SettingsRecipe/obj/Debug/SettingsRecipe.SettingsRecipePage.xaml.g.cs" Line="1" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SettingsRecipe" expanded="True">
+            <Node name="SettingsRecipe" expanded="True">
+              <Node name="SettingsRecipeViewModel.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.SettingsRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5B88AB7D-5F28-49E8-8B44-ED319688B1BE">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.SettingsRecipe.iOS>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.SettingsRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E475FF84-FD91-4DE8-AA20-4AB19977D7F6">
-    <MonoDevelop.MacDev.AppleDevelopmentTeam />
-  </MonoDevelop.Ide.ItemProperties.SettingsRecipe.iOS>
   <MultiItemStartupConfigurations />
 </Properties>
