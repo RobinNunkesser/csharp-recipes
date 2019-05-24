@@ -8,7 +8,7 @@ namespace MVVMRecipe
         {
             InitializeComponent();
 
-            MainPage = new DetailsPage();
+            MainPage = new NavigationPage(new DetailsPage());
         }
 
         protected override void OnStart()

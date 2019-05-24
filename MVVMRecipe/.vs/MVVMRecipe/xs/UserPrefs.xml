@@ -1,22 +1,26 @@
-﻿<Properties StartupConfiguration="{D6ABF1E4-F839-4AEE-91E9-FBC77CD0964D}|Default">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{D6ABF1E4-F839-4AEE-91E9-FBC77CD0964D}|Default">
   <MonoDevelop.Ide.ItemProperties.MVVMRecipe.Droid AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
-  <MonoDevelop.Ide.ItemProperties.MVVMRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5B88AB7D-5F28-49E8-8B44-ED319688B1BE">
+  <MonoDevelop.Ide.ItemProperties.MVVMRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.88C567C2-1067-45A8-BC5A-69FF4D4E4955">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.MVVMRecipe.iOS>
-  <MonoDevelop.Ide.Workbench ActiveDocument="MVVMRecipe/DetailsViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MVVMRecipe Status">
     <Files>
-      <File FileName="MVVMRecipe/DetailsPage.xaml" Line="8" Column="64" />
-      <File FileName="MVVMRecipe/DetailsPage.xaml.cs" Line="25" Column="1" />
-      <File FileName="MVVMRecipe/App.xaml.cs" Line="11" Column="39" />
-      <File FileName="MVVMRecipe/DetailsViewModel.cs" Line="35" Column="47" />
+      <File FileName="MVVMRecipe/DetailsPage.xaml" />
+      <File FileName="MVVMRecipe/DetailsPage.xaml.cs" Line="15" Column="1" />
+      <File FileName="MVVMRecipe/App.xaml.cs" Line="11" Column="60" />
+      <File FileName="MVVMRecipe/DetailsViewModel.cs" Line="45" Column="1" />
+      <File FileName="MVVMRecipe/obj/Debug/MVVMRecipe.DetailsPage.xaml.g.cs" Line="1" Column="1" />
+      <File FileName="MVVMRecipe Status" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MVVMRecipe" expanded="True">
             <Node name="MVVMRecipe" expanded="True">
-              <Node name="DetailsPage.xaml" expanded="True" />
-              <Node name="DetailsViewModel.cs" selected="True" />
+              <Node name="App.xaml" expanded="True" />
+              <Node name="DetailsPage.xaml" expanded="True">
+                <Node name="DetailsPage.xaml.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>

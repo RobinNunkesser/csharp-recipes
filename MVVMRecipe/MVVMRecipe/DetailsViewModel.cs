@@ -1,5 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace MVVMRecipe
 {
@@ -8,33 +10,40 @@ namespace MVVMRecipe
         string forename, surname;
         public string Forename
         {
-            get
-            {
-                return forename;
-            }
+            get => forename;
             set
             {
                 if (forename != value)
                 {
                     forename = value;
-                    OnPropertyChanged("Forename");
+                    OnPropertyChanged();
                 }
             }
         }
         public string Surname
         {
-            get
-            {
-                return surname;
-            }
+            get => surname;
             set
             {
                 if (surname != value)
                 {
                     surname = value;
-                    OnPropertyChanged("Surname");
+                    OnPropertyChanged();
                 }
             }
+        }
+
+        public ICommand ResetCommand { get; private set; }
+
+        public DetailsViewModel()
+        {
+            ResetCommand = new Command(Reset);
+        }
+
+        public void Reset()
+        {
+            Forename = "";
+            Surname = "";
         }
 
         #region INotifyPropertyChanged implementation

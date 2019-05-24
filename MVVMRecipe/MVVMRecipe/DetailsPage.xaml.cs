@@ -14,11 +14,5 @@ namespace MVVMRecipe
             InitializeComponent();
             BindingContext = detailsViewModel;
         }
-
-        public void OnResetButtonClicked(object sender, EventArgs e)
-        {
-            detailsViewModel.Forename = "";
-            detailsViewModel.Surname = "";
-        }
     }
 }
