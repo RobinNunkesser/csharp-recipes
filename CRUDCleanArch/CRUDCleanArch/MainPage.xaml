@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+     xmlns:local="clr-namespace:CRUDCleanArch" x:Class="CRUDCleanArch.MainPage">
+    <StackLayout Padding="16,0,16,0" VerticalOptions="Center">
+        <Entry x:Name="ForenameEntry" Placeholder="Forename"/>
+        <Entry x:Name="SurnameEntry" Placeholder="Surname"/>
+        <Button Text="Create and Retrieve" Clicked="Handle_Clicked" HorizontalOptions="Center"
+             VerticalOptions="Start" />
+    </StackLayout>
+</ContentPage>
