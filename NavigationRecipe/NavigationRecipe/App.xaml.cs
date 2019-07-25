@@ -8,7 +8,7 @@ namespace NavigationRecipe
         {
             InitializeComponent();
 
-            MainPage = new NavigationRecipePage();
+            MainPage = new AppShell();
         }
 
         protected override void OnStart()

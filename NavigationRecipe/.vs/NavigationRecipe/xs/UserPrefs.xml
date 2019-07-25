@@ -1,27 +1,31 @@
-﻿<Properties StartupConfiguration="{5ED8B8A0-20FF-4EBB-870E-721BC16EF0B3}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="NavigationRecipe/NavigationRecipePage.xaml">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{7A1C5591-B137-41BF-B892-44A9E52FAB7C}|Default">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="NavigationRecipe/NavigationRecipePage.xaml" Line="10" Column="26" />
-      <File FileName="NavigationRecipe/MyFirstTabPage.xaml" Line="8" Column="1" />
-      <File FileName="NavigationRecipe/MyFirstTabPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="NavigationRecipe/MySecondTabPage.xaml" Line="8" Column="1" />
-      <File FileName="NavigationRecipe/MySecondTabPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="NavigationRecipe/NavigationRecipePage.xaml.cs" Line="5" Column="59" />
+      <File FileName="NavigationRecipe/MyFirstTabPage.xaml" />
+      <File FileName="NavigationRecipe/MyFirstTabPage.xaml.cs" />
+      <File FileName="NavigationRecipe/MySecondTabPage.xaml" />
+      <File FileName="NavigationRecipe/MySecondTabPage.xaml.cs" />
+      <File FileName="NavigationRecipe/App.xaml.cs" Line="12" Column="10" />
+      <File FileName="NavigationRecipe/AppShell.xaml" Line="10" Column="15" />
+      <File FileName="NavigationRecipe/AppShell.xaml.cs" Line="9" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NavigationRecipe" expanded="True">
             <Node name="NavigationRecipe" expanded="True">
-              <Node name="NavigationRecipePage.xaml" selected="True" />
+              <Node name="App.xaml" expanded="True" />
+              <Node name="AppShell.xaml" expanded="True" selected="True" />
             </Node>
+            <Node name="NavigationRecipe.Droid" expanded="True" />
+            <Node name="NavigationRecipe.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.NavigationRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E475FF84-FD91-4DE8-AA20-4AB19977D7F6">
+  <MonoDevelop.Ide.ItemProperties.NavigationRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.88C567C2-1067-45A8-BC5A-69FF4D4E4955">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.NavigationRecipe.iOS>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
