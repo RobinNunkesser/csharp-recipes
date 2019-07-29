@@ -1,28 +1,29 @@
 ﻿<Properties StartupConfiguration="{4FB891C3-3CFE-4D84-B529-9E662C04C6C8}|Default">
-  <MonoDevelop.Ide.ItemProperties.FilesRecipe.Droid AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.Nexus_5X_API_25" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FilesRecipe/FilesRecipePage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FilesRecipe/SaveAndLoad.cs">
     <Files>
-      <File FileName="FilesRecipe/ISaveAndLoad.cs" Line="10" Column="1" />
-      <File FileName="FilesRecipe/FilesRecipePage.xaml" Line="12" Column="15" />
-      <File FileName="FilesRecipe/FilesRecipePage.xaml.cs" Line="22" Column="76" />
+      <File FileName="FilesRecipe/ISaveAndLoad.cs" Line="1" Column="1" />
+      <File FileName="FilesRecipe/FilesRecipePage.xaml" />
+      <File FileName="FilesRecipe/FilesRecipePage.xaml.cs" Line="1" Column="1" />
       <File FileName="Droid/MainActivity.cs" Line="1" Column="1" />
-      <File FileName="Droid/SaveAndLoad.cs" Line="14" Column="1" />
-      <File FileName="iOS/SaveAndLoad.cs" Line="13" Column="1" />
-      <File FileName="FilesRecipe/obj/Debug/FilesRecipe.FilesRecipePage.xaml.g.cs" Line="30" Column="6" />
-      <File FileName="Droid/packages.config" Line="1" Column="1" />
-      <File FileName="FilesRecipe/App.xaml.cs" Line="11" Column="65" />
+      <File FileName="Droid/SaveAndLoad.cs" Line="1" Column="1" />
+      <File FileName="iOS/SaveAndLoad.cs" Line="1" Column="1" />
+      <File FileName="FilesRecipe/obj/Debug/FilesRecipe.FilesRecipePage.xaml.g.cs" Line="1" Column="1" />
+      <File FileName="FilesRecipe/App.xaml.cs" Line="1" Column="1" />
+      <File FileName="FilesRecipe/SaveAndLoad.cs" Line="14" Column="62" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FilesRecipe" expanded="True">
             <Node name="FilesRecipe" expanded="True">
-              <Node name="FilesRecipePage.xaml" expanded="True">
-                <Node name="FilesRecipePage.xaml.cs" selected="True" />
-              </Node>
+              <Node name="FilesRecipePage.xaml" expanded="True" />
             </Node>
-            <Node name="FilesRecipe.Droid" expanded="True" />
-            <Node name="FilesRecipe.iOS" expanded="True" />
+            <Node name="FilesRecipe.Droid" expanded="True">
+              <Node name="Assets" expanded="True" />
+            </Node>
+            <Node name="FilesRecipe.iOS" expanded="True">
+              <Node name="Packages" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -30,9 +31,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.FilesRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5B88AB7D-5F28-49E8-8B44-ED319688B1BE">
-    <MonoDevelop.MacDev.AppleDevelopmentTeam />
-  </MonoDevelop.Ide.ItemProperties.FilesRecipe.iOS>
+  <MonoDevelop.Ide.ItemProperties.FilesRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.88C567C2-1067-45A8-BC5A-69FF4D4E4955" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

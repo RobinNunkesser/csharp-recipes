@@ -1,20 +1,31 @@
 ﻿<Properties StartupConfiguration="{08870398-CC17-4982-819F-EF9515DE2C81}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="RESTRecipe/iTunesService.cs">
     <Files>
-      <File FileName="RESTRecipe/iTunesService.cs" Line="18" Column="13" />
-      <File FileName="RESTRecipe/App.xaml" Line="9" Column="1" />
+      <File FileName="RESTRecipe/iTunesService.cs" Line="18" Column="1" />
+      <File FileName="RESTRecipe/App.xaml" />
       <File FileName="RESTRecipe/App.xaml.cs" Line="11" Column="1" />
-      <File FileName="RESTRecipe/RESTRecipePage.xaml" Line="7" Column="1" />
+      <File FileName="RESTRecipe/RESTRecipePage.xaml" />
       <File FileName="RESTRecipe/RESTRecipePage.xaml.cs" Line="17" Column="52" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RESTRecipe" expanded="True">
+            <Node name="RESTRecipe" expanded="True">
+              <Node name="iTunesService.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.RESTRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.EA9FD8AD-B65C-484D-A20B-0F64D487E17C">
-    <MonoDevelop.MacDev.AppleDevelopmentTeam />
-  </MonoDevelop.Ide.ItemProperties.RESTRecipe.iOS>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.RESTRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.88C567C2-1067-45A8-BC5A-69FF4D4E4955">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.RESTRecipe.iOS>
 </Properties>

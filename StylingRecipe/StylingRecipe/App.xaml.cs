@@ -11,6 +11,11 @@ namespace StylingRecipe
             InitializeComponent();
 
             MainPage = new MainPage();
+
+            var newResources = new ResourceDictionary();
+            newResources.
+            this.Resources = newResources;
+
         }
 
         protected override void OnStart()

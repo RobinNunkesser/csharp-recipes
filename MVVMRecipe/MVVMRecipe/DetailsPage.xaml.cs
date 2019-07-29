@@ -9,7 +9,7 @@ namespace MVVMRecipe
     {
         public DetailsPage()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
     }
 }

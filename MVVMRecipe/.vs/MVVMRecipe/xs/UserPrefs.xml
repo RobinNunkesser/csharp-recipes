@@ -3,14 +3,13 @@
   <MonoDevelop.Ide.ItemProperties.MVVMRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.88C567C2-1067-45A8-BC5A-69FF4D4E4955">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.MVVMRecipe.iOS>
-  <MonoDevelop.Ide.Workbench ActiveDocument="MVVMRecipe Status">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MVVMRecipe/DetailsPage.xaml.cs">
     <Files>
-      <File FileName="MVVMRecipe/DetailsPage.xaml" />
-      <File FileName="MVVMRecipe/DetailsPage.xaml.cs" Line="15" Column="1" />
-      <File FileName="MVVMRecipe/App.xaml.cs" Line="11" Column="60" />
-      <File FileName="MVVMRecipe/DetailsViewModel.cs" Line="45" Column="1" />
-      <File FileName="MVVMRecipe/obj/Debug/MVVMRecipe.DetailsPage.xaml.g.cs" Line="1" Column="1" />
-      <File FileName="MVVMRecipe Status" />
+      <File FileName="MVVMRecipe/DetailsPage.xaml" Line="9" Column="40" />
+      <File FileName="MVVMRecipe/DetailsViewModel.cs" Line="19" Column="38" />
+      <File FileName="MVVMRecipe/DetailsPage.xaml.cs" Line="12" Column="35" />
+      <File FileName="MVVMRecipe/App.xaml.cs" />
+      <File FileName="MVVMRecipe/obj/Debug/MVVMRecipe.DetailsPage.xaml.g.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

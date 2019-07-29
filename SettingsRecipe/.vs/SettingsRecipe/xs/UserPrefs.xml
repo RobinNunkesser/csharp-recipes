@@ -3,9 +3,9 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="SettingsRecipe/SettingsRecipeViewModel.cs">
     <Files>
       <File FileName="packages/Xam.Plugins.Settings.3.1.1/readme.txt" Line="19" Column="1" />
-      <File FileName="SettingsRecipe/Settings.cs" Line="14" Column="1" />
-      <File FileName="SettingsRecipe/SettingsRecipePage.xaml" Line="7" Column="58" />
-      <File FileName="SettingsRecipe/SettingsRecipeViewModel.cs" Line="22" Column="36" />
+      <File FileName="SettingsRecipe/Settings.cs" Line="34" Column="10" />
+      <File FileName="SettingsRecipe/SettingsRecipePage.xaml" />
+      <File FileName="SettingsRecipe/SettingsRecipeViewModel.cs" Line="11" Column="28" />
       <File FileName="SettingsRecipe/SettingsRecipePage.xaml.cs" Line="1" Column="1" />
       <File FileName="SettingsRecipe/obj/Debug/SettingsRecipe.SettingsRecipePage.xaml.g.cs" Line="1" Column="1" />
     </Files>
@@ -14,6 +14,8 @@
         <State name="__root__">
           <Node name="SettingsRecipe" expanded="True">
             <Node name="SettingsRecipe" expanded="True">
+              <Node name="Packages" expanded="True" />
+              <Node name="SettingsRecipePage.xaml" expanded="True" />
               <Node name="SettingsRecipeViewModel.cs" selected="True" />
             </Node>
           </Node>
@@ -22,7 +24,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.SettingsRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5B88AB7D-5F28-49E8-8B44-ED319688B1BE">
+  <MonoDevelop.Ide.ItemProperties.SettingsRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.88C567C2-1067-45A8-BC5A-69FF4D4E4955">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.SettingsRecipe.iOS>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

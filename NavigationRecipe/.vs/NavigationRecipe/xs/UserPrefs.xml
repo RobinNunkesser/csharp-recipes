@@ -6,7 +6,7 @@
       <File FileName="NavigationRecipe/MySecondTabPage.xaml" />
       <File FileName="NavigationRecipe/MySecondTabPage.xaml.cs" />
       <File FileName="NavigationRecipe/App.xaml.cs" Line="12" Column="10" />
-      <File FileName="NavigationRecipe/AppShell.xaml" Line="10" Column="15" />
+      <File FileName="NavigationRecipe/AppShell.xaml" Line="13" Column="43" />
       <File FileName="NavigationRecipe/AppShell.xaml.cs" Line="9" Column="1" />
     </Files>
     <Pads>
@@ -15,10 +15,16 @@
           <Node name="NavigationRecipe" expanded="True">
             <Node name="NavigationRecipe" expanded="True">
               <Node name="App.xaml" expanded="True" />
-              <Node name="AppShell.xaml" expanded="True" selected="True" />
+              <Node name="AppShell.xaml" expanded="True" />
             </Node>
-            <Node name="NavigationRecipe.Droid" expanded="True" />
-            <Node name="NavigationRecipe.iOS" expanded="True" />
+            <Node name="NavigationRecipe.Droid" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="drawable" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="NavigationRecipe.iOS" expanded="True">
+              <Node name="Resources" expanded="True" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
