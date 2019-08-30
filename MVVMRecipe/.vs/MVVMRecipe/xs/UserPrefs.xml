@@ -6,7 +6,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="MVVMRecipe/DetailsPage.xaml.cs">
     <Files>
       <File FileName="MVVMRecipe/DetailsPage.xaml" Line="9" Column="40" />
-      <File FileName="MVVMRecipe/DetailsViewModel.cs" Line="19" Column="38" />
+      <File FileName="MVVMRecipe/DetailsViewModel.cs" />
       <File FileName="MVVMRecipe/DetailsPage.xaml.cs" Line="12" Column="35" />
       <File FileName="MVVMRecipe/App.xaml.cs" />
       <File FileName="MVVMRecipe/obj/Debug/MVVMRecipe.DetailsPage.xaml.g.cs" />

@@ -5,10 +5,10 @@
      BindingContext="{local:DetailsViewModel}" x:Class="MVVMRecipe.DetailsPage">
     <ContentPage.Content>
         <StackLayout Padding="0,20,0,0">
-            <Label Text="Forename:" />
-            <Entry Text="{Binding Forename, Mode=OneWayToSource}" />
-            <Label Text="Surname:" />
-            <Entry Text="{Binding Surname, Mode=TwoWay}" />
+            <Entry Placeholder="Forename:"
+                Text="{Binding Forename, Mode=OneWayToSource}" />            
+            <Entry Placeholder="Surname:"
+                Text="{Binding Surname, Mode=TwoWay}" />
             <StackLayout Padding="0,20,0,0" Orientation="Horizontal">
                 <Label Text="Your forename is:" />
                 <Label Text="{Binding Forename, Mode=OneWay}" />
