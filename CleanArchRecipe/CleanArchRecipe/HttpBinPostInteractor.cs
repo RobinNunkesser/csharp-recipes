@@ -13,7 +13,7 @@ namespace CleanArchRecipe
         }
 
         public async void Execute(HttpBinPostRequest request,
-            IDisplayer<string> displayer)
+            IDisplayer<string> displayer, int requestCode = 0)
         {
             var json = JsonConvert.SerializeObject(request);
             var gatewayResponse = await _gateway.Post(json);

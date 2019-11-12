@@ -1,15 +1,13 @@
-﻿using System;
-using BasicCleanArch;
+﻿using BasicCleanArch;
 
 namespace CleanArchRecipe
 {
-    public class HttpBinResponsePresenter : IPresenter<HttpBinResponseModel, String>
+    public class
+        HttpBinResponsePresenter : IPresenter<HttpBinResponseModel, string>
     {
-        public string present(HttpBinResponseModel entity)
-        {
-            return entity.json != null ? 
-                $"Response: {entity.json}" : 
-                $"origin: {entity.origin}, url: {entity.url}";
-        }
+        public string Present(HttpBinResponseModel entity) =>
+            entity.json != null
+                ? $"Response: {entity.json}"
+                : $"origin: {entity.origin}, url: {entity.url}";
     }
 }

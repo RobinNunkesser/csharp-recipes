@@ -1,5 +1,4 @@
-﻿using System;
-using Xunit;
+﻿using Xunit;
 
 namespace CleanArchRecipe.Tests
 {
@@ -15,10 +14,7 @@ namespace CleanArchRecipe.Tests
             {
                 Assert.NotNull(success.origin);
                 Assert.NotNull(success.url);
-            }, failure =>
-            {
-                throw failure;
-            });
+            }, failure => throw failure);
         }
     }
 }

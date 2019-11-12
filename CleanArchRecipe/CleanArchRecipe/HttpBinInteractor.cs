@@ -6,8 +6,8 @@ namespace CleanArchRecipe
         HttpBinInteractor : MustInitialize<
             IPresenter<HttpBinResponseModel, string>>
     {
-        protected HttpBinGateway _gateway;
-        protected IPresenter<HttpBinResponseModel, string> _presenter;
+        protected readonly HttpBinGateway _gateway;
+        private readonly IPresenter<HttpBinResponseModel, string> _presenter;
 
         protected HttpBinInteractor(HttpBinGateway gateway,
             IPresenter<HttpBinResponseModel, string> presenter) : base(
@@ -22,9 +22,9 @@ namespace CleanArchRecipe
         {
             result.Match(success =>
             {
-                var viewModel = _presenter.present(success);
-                displayer.Display(new Result<string>(viewModel));
-            }, failure => { displayer.Display(new Result<string>(failure)); });
+                var viewModel = _presenter.Present(success);
+                displayer.Display(viewModel);
+            }, failure => displayer.Display(failure));
         }
     }
 }

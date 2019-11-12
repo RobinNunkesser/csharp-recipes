@@ -22,11 +22,14 @@ namespace CleanArchRecipe
             On<iOS>().SetUseSafeArea(true);
         }
 
-        public void Display(Result<string> response)
+        public void Display(string value, int requestCode = 0)
         {
-            response.Match(success => ResultLabel.Text = success,
-                async failure =>
-                    await DisplayAlert("Fehler", failure.Message, "OK"));
+            ResultLabel.Text = value;
+        }
+
+        public async void Display(Exception error)
+        {
+            await DisplayAlert("Fehler", error.Message, "OK");
         }
 
         private void Get_Button_OnClicked(object sender, EventArgs e)

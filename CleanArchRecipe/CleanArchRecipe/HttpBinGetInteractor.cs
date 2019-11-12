@@ -11,7 +11,8 @@ namespace CleanArchRecipe
         {
         }
 
-        public async void Execute(object request, IDisplayer<string> displayer)
+        public async void Execute(object request, IDisplayer<string> displayer,
+            int requestCode = 0)
         {
             var gatewayResponse = await _gateway.Get();
             processResult(gatewayResponse, displayer);

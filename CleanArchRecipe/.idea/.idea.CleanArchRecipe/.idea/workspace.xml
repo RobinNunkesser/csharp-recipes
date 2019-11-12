@@ -5,58 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="797ae15c-0d08-41f4-8fd9-eeba888b2c56" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../BarcodeScanner/BarcodeScanner.Android/Resources/Resource.designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../BarcodeScanner/BarcodeScanner.Android/Resources/Resource.designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraRecipe/CameraRecipe.Android/Properties/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraRecipe/CameraRecipe.Android/Properties/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraRecipe/CameraRecipe.Android/Resources/xml/file_paths.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraRecipe/CameraRecipe.Android/Resources/xml/file_paths.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/CleanArchRecipe.Android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/CleanArchRecipe.Android.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArchRecipe.Android/Resources/Resource.designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe.Android/Resources/Resource.designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArchRecipe.Console/CleanArchRecipe.Console.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe.Console/CleanArchRecipe.Console.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CleanArchRecipe.Console/MainView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe.Console/MainView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DeviceSensors/DeviceSensors.Android/DeviceSensors.Android.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../DeviceSensors/DeviceSensors.Android/DeviceSensors.Android.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DeviceSensors/DeviceSensors.Android/Properties/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DeviceSensors/DeviceSensors.Android/Properties/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArchRecipe.Console/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe.Console/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArchRecipe.Tests/HttpBinGatewayTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe.Tests/HttpBinGatewayTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArchRecipe.Tests/HttpRequestPresenterTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe.Tests/HttpRequestPresenterTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArchRecipe.iOS/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe.iOS/Main.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArchRecipe/CleanArchRecipe.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe/CleanArchRecipe.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArchRecipe/HttpBinGetInteractor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe/HttpBinGetInteractor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArchRecipe/HttpBinInteractor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe/HttpBinInteractor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArchRecipe/HttpBinPostInteractor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe/HttpBinPostInteractor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArchRecipe/HttpBinResponsePresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe/HttpBinResponsePresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArchRecipe/MainPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe/MainPage.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FilesRecipe/.vs/FilesRecipe/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FilesRecipe/.vs/FilesRecipe/xs/UserPrefs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FilesRecipe/.vs/FilesRecipe/xs/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../FilesRecipe/.vs/FilesRecipe/xs/sqlite3/storage.ide" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FilesRecipe/.vs/FilesRecipe/xs/sqlite3/storage.ide-shm" beforeDir="false" afterPath="$PROJECT_DIR$/../FilesRecipe/.vs/FilesRecipe/xs/sqlite3/storage.ide-shm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FilesRecipe/.vs/FilesRecipe/xs/sqlite3/storage.ide-wal" beforeDir="false" afterPath="$PROJECT_DIR$/../FilesRecipe/.vs/FilesRecipe/xs/sqlite3/storage.ide-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FilesRecipe/Droid/FilesRecipe.Droid.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../FilesRecipe/Droid/FilesRecipe.Droid.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FilesRecipe/Droid/Properties/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FilesRecipe/Droid/Properties/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FilesRecipe/Droid/SaveAndLoad.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FilesRecipe/Droid/SaveAndLoad.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FilesRecipe/FilesRecipe/FilesRecipePage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FilesRecipe/FilesRecipe/FilesRecipePage.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FilesRecipe/iOS/SaveAndLoad.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FilesRecipe/iOS/SaveAndLoad.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FilesRecipe/.vs/FilesRecipe/xs/sqlite3/storage.ide-shm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FilesRecipe/.vs/FilesRecipe/xs/sqlite3/storage.ide-wal" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../LicenseRecipe/.vs/LicenseRecipe/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LicenseRecipe/.vs/LicenseRecipe/xs/UserPrefs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LicenseRecipe/.vs/LicenseRecipe/xs/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../LicenseRecipe/.vs/LicenseRecipe/xs/sqlite3/storage.ide" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LicenseRecipe/.vs/LicenseRecipe/xs/sqlite3/storage.ide-shm" beforeDir="false" afterPath="$PROJECT_DIR$/../LicenseRecipe/.vs/LicenseRecipe/xs/sqlite3/storage.ide-shm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LicenseRecipe/.vs/LicenseRecipe/xs/sqlite3/storage.ide-wal" beforeDir="false" afterPath="$PROJECT_DIR$/../LicenseRecipe/.vs/LicenseRecipe/xs/sqlite3/storage.ide-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LicenseRecipe/Droid/LicenseRecipe.Droid.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../LicenseRecipe/Droid/LicenseRecipe.Droid.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LicenseRecipe/Droid/Properties/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LicenseRecipe/Droid/Properties/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LicenseRecipe/Droid/Resources/Resource.designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../LicenseRecipe/Droid/Resources/Resource.designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LicenseRecipe/.vs/LicenseRecipe/xs/sqlite3/storage.ide-shm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LicenseRecipe/.vs/LicenseRecipe/xs/sqlite3/storage.ide-wal" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MVVMRecipe/.vs/MVVMRecipe/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MVVMRecipe/.vs/MVVMRecipe/xs/UserPrefs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVVMRecipe/.vs/MVVMRecipe/xs/sqlite3/storage.ide-shm" beforeDir="false" afterPath="$PROJECT_DIR$/../MVVMRecipe/.vs/MVVMRecipe/xs/sqlite3/storage.ide-shm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVVMRecipe/.vs/MVVMRecipe/xs/sqlite3/storage.ide-wal" beforeDir="false" afterPath="$PROJECT_DIR$/../MVVMRecipe/.vs/MVVMRecipe/xs/sqlite3/storage.ide-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MinimalCleanArch/MinimalCleanArch/MainPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../MinimalCleanArch/MinimalCleanArch/MainPage.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MinimalCleanArch/MinimalCleanArch/MinimalInteractor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../MinimalCleanArch/MinimalCleanArch/MinimalInteractor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NavigationRecipe/.idea/.idea.NavigationRecipe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NavigationRecipe/.idea/.idea.NavigationRecipe/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NavigationRecipe/.vs/NavigationRecipe/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NavigationRecipe/.vs/NavigationRecipe/xs/UserPrefs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NavigationRecipe/.vs/NavigationRecipe/xs/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../NavigationRecipe/.vs/NavigationRecipe/xs/sqlite3/storage.ide" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NavigationRecipe/.vs/NavigationRecipe/xs/sqlite3/storage.ide-shm" beforeDir="false" afterPath="$PROJECT_DIR$/../NavigationRecipe/.vs/NavigationRecipe/xs/sqlite3/storage.ide-shm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NavigationRecipe/.vs/NavigationRecipe/xs/sqlite3/storage.ide-wal" beforeDir="false" afterPath="$PROJECT_DIR$/../NavigationRecipe/.vs/NavigationRecipe/xs/sqlite3/storage.ide-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NavigationRecipe/Droid/NavigationRecipe.Droid.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../NavigationRecipe/Droid/NavigationRecipe.Droid.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NavigationRecipe/Droid/Properties/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NavigationRecipe/Droid/Properties/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PropertiesRecipe/.vs/PropertiesRecipe/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PropertiesRecipe/.vs/PropertiesRecipe/xs/UserPrefs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PropertiesRecipe/.vs/PropertiesRecipe/xs/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../PropertiesRecipe/.vs/PropertiesRecipe/xs/sqlite3/storage.ide" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PropertiesRecipe/.vs/PropertiesRecipe/xs/sqlite3/storage.ide-shm" beforeDir="false" afterPath="$PROJECT_DIR$/../PropertiesRecipe/.vs/PropertiesRecipe/xs/sqlite3/storage.ide-shm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PropertiesRecipe/.vs/PropertiesRecipe/xs/sqlite3/storage.ide-wal" beforeDir="false" afterPath="$PROJECT_DIR$/../PropertiesRecipe/.vs/PropertiesRecipe/xs/sqlite3/storage.ide-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PropertiesRecipe/Droid/Properties/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PropertiesRecipe/Droid/Properties/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PropertiesRecipe/Droid/PropertiesRecipe.Droid.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../PropertiesRecipe/Droid/PropertiesRecipe.Droid.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PropertiesRecipe/Droid/Resources/Resource.designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../PropertiesRecipe/Droid/Resources/Resource.designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MVVMRecipe/.vs/MVVMRecipe/xs/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../MVVMRecipe/.vs/MVVMRecipe/xs/sqlite3/storage.ide" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MVVMRecipe/.vs/MVVMRecipe/xs/sqlite3/storage.ide-shm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MVVMRecipe/.vs/MVVMRecipe/xs/sqlite3/storage.ide-wal" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../SettingsRecipe/.vs/SettingsRecipe/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SettingsRecipe/.vs/SettingsRecipe/xs/UserPrefs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SettingsRecipe/.vs/SettingsRecipe/xs/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../SettingsRecipe/.vs/SettingsRecipe/xs/sqlite3/storage.ide" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SettingsRecipe/.vs/SettingsRecipe/xs/sqlite3/storage.ide-shm" beforeDir="false" afterPath="$PROJECT_DIR$/../SettingsRecipe/.vs/SettingsRecipe/xs/sqlite3/storage.ide-shm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SettingsRecipe/.vs/SettingsRecipe/xs/sqlite3/storage.ide-wal" beforeDir="false" afterPath="$PROJECT_DIR$/../SettingsRecipe/.vs/SettingsRecipe/xs/sqlite3/storage.ide-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SettingsRecipe/Droid/Properties/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SettingsRecipe/Droid/Properties/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SettingsRecipe/Droid/Resources/Resource.designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../SettingsRecipe/Droid/Resources/Resource.designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SettingsRecipe/Droid/SettingsRecipe.Droid.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../SettingsRecipe/Droid/SettingsRecipe.Droid.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TableRecipe/.vs/TableRecipe/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TableRecipe/.vs/TableRecipe/xs/UserPrefs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TableRecipe/.vs/TableRecipe/xs/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../TableRecipe/.vs/TableRecipe/xs/sqlite3/storage.ide" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TableRecipe/.vs/TableRecipe/xs/sqlite3/storage.ide-shm" beforeDir="false" afterPath="$PROJECT_DIR$/../TableRecipe/.vs/TableRecipe/xs/sqlite3/storage.ide-shm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TableRecipe/.vs/TableRecipe/xs/sqlite3/storage.ide-wal" beforeDir="false" afterPath="$PROJECT_DIR$/../TableRecipe/.vs/TableRecipe/xs/sqlite3/storage.ide-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TableRecipe/Droid/Properties/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TableRecipe/Droid/Properties/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TableRecipe/Droid/TableRecipe.Droid.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../TableRecipe/Droid/TableRecipe.Droid.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TableRecipe/Droid/Resources/Resource.designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../TableRecipe/Droid/Resources/Resource.designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TableRecipe/TableRecipe/TableRecipePage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/../TableRecipe/TableRecipe/TableRecipePage.xaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,135 +50,43 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CleanArchRecipe/HttpBinGateway.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-              <folding>
-                <marker date="1555494524195" expanded="false" signature="6:161" ph="..." />
-                <marker date="1555494524195" expanded="true" signature="188:2243" ph="{...}" />
-                <marker date="1555494524195" expanded="true" signature="222:2241" ph="{...}" />
-                <marker date="1555494524195" expanded="true" signature="391:617" ph="{...}" />
-                <marker date="1555494524195" expanded="true" signature="680:1174" ph="{...}" />
-                <marker date="1555494524195" expanded="true" signature="735:1164" ph="{...}" />
-                <marker date="1555494524195" expanded="true" signature="769:1012" ph="{...}" />
-                <marker date="1555494524195" expanded="true" signature="1049:1150" ph="{...}" />
-                <marker date="1555494524195" expanded="true" signature="1255:1907" ph="{...}" />
-                <marker date="1555494524195" expanded="true" signature="1423:1897" ph="{...}" />
-                <marker date="1555494524195" expanded="true" signature="1457:1745" ph="{...}" />
-                <marker date="1555494524195" expanded="true" signature="1782:1883" ph="{...}" />
-                <marker date="1555494524195" expanded="true" signature="2016:2235" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CleanArchRecipe/MainPage.xaml.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-              <folding>
-                <marker date="1555494991352" expanded="false" signature="6:154" ph="..." />
-                <marker date="1555494991352" expanded="true" signature="181:1347" ph="{...}" />
-                <marker date="1555494991352" expanded="true" signature="251:1345" ph="{...}" />
-                <marker date="1555494991352" expanded="true" signature="649:748" ph="{...}" />
-                <marker date="1555494991352" expanded="true" signature="802:995" ph="{...}" />
-                <marker date="1555494991352" expanded="true" signature="1066:1134" ph="{...}" />
-                <marker date="1555494991352" expanded="true" signature="1206:1339" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CleanArchRecipe/MainPage.xaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-              <folding>
-                <marker date="1555494967810" expanded="true" signature="40:607" ph="&lt;&lt;StackLayout&gt;&#10;        &lt;Button Text=&quot;Test HTTP Get&quot; Clicked=&quot;Get_Button_OnClicked&quot; /&gt;&#10;        &lt;Entry x:Name=&quot;ParameterEntry&quot; Placeholder=&quot;Parameters for HTTP Post&quot; /&gt;&#10;        &lt;Button Text=&quot;Test HTTP Post&quot; Clicked=&quot;Post_Button_OnClicked&quot; /&gt;&#10;        &lt;Label x:Name=&quot;ResultLabel&quot; HorizontalOptions=&quot;Center&quot;&#10;               VerticalOptions=&quot;CenterAndExpand&quot; /&gt;&#10;    &lt;/StackLayout&gt;.../&gt;" />
-                <marker date="1555494967810" expanded="true" signature="220:592" ph="&lt;&lt;Button Text=&quot;Test HTTP Get&quot; Clicked=&quot;Get_Button_OnClicked&quot; /&gt; &lt;Entry x:Name=&quot;ParameterEntry&quot; Placeholder=&quot;Parameters for HTTP Post&quot; /&gt; &lt;Button Text=&quot;Test HTTP Post&quot; Clicked=&quot;Post_Button_OnClicked&quot; /&gt; &lt;Label x:Name=&quot;ResultLabel&quot; HorizontalOptions=&quot;Center&quot;&#10;               VerticalOptions=&quot;CenterAndExpand&quot; /&gt;.../&gt;" />
-                <marker date="1555494967810" expanded="true" signature="467:573" ph="&lt;.../&gt;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CleanArchRecipe.Console/Program.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="33" lean-forward="true" selection-end-column="33" />
-              <folding>
-                <marker date="1558018092874" expanded="true" signature="33:142" ph="{...}" />
-                <marker date="1558018092874" expanded="true" signature="53:140" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CleanArchRecipe.Console/MainView.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
-              <folding>
-                <marker date="1558020968085" expanded="true" signature="56:883" ph="{...}" />
-                <marker date="1558020968085" expanded="true" signature="105:881" ph="{...}" />
-                <marker date="1558020968085" expanded="true" signature="350:516" ph="{...}" />
-                <marker date="1558020968085" expanded="true" signature="545:875" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CleanArchRecipe.Tests/HttpRequestPresenterTests.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-              <folding>
-                <marker date="1555492431085" expanded="true" signature="45:477" ph="{...}" />
-                <marker date="1555492431085" expanded="true" signature="90:475" ph="{...}" />
-                <marker date="1555492431085" expanded="true" signature="145:469" ph="{...}" />
-                <marker date="1555492431085" expanded="true" signature="277:339" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/CleanArchRecipe.Tests/HttpRequestPresenterTests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../BarcodeScanner/BarcodeScanner.Android/Resources/Resource.designer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CleanArchRecipe/MainPage.xaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CleanArchRecipe/MainPage.xaml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../xamarin-tunesearch/TuneSearch/TuneSearch/MainPage.xaml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArchRecipe/HttpBinGateway.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CleanArchRecipe/HttpBinGetInteractor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CleanArchRecipe.Console/MainView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../MinimalCleanArch/MinimalCleanArch/MainPage.xaml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArchRecipe.Console/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArchRecipe/MainPage.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArchRecipe/HttpBinInteractor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArchRecipe/HttpBinResponsePresenter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArchRecipe/HttpBinGetInteractor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArchRecipe/HttpBinPostInteractor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../BarcodeScanner/BarcodeScanner.Android/Resources/Resource.designer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../MinimalCleanArch/MinimalCleanArch/MainPage.xaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArchRecipe.Tests/HttpRequestPresenterTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../xamarin-tunesearch/TuneSearch/TuneSearch/MainPage.xaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArchRecipe/MainPage.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArchRecipe.iOS/Main.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArchRecipe.Console/MainView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArchRecipe.Tests/HttpBinGatewayTests.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/CleanArchRecipe/Common/IOutputBoundary.cs" />
         <option value="$PROJECT_DIR$/CleanArchRecipe/Interactor.cs" />
-        <option value="$PROJECT_DIR$/CleanArchRecipe.Tests/HttpRequestPresenterTests.cs" />
         <option value="$PROJECT_DIR$/CleanArchRecipe/HttpBinGateway.cs" />
-        <option value="$PROJECT_DIR$/CleanArchRecipe/MainPage.xaml.cs" />
         <option value="$PROJECT_DIR$/CleanArchRecipe/MainPage.xaml" />
-        <option value="$PROJECT_DIR$/CleanArchRecipe.Console/Program.cs" />
         <option value="$PROJECT_DIR$/CleanArchRecipe.Console/MainView.cs" />
+        <option value="$PROJECT_DIR$/CleanArchRecipe/MainPage.xaml.cs" />
+        <option value="$PROJECT_DIR$/CleanArchRecipe/HttpBinResponsePresenter.cs" />
+        <option value="$PROJECT_DIR$/CleanArchRecipe/HttpBinPostInteractor.cs" />
+        <option value="$PROJECT_DIR$/CleanArchRecipe/HttpBinInteractor.cs" />
+        <option value="$PROJECT_DIR$/CleanArchRecipe/HttpBinGetInteractor.cs" />
+        <option value="$PROJECT_DIR$/CleanArchRecipe.Tests/HttpRequestPresenterTests.cs" />
+        <option value="$PROJECT_DIR$/CleanArchRecipe.Console/Program.cs" />
+        <option value="$PROJECT_DIR$/CleanArchRecipe.iOS/Main.cs" />
+        <option value="$PROJECT_DIR$/CleanArchRecipe.Tests/HttpBinGatewayTests.cs" />
       </list>
     </option>
   </component>
@@ -201,48 +95,14 @@
       <facet id="CleanArchRecipe.Android/invalid/Android Facet - CleanArchRecipe.Android" />
     </ignored-facets>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="777" />
-  </component>
+  <component name="ProjectId" id="1TVVsHOWUWHtisHREzFGB9E50Ua" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator currentView="SolutionExplorer" proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="AssemblyExplorer" />
-      <pane id="SolutionExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="CleanArchRecipe" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="CleanArchRecipe" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="CleanArchRecipe.Console" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="CleanArchRecipe" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="CleanArchRecipe.Console" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Dependencies" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-all-files" value="false" />
-      </pane>
-      <pane id="FileSystemExplorer" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Projects/BasicCleanArchCPD2019/BasicCleanArchCPD2019.sln" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RunDashboard">
@@ -298,12 +158,13 @@
       <option name="DEFAULT_IPHONE_DEVICE" value="" />
       <option name="DEFAULT_IPHONE_SIMULATOR" value="" />
       <option name="DEPLOY_TARGET_BEHAVIOUR_NAME" value="Ask" />
+      <option name="IS_PASS_PARENT_ENVS" value="false" />
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue=".NET Project.Default" />
       <item itemvalue="Xamarin.Android.Android Default" />
       <item itemvalue="Xamarin.iOS.iOS Default" />
-      <item itemvalue=".NET Project.Default" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -320,6 +181,8 @@
       <workItem from="1545125730967" duration="183000" />
       <workItem from="1555491900831" duration="4264000" />
       <workItem from="1558017617183" duration="1641000" />
+      <workItem from="1573545456957" duration="131000" />
+      <workItem from="1573550226897" duration="2272000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring">
       <created>1555492506295</created>
@@ -352,63 +215,31 @@
     <option name="localTasksCounter" value="5" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7527000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25767368" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="Captures" order="5" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32846716" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="NuGet" order="7" weight="0.329927" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unit Tests" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.329927" />
-      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="14" weight="0.32846716" />
-      <window_info anchor="bottom" id="Android Profiler" order="15" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Logcat" order="16" weight="0.329927" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Errors In Solution" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Device File Explorer" order="6" side_tool="true" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
     <MESSAGE value="Integrate post into recipe" />
     <MESSAGE value="Refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
+    <MESSAGE value="Using BasicCleanArch 1.0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Using BasicCleanArch 1.0.1" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -426,123 +257,7 @@
           <properties documentPath="$PROJECT_DIR$/CleanArchRecipe/Interactor.cs" initialLine="16" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/CleanArchRecipe/MainPage.xaml.cs</url>
-          <line>26</line>
-          <properties documentPath="$PROJECT_DIR$/CleanArchRecipe/MainPage.xaml.cs" initialLine="26">
-            <startOffsets>
-              <option value="-1" />
-            </startOffsets>
-            <endOffsets>
-              <option value="-1" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CleanArchRecipe/Common/Response.cs" />
-    <entry file="file://$PROJECT_DIR$/CleanArchRecipe/Common/IOutputBoundary.cs" />
-    <entry file="file://$PROJECT_DIR$/CleanArchRecipe/Interactor.cs" />
-    <entry file="file://$PROJECT_DIR$/CleanArchRecipe/ResponseEntity.cs" />
-    <entry file="file://$PROJECT_DIR$/../../xamarin-tunesearch/TuneSearch/TuneSearch/MainPage.xaml.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="30" column="103" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="103" />
-          <folding>
-            <element signature="e#0#210#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CleanArchRecipe/HttpBinGateway.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-          <folding>
-            <marker date="1555494524195" expanded="false" signature="6:161" ph="..." />
-            <marker date="1555494524195" expanded="true" signature="188:2243" ph="{...}" />
-            <marker date="1555494524195" expanded="true" signature="222:2241" ph="{...}" />
-            <marker date="1555494524195" expanded="true" signature="391:617" ph="{...}" />
-            <marker date="1555494524195" expanded="true" signature="680:1174" ph="{...}" />
-            <marker date="1555494524195" expanded="true" signature="735:1164" ph="{...}" />
-            <marker date="1555494524195" expanded="true" signature="769:1012" ph="{...}" />
-            <marker date="1555494524195" expanded="true" signature="1049:1150" ph="{...}" />
-            <marker date="1555494524195" expanded="true" signature="1255:1907" ph="{...}" />
-            <marker date="1555494524195" expanded="true" signature="1423:1897" ph="{...}" />
-            <marker date="1555494524195" expanded="true" signature="1457:1745" ph="{...}" />
-            <marker date="1555494524195" expanded="true" signature="1782:1883" ph="{...}" />
-            <marker date="1555494524195" expanded="true" signature="2016:2235" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CleanArchRecipe/MainPage.xaml.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-          <folding>
-            <marker date="1555494991352" expanded="false" signature="6:154" ph="..." />
-            <marker date="1555494991352" expanded="true" signature="181:1347" ph="{...}" />
-            <marker date="1555494991352" expanded="true" signature="251:1345" ph="{...}" />
-            <marker date="1555494991352" expanded="true" signature="649:748" ph="{...}" />
-            <marker date="1555494991352" expanded="true" signature="802:995" ph="{...}" />
-            <marker date="1555494991352" expanded="true" signature="1066:1134" ph="{...}" />
-            <marker date="1555494991352" expanded="true" signature="1206:1339" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CleanArchRecipe.Tests/HttpRequestPresenterTests.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-          <folding>
-            <marker date="1555492431085" expanded="true" signature="45:477" ph="{...}" />
-            <marker date="1555492431085" expanded="true" signature="90:475" ph="{...}" />
-            <marker date="1555492431085" expanded="true" signature="145:469" ph="{...}" />
-            <marker date="1555492431085" expanded="true" signature="277:339" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CleanArchRecipe/MainPage.xaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <marker date="1555494967810" expanded="true" signature="40:607" ph="&lt;&lt;StackLayout&gt;&#10;        &lt;Button Text=&quot;Test HTTP Get&quot; Clicked=&quot;Get_Button_OnClicked&quot; /&gt;&#10;        &lt;Entry x:Name=&quot;ParameterEntry&quot; Placeholder=&quot;Parameters for HTTP Post&quot; /&gt;&#10;        &lt;Button Text=&quot;Test HTTP Post&quot; Clicked=&quot;Post_Button_OnClicked&quot; /&gt;&#10;        &lt;Label x:Name=&quot;ResultLabel&quot; HorizontalOptions=&quot;Center&quot;&#10;               VerticalOptions=&quot;CenterAndExpand&quot; /&gt;&#10;    &lt;/StackLayout&gt;.../&gt;" />
-            <marker date="1555494967810" expanded="true" signature="220:592" ph="&lt;&lt;Button Text=&quot;Test HTTP Get&quot; Clicked=&quot;Get_Button_OnClicked&quot; /&gt; &lt;Entry x:Name=&quot;ParameterEntry&quot; Placeholder=&quot;Parameters for HTTP Post&quot; /&gt; &lt;Button Text=&quot;Test HTTP Post&quot; Clicked=&quot;Post_Button_OnClicked&quot; /&gt; &lt;Label x:Name=&quot;ResultLabel&quot; HorizontalOptions=&quot;Center&quot;&#10;               VerticalOptions=&quot;CenterAndExpand&quot; /&gt;.../&gt;" />
-            <marker date="1555494967810" expanded="true" signature="467:573" ph="&lt;.../&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CleanArchRecipe.Console/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="33" lean-forward="true" selection-end-column="33" />
-          <folding>
-            <marker date="1558018092874" expanded="true" signature="33:142" ph="{...}" />
-            <marker date="1558018092874" expanded="true" signature="53:140" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CleanArchRecipe.Console/MainView.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
-          <folding>
-            <marker date="1558020968085" expanded="true" signature="56:883" ph="{...}" />
-            <marker date="1558020968085" expanded="true" signature="105:881" ph="{...}" />
-            <marker date="1558020968085" expanded="true" signature="350:516" ph="{...}" />
-            <marker date="1558020968085" expanded="true" signature="545:875" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

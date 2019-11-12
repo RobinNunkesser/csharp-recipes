@@ -12,7 +12,7 @@ namespace CleanArchRecipe.Tests
             {
                 origin = "origin", url = "url"
             };
-            var viewModel = presenter.present(model);
+            var viewModel = presenter.Present(model);
             Assert.Equal("origin: origin, url: url", viewModel);
         }
     }

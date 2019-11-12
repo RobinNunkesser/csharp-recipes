@@ -1,4 +1,5 @@
-﻿using BasicCleanArch;
+﻿using System;
+using BasicCleanArch;
 
 namespace CleanArchRecipe.Console
 {
@@ -8,10 +9,14 @@ namespace CleanArchRecipe.Console
             new HttpBinPostInteractor(new HttpBinGateway(),
                 new HttpBinResponsePresenter());
 
-        public void Display(Result<string> response)
+        public void Display(string value, int requestCode = 0)
         {
-            response.Match(success => { System.Console.WriteLine(success); },
-                failure => { System.Console.WriteLine(failure); });
+            System.Console.WriteLine(value);
+        }
+
+        public void Display(Exception error)
+        {
+            System.Console.WriteLine(error);
         }
 
         public void Start()
