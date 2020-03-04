@@ -11,8 +11,8 @@ namespace BasicInteraction
         }
 
         private void Handle_Clicked(object sender, EventArgs e)
-        {
-            TermLabel.Text = TermEntry.Text;
+        {            
+            TermLabel.Text = TermEntry.Text.ToUpper();
         }
     }
 }

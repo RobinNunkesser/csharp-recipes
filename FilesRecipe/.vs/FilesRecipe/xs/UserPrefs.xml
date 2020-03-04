@@ -1,15 +1,10 @@
 ﻿<Properties StartupConfiguration="{4FB891C3-3CFE-4D84-B529-9E662C04C6C8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FilesRecipe/SaveAndLoad.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/SaveAndLoad.cs">
     <Files>
-      <File FileName="FilesRecipe/ISaveAndLoad.cs" Line="1" Column="1" />
-      <File FileName="FilesRecipe/FilesRecipePage.xaml" />
-      <File FileName="FilesRecipe/FilesRecipePage.xaml.cs" Line="1" Column="1" />
-      <File FileName="Droid/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="FilesRecipe/ISaveAndLoad.cs" Line="4" Column="22" />
+      <File FileName="FilesRecipe/FilesRecipePage.xaml.cs" Line="17" Column="34" />
+      <File FileName="iOS/SaveAndLoad.cs" Line="5" Column="1" />
       <File FileName="Droid/SaveAndLoad.cs" Line="1" Column="1" />
-      <File FileName="iOS/SaveAndLoad.cs" Line="1" Column="1" />
-      <File FileName="FilesRecipe/obj/Debug/FilesRecipe.FilesRecipePage.xaml.g.cs" Line="1" Column="1" />
-      <File FileName="FilesRecipe/App.xaml.cs" Line="1" Column="1" />
-      <File FileName="FilesRecipe/SaveAndLoad.cs" Line="14" Column="62" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,10 +14,7 @@
               <Node name="FilesRecipePage.xaml" expanded="True" />
             </Node>
             <Node name="FilesRecipe.Droid" expanded="True">
-              <Node name="Assets" expanded="True" />
-            </Node>
-            <Node name="FilesRecipe.iOS" expanded="True">
-              <Node name="Packages" selected="True" />
+              <Node name="SaveAndLoad.cs" selected="True" />
             </Node>
           </Node>
         </State>

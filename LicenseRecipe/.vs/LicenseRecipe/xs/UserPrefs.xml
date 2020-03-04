@@ -1,17 +1,19 @@
 ﻿<Properties StartupConfiguration="{1D1C4864-F26E-4E37-BACA-163EB3A58855}|Default">
-  <MonoDevelop.Ide.ItemProperties.LicenseRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5B88AB7D-5F28-49E8-8B44-ED319688B1BE">
+  <MonoDevelop.Ide.ItemProperties.LicenseRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.88C567C2-1067-45A8-BC5A-69FF4D4E4955">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.LicenseRecipe.iOS>
   <MonoDevelop.Ide.Workbench ActiveDocument="LicenseRecipe/LicenseRecipePage.xaml.cs">
     <Files>
-      <File FileName="LicenseRecipe/LicenseRecipePage.xaml.cs" Line="15" Column="59" />
+      <File FileName="LicenseRecipe/LicenseRecipePage.xaml.cs" Line="21" Column="1" />
       <File FileName="LicenseRecipe/LicenseRecipePage.xaml" Line="8" Column="1" />
+      <File FileName="LicenseRecipe/licenses.html" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="LicenseRecipe" expanded="True">
             <Node name="LicenseRecipe" expanded="True">
+              <Node name="App.xaml" expanded="True" />
               <Node name="LicenseRecipePage.xaml" expanded="True">
                 <Node name="LicenseRecipePage.xaml.cs" selected="True" />
               </Node>

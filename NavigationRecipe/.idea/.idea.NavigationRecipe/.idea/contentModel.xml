@@ -19,6 +19,8 @@
           <e p="AboutResources.txt" t="Include" />
           <e p="drawable" t="Include">
             <e p="icon.png" t="Include" />
+            <e p="tab_about.png" t="Include" />
+            <e p="tab_feed.png" t="Include" />
           </e>
           <e p="drawable-hdpi" t="Include">
             <e p="icon.png" t="Include" />
@@ -55,20 +57,34 @@
         <e p="NavigationRecipe.iOS.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="packages.config" t="Include" />
-        <e p="Resources" t="Include" />
+        <e p="Resources" t="Include">
+          <e p="tab_about.png" t="Include" />
+          <e p="tab_about@2x.png" t="Include" />
+          <e p="tab_about@3x.png" t="Include" />
+          <e p="tab_feed.png" t="Include" />
+          <e p="tab_feed@2x.png" t="Include" />
+          <e p="tab_feed@3x.png" t="Include" />
+        </e>
       </e>
       <e p="NavigationRecipe" t="IncludeRecursive">
         <e p="App.xaml" t="Include" />
         <e p="App.xaml.cs" t="Include" />
+        <e p="AppShell.xaml" t="Include" />
+        <e p="AppShell.xaml.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="MyFirstTabPage.xaml" t="Include" />
         <e p="MyFirstTabPage.xaml.cs" t="Include" />
         <e p="MySecondTabPage.xaml" t="Include" />
         <e p="MySecondTabPage.xaml.cs" t="Include" />
         <e p="NavigationRecipe.csproj" t="IncludeRecursive" />
-        <e p="NavigationRecipePage.xaml" t="Include" />
-        <e p="NavigationRecipePage.xaml.cs" t="Include" />
-        <e p="obj" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="App.xaml.g.cs" t="Include" />
+            <e p="AppShell.xaml.g.cs" t="Include" />
+            <e p="MyFirstTabPage.xaml.g.cs" t="Include" />
+            <e p="MySecondTabPage.xaml.g.cs" t="Include" />
+          </e>
+        </e>
         <e p="packages.config" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
@@ -76,29 +92,22 @@
       </e>
       <e p="NavigationRecipe.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive">
-        <e p="Xamarin.Android.Arch.Lifecycle.Runtime.1.0.3.1/proguard" t="Include">
+        <e p="Xamarin.Android.Arch.Lifecycle.Runtime.1.1.1.1/proguard/monoandroid81" t="Include">
           <e p="proguard.txt" t="Include" />
         </e>
-        <e p="Xamarin.Android.Support.Animated.Vector.Drawable.27.0.2.1/proguard" t="Include">
-          <e p="proguard.txt" t="Include" />
-        </e>
-        <e p="Xamarin.Android.Support.Core.UI.27.0.2.1/proguard" t="Include">
-          <e p="proguard.txt" t="Include" />
-        </e>
-        <e p="Xamarin.Android.Support.Design.27.0.2.1/proguard" t="Include">
-          <e p="proguard.txt" t="Include" />
-        </e>
-        <e p="Xamarin.Android.Support.Media.Compat.27.0.2.1/proguard" t="Include">
-          <e p="proguard.txt" t="Include" />
-        </e>
-        <e p="Xamarin.Android.Support.Transition.27.0.2.1/proguard" t="Include">
-          <e p="proguard.txt" t="Include" />
-        </e>
-        <e p="Xamarin.Android.Support.v7.RecyclerView.27.0.2.1/proguard" t="Include">
-          <e p="proguard.txt" t="Include" />
+        <e p="Xamarin.Android.Support.Animated.Vector.Drawable.28.0.0.1/proguard/monoandroid81/proguard.txt" t="Include" />
+        <e p="Xamarin.Android.Support.Core.UI.28.0.0.1/proguard/monoandroid81/proguard.txt" t="Include" />
+        <e p="Xamarin.Android.Support.Design.28.0.0.1/proguard/monoandroid81/proguard.txt" t="Include" />
+        <e p="Xamarin.Android.Support.Media.Compat.28.0.0.1/proguard/monoandroid81/proguard.txt" t="Include" />
+        <e p="Xamarin.Android.Support.Transition.28.0.0.1/proguard/monoandroid81/proguard.txt" t="Include" />
+        <e p="Xamarin.Android.Support.v7.RecyclerView.28.0.0.1/proguard/monoandroid81/proguard.txt" t="Include" />
+        <e p="Xamarin.Forms.4.1.0.618606/build/MonoAndroid10" t="Include">
+          <e p="proguard.cfg" t="Include" />
         </e>
       </e>
     </e>
-    <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_NavigationRecipe.1526504891.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_NavigationRecipe.-1872849774.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
   </component>
 </project>

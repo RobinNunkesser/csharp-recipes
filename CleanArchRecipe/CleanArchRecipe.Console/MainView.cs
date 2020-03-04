@@ -1,5 +1,6 @@
 ﻿using System;
 using BasicCleanArch;
+using static System.Console;
 
 namespace CleanArchRecipe.Console
 {
@@ -9,23 +10,16 @@ namespace CleanArchRecipe.Console
             new HttpBinPostInteractor(new HttpBinGateway(),
                 new HttpBinResponsePresenter());
 
-        public void Display(string value, int requestCode = 0)
-        {
-            System.Console.WriteLine(value);
-        }
-
-        public void Display(Exception error)
-        {
-            System.Console.WriteLine(error);
-        }
-
+        public void Display(string value, int requestCode = 0) => Write(value);        
+        public void Display(Exception error) => Write(error);
+        
         public void Start()
         {
-            System.Console.WriteLine("Term to post? ");
-            var term = System.Console.ReadLine();
+            WriteLine("Term to post? ");
+            var term = ReadLine();
             _interactor.Execute(new HttpBinPostRequest {term = term}, this);
-            System.Console.WriteLine("\nAsync operation. Press key to abort");
-            var key = System.Console.ReadKey();
+            WriteLine("\nAsync operation. Press key to abort");
+            ReadKey();
         }
     }
 }

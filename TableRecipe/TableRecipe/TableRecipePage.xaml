@@ -3,8 +3,10 @@
      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
      xmlns:local="clr-namespace:TableRecipe"
      x:Class="TableRecipe.TableRecipePage">
-    <ListView x:Name="listView" BindingContext="{local:TableRecipeViewModel}"
-         ItemsSource="{Binding items}" ItemSelected="listSelection">
+    <ListView x:Name="listView"
+              BindingContext="{local:TableRecipeViewModel}"
+              ItemsSource="{Binding items}"
+              ItemSelected="listSelection">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <TextCell Text="{Binding text}" Detail="{Binding detail}" />

@@ -3,9 +3,9 @@
   <MonoDevelop.Ide.ItemProperties.MVVMRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.88C567C2-1067-45A8-BC5A-69FF4D4E4955">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.MVVMRecipe.iOS>
-  <MonoDevelop.Ide.Workbench ActiveDocument="MVVMRecipe/DetailsPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MVVMRecipe/DetailsPage.xaml">
     <Files>
-      <File FileName="MVVMRecipe/DetailsPage.xaml" Line="9" Column="40" />
+      <File FileName="MVVMRecipe/DetailsPage.xaml" Line="7" Column="38" />
       <File FileName="MVVMRecipe/DetailsViewModel.cs" />
       <File FileName="MVVMRecipe/DetailsPage.xaml.cs" Line="12" Column="35" />
       <File FileName="MVVMRecipe/App.xaml.cs" />
@@ -17,9 +17,7 @@
           <Node name="MVVMRecipe" expanded="True">
             <Node name="MVVMRecipe" expanded="True">
               <Node name="App.xaml" expanded="True" />
-              <Node name="DetailsPage.xaml" expanded="True">
-                <Node name="DetailsPage.xaml.cs" selected="True" />
-              </Node>
+              <Node name="DetailsPage.xaml" expanded="True" selected="True" />
             </Node>
           </Node>
         </State>

@@ -1,22 +1,21 @@
 ﻿<Properties StartupConfiguration="{E32393FA-8120-4DFA-86BE-2249AB9E0F7E}|Default">
   <MonoDevelop.Ide.ItemProperties.SettingsRecipe.Droid AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SettingsRecipe/SettingsRecipeViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SettingsRecipe/Settings.cs">
     <Files>
       <File FileName="packages/Xam.Plugins.Settings.3.1.1/readme.txt" Line="19" Column="1" />
-      <File FileName="SettingsRecipe/Settings.cs" Line="34" Column="10" />
+      <File FileName="SettingsRecipe/Settings.cs" Line="7" Column="33" />
       <File FileName="SettingsRecipe/SettingsRecipePage.xaml" />
-      <File FileName="SettingsRecipe/SettingsRecipeViewModel.cs" Line="11" Column="28" />
-      <File FileName="SettingsRecipe/SettingsRecipePage.xaml.cs" Line="1" Column="1" />
-      <File FileName="SettingsRecipe/obj/Debug/SettingsRecipe.SettingsRecipePage.xaml.g.cs" Line="1" Column="1" />
+      <File FileName="SettingsRecipe/SettingsRecipeViewModel.cs" />
+      <File FileName="SettingsRecipe/SettingsRecipePage.xaml.cs" />
+      <File FileName="SettingsRecipe/obj/Debug/SettingsRecipe.SettingsRecipePage.xaml.g.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SettingsRecipe" expanded="True">
             <Node name="SettingsRecipe" expanded="True">
-              <Node name="Packages" expanded="True" />
+              <Node name="Settings.cs" selected="True" />
               <Node name="SettingsRecipePage.xaml" expanded="True" />
-              <Node name="SettingsRecipeViewModel.cs" selected="True" />
             </Node>
           </Node>
         </State>
