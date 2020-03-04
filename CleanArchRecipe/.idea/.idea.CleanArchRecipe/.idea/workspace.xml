@@ -5,25 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="797ae15c-0d08-41f4-8fd9-eeba888b2c56" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../FilesRecipe/.vs/FilesRecipe/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FilesRecipe/.vs/FilesRecipe/xs/UserPrefs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FilesRecipe/.vs/FilesRecipe/xs/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../FilesRecipe/.vs/FilesRecipe/xs/sqlite3/storage.ide" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FilesRecipe/.vs/FilesRecipe/xs/sqlite3/storage.ide-shm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FilesRecipe/.vs/FilesRecipe/xs/sqlite3/storage.ide-wal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LicenseRecipe/.vs/LicenseRecipe/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LicenseRecipe/.vs/LicenseRecipe/xs/UserPrefs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LicenseRecipe/.vs/LicenseRecipe/xs/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../LicenseRecipe/.vs/LicenseRecipe/xs/sqlite3/storage.ide" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LicenseRecipe/.vs/LicenseRecipe/xs/sqlite3/storage.ide-shm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LicenseRecipe/.vs/LicenseRecipe/xs/sqlite3/storage.ide-wal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVVMRecipe/.vs/MVVMRecipe/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MVVMRecipe/.vs/MVVMRecipe/xs/UserPrefs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVVMRecipe/.vs/MVVMRecipe/xs/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../MVVMRecipe/.vs/MVVMRecipe/xs/sqlite3/storage.ide" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVVMRecipe/.vs/MVVMRecipe/xs/sqlite3/storage.ide-shm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVVMRecipe/.vs/MVVMRecipe/xs/sqlite3/storage.ide-wal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SettingsRecipe/.vs/SettingsRecipe/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SettingsRecipe/.vs/SettingsRecipe/xs/UserPrefs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SettingsRecipe/.vs/SettingsRecipe/xs/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../SettingsRecipe/.vs/SettingsRecipe/xs/sqlite3/storage.ide" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TableRecipe/.vs/TableRecipe/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TableRecipe/.vs/TableRecipe/xs/UserPrefs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TableRecipe/.vs/TableRecipe/xs/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../TableRecipe/.vs/TableRecipe/xs/sqlite3/storage.ide" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TableRecipe/TableRecipe/TableRecipePage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/../TableRecipe/TableRecipe/TableRecipePage.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/CleanArchRecipe.Android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/CleanArchRecipe.Android.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArchRecipe.Android/CleanArchRecipe.Android.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe.Android/CleanArchRecipe.Android.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArchRecipe.Android/Properties/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe.Android/Properties/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArchRecipe.Android/Resources/Resource.designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe.Android/Resources/Resource.designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArchRecipe.Tests/HttpBinGatewayTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe.Tests/HttpBinGatewayTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArchRecipe.Tests/HttpRequestPresenterTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe.Tests/HttpRequestPresenterTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArchRecipe.iOS/CleanArchRecipe.iOS.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe.iOS/CleanArchRecipe.iOS.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArchRecipe/CleanArchRecipe.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe/CleanArchRecipe.csproj" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,22 +26,23 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/CleanArchRecipe/HttpBinGateway.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CleanArchRecipe.Console/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArchRecipe.Android/MainActivity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArchRecipe/MainPage.xaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CleanArchRecipe/HttpBinInteractor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CleanArchRecipe/HttpBinResponsePresenter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CleanArchRecipe/HttpBinGetInteractor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CleanArchRecipe/HttpBinPostInteractor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../BarcodeScanner/BarcodeScanner.Android/Resources/Resource.designer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../MinimalCleanArch/MinimalCleanArch/MainPage.xaml.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CleanArchRecipe.Tests/HttpRequestPresenterTests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../TableRecipe/Droid/Resources/Resource.designer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../xamarin-tunesearch/TuneSearch/TuneSearch/MainPage.xaml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArchRecipe/MainPage.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArchRecipe/HttpBinGateway.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../TableRecipe/Droid/Resources/Resource.designer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArchRecipe/HttpBinInteractor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../MinimalCleanArch/MinimalCleanArch/MainPage.xaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArchRecipe/HttpBinResponsePresenter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../BarcodeScanner/BarcodeScanner.Android/Resources/Resource.designer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArchRecipe/HttpBinGetInteractor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../xamarin-tunesearch/TuneSearch/TuneSearch/MainPage.xaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArchRecipe/HttpBinPostInteractor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArchRecipe.Tests/HttpBinGatewayTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArchRecipe.iOS/Main.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CleanArchRecipe.Console/MainView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CleanArchRecipe.Tests/HttpBinGatewayTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArchRecipe.Tests/HttpRequestPresenterTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CleanArchRecipe.Console/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -66,6 +60,7 @@
         <option value="$PROJECT_DIR$/CleanArchRecipe.Tests/HttpRequestPresenterTests.cs" />
         <option value="$PROJECT_DIR$/CleanArchRecipe.Console/Program.cs" />
         <option value="$PROJECT_DIR$/CleanArchRecipe.iOS/Main.cs" />
+        <option value="$PROJECT_DIR$/CleanArchRecipe.Android/MainActivity.cs" />
         <option value="$PROJECT_DIR$/CleanArchRecipe.Tests/HttpBinGatewayTests.cs" />
       </list>
     </option>
@@ -77,27 +72,23 @@
   </component>
   <component name="ProjectId" id="1TVVsHOWUWHtisHREzFGB9E50Ua" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="device.picker.selection" value="Pixel_2_API_28" />
     <property name="last_opened_file_path" value="$USER_HOME$/Projects/BasicCleanArchCPD2019/BasicCleanArchCPD2019.sln" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected=".NET Project.Default">
+  <component name="RunManager" selected="Xamarin.Android.Android Default">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/CleanArchRecipe.Console/bin/Debug/netcoreapp2.1/CleanArchRecipe.Console.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -135,9 +126,6 @@
     <configuration name="iOS Default" type="XamarinIOSProject" factoryName="Xamarin.iOS">
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/CleanArchRecipe.iOS/CleanArchRecipe.iOS.csproj" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="DEFAULT_IPHONE_DEVICE" value="" />
-      <option name="DEFAULT_IPHONE_SIMULATOR" value="" />
-      <option name="DEPLOY_TARGET_BEHAVIOUR_NAME" value="Ask" />
       <option name="IS_PASS_PARENT_ENVS" value="false" />
       <method v="2" />
     </configuration>
@@ -163,6 +151,7 @@
       <workItem from="1558017617183" duration="1641000" />
       <workItem from="1573545456957" duration="131000" />
       <workItem from="1573550226897" duration="2541000" />
+      <workItem from="1583352531589" duration="688000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring">
       <created>1555492506295</created>
@@ -222,7 +211,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
     <MESSAGE value="Integrate post into recipe" />
     <MESSAGE value="Refactoring" />
     <MESSAGE value="Using BasicCleanArch 1.0.1" />
@@ -230,6 +218,12 @@
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="328" y="175" key="deploy.picker.dialog" timestamp="1583353303974">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="328" y="175" key="deploy.picker.dialog/0.23.1280.777@0.23.1280.777" timestamp="1583353303974" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

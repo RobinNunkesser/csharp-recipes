@@ -12,8 +12,8 @@ namespace CleanArchRecipe.Tests
 
             gatewayResponse.Match(success =>
             {
-                Assert.NotNull(success.origin);
-                Assert.NotNull(success.url);
+                Assert.NotNull(success.Origin);
+                Assert.NotNull(success.Url);
             }, failure => throw failure);
         }
     }

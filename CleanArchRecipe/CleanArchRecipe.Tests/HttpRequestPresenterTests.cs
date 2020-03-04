@@ -10,7 +10,7 @@ namespace CleanArchRecipe.Tests
             var presenter = new HttpBinResponsePresenter();
             var model = new HttpBinResponseModel
             {
-                origin = "origin", url = "url"
+                Origin = "origin", Url = new System.Uri("url")
             };
             var viewModel = presenter.Present(model);
             Assert.Equal("origin: origin, url: url", viewModel);
