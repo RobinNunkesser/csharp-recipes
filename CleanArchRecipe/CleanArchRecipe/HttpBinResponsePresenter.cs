@@ -8,6 +8,6 @@ namespace CleanArchRecipe
         public string Present(HttpBinResponseModel entity) =>
             entity.json != null
                 ? $"Response: {entity.json}"
-                : $"origin: {entity.origin}, url: {entity.url}";
+                : $"origin: {entity.Origin}, url: {entity.Url}";
     }
 }
