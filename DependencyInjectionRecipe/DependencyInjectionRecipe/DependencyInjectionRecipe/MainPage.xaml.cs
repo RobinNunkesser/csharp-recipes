@@ -10,9 +10,6 @@ namespace DependencyInjectionRecipe
 {
     public partial class MainPage : ContentPage
     {
-        private IDependencyExample Dependency =>
-            (IDependencyExample) ServiceProvider.Provider.GetService(
-                typeof(IDependencyExample));
         public MainPage()
         {
             InitializeComponent();
@@ -21,7 +18,7 @@ namespace DependencyInjectionRecipe
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            Debug.WriteLine(Dependency.GetEnvironment());
+            Debug.WriteLine(new Interactor().Execute());
         }
     }
 }
