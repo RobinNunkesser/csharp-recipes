@@ -1,23 +1,22 @@
-﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{D6ABF1E4-F839-4AEE-91E9-FBC77CD0964D}|Default">
-  <MonoDevelop.Ide.ItemProperties.MVVMRecipe.Droid AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
-  <MonoDevelop.Ide.ItemProperties.MVVMRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.88C567C2-1067-45A8-BC5A-69FF4D4E4955">
-    <MonoDevelop.MacDev.AppleDevelopmentTeam />
-  </MonoDevelop.Ide.ItemProperties.MVVMRecipe.iOS>
-  <MonoDevelop.Ide.Workbench ActiveDocument="MVVMRecipe/DetailsPage.xaml">
+﻿<Properties StartupConfiguration="{A4D0315E-FE38-4F4B-A063-E08AFE0C171D}|Default">
+  <MonoDevelop.Ide.ItemProperties.MVVMRecipe.iOS FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.MVVMRecipe.Android PreferredExecutionTarget="Android.Pixel_2_API_28" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MVVMRecipe/App.xaml.cs">
     <Files>
-      <File FileName="MVVMRecipe/DetailsPage.xaml" Line="7" Column="38" />
-      <File FileName="MVVMRecipe/DetailsViewModel.cs" />
-      <File FileName="MVVMRecipe/DetailsPage.xaml.cs" Line="12" Column="35" />
-      <File FileName="MVVMRecipe/App.xaml.cs" />
-      <File FileName="MVVMRecipe/obj/Debug/MVVMRecipe.DetailsPage.xaml.g.cs" />
+      <File FileName="MVVMRecipe/DetailsPage.xaml.cs" Line="16" Column="1" />
+      <File FileName="MVVMRecipe/App.xaml.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MVVMRecipe" expanded="True">
             <Node name="MVVMRecipe" expanded="True">
-              <Node name="App.xaml" expanded="True" />
-              <Node name="DetailsPage.xaml" expanded="True" selected="True" />
+              <Node name="App.xaml" expanded="True">
+                <Node name="App.xaml.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="MVVMRecipe.Android" expanded="True">
+              <Node name="Packages" expanded="True" />
             </Node>
           </Node>
         </State>
