@@ -572,11 +572,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nunkesser/Projects/BasicInteraction/BasicInteraction/BasicInteraction.csproj",
+      "projectUniqueName": "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/BasicInteraction.csproj",
       "projectName": "BasicInteraction",
-      "projectPath": "/Users/nunkesser/Projects/BasicInteraction/BasicInteraction/BasicInteraction.csproj",
+      "projectPath": "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/BasicInteraction.csproj",
       "packagesPath": "/Users/nunkesser/.nuget/packages/",
-      "outputPath": "/Users/nunkesser/Projects/BasicInteraction/BasicInteraction/obj/",
+      "outputPath": "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

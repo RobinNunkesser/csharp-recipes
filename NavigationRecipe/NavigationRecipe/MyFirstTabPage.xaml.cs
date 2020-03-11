@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace NavigationRecipe
 {
@@ -10,6 +7,11 @@ namespace NavigationRecipe
         public MyFirstTabPage()
         {
             InitializeComponent();
+        }
+
+        async void Button_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new SecondLevelPage("Hello 2nd level!"));
         }
     }
 }

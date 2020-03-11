@@ -19,6 +19,9 @@
 
         [JsonProperty("url")]
         public Uri Url { get; set; }
+
+        [JsonProperty("json")]
+        public HttpBinPostRequest Json { get; set; }
     }
 
     public partial class Args
@@ -48,23 +51,29 @@
 
     public partial class HttpBinResponseModel
     {
-        public static HttpBinResponseModel FromJson(string json) => JsonConvert.DeserializeObject<HttpBinResponseModel>(json, CleanArchRecipe.Converter.Settings);
+        public static HttpBinResponseModel FromJson(string json) =>
+            JsonConvert.DeserializeObject<HttpBinResponseModel>(json,
+                Converter.Settings);
     }
 
     public static class Serialize
     {
-        public static string ToJson(this HttpBinResponseModel self) => JsonConvert.SerializeObject(self, CleanArchRecipe.Converter.Settings);
+        public static string ToJson(this HttpBinResponseModel self) =>
+            JsonConvert.SerializeObject(self, Converter.Settings);
     }
 
     internal static class Converter
     {
-        public static readonly JsonSerializerSettings Settings = new JsonSerializerSettings
+        public static readonly JsonSerializerSettings Settings =
+            new JsonSerializerSettings
         {
             MetadataPropertyHandling = MetadataPropertyHandling.Ignore,
             DateParseHandling = DateParseHandling.None,
             Converters =
             {
-                new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.AssumeUniversal }
+                new IsoDateTimeConverter {
+                    DateTimeStyles = DateTimeStyles.AssumeUniversal
+                }
             },
         };
     }

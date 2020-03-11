@@ -6,8 +6,8 @@ namespace CleanArchRecipe
         HttpBinResponsePresenter : IPresenter<HttpBinResponseModel, string>
     {
         public string Present(HttpBinResponseModel entity) =>
-            entity.json != null
-                ? $"Response: {entity.json}"
+            entity.Json != null
+                ? $"Response: {entity.Json}"
                 : $"origin: {entity.Origin}, url: {entity.Url}";
     }
 }

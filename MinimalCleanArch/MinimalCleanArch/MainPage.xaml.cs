@@ -1,6 +1,7 @@
 ﻿using Xamarin.Forms;
 using BasicCleanArch;
 using System.Diagnostics;
+using System;
 
 namespace MinimalCleanArch
 {
@@ -18,13 +19,14 @@ namespace MinimalCleanArch
             interactor.Execute(null,this);
         }
 
-        public void Display(Result<string> result)
+        public void Display(string value, int requestCode = 0)
         {
-            result.Match(
-            (success) => ResultLabel.Text = success,
-            (failure) => Debug.WriteLine(failure)
-            );
+            ResultLabel.Text = value;
         }
 
+        public void Display(Exception error)
+        {
+            Debug.WriteLine(error);
+        }
     }
 }

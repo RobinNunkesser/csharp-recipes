@@ -1,19 +1,25 @@
-﻿<Properties StartupConfiguration="{2E619762-446F-460F-B771-0A81CB443D56}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="JSONRecipe/JSONService.cs">
-    <Files>
-      <File FileName="JSONRecipe/App.xaml" Line="9" Column="1" />
-      <File FileName="JSONRecipe/App.xaml.cs" Line="10" Column="31" />
-      <File FileName="JSONRecipe/JSONService.cs" Line="27" Column="16" />
-      <File FileName="JSONRecipe/JSONRecipePage.xaml.cs" Line="10" Column="31" />
-    </Files>
+﻿<Properties StartupConfiguration="{BCF726AF-5262-44CC-BDF2-33BC6216D518}|Default">
+  <MonoDevelop.Ide.ItemProperties.JSONRecipe.iOS FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="JSONRecipe" expanded="True">
+            <Node name="JSONRecipe" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.JSONRecipe.Android PreferredExecutionTarget="Android.Pixel_2_API_28" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.JSONRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.EA9FD8AD-B65C-484D-A20B-0F64D487E17C">
-    <MonoDevelop.MacDev.AppleDevelopmentTeam />
-  </MonoDevelop.Ide.ItemProperties.JSONRecipe.iOS>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>

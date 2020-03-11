@@ -4,18 +4,11 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="797ae15c-0d08-41f4-8fd9-eeba888b2c56" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="797ae15c-0d08-41f4-8fd9-eeba888b2c56" name="Default Changelist" comment="Xamarin.forms update">
+      <changelist_data name="" email="" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/CleanArchRecipe.Android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/CleanArchRecipe.Android.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CleanArchRecipe/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanArchRecipe.Android/CleanArchRecipe.Android.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe.Android/CleanArchRecipe.Android.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanArchRecipe.Android/Properties/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe.Android/Properties/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanArchRecipe.Android/Resources/Resource.designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe.Android/Resources/Resource.designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanArchRecipe.Tests/HttpBinGatewayTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe.Tests/HttpBinGatewayTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanArchRecipe.Tests/HttpRequestPresenterTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe.Tests/HttpRequestPresenterTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanArchRecipe.iOS/CleanArchRecipe.iOS.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe.iOS/CleanArchRecipe.iOS.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanArchRecipe/CleanArchRecipe.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CleanArchRecipe/CleanArchRecipe.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PropertiesRecipe/Droid/Resources/Resource.designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../PropertiesRecipe/Droid/Resources/Resource.designer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,6 +145,8 @@
       <workItem from="1573545456957" duration="131000" />
       <workItem from="1573550226897" duration="2541000" />
       <workItem from="1583352531589" duration="688000" />
+      <workItem from="1583353970199" duration="554000" />
+      <workItem from="1583390878772" duration="105000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring">
       <created>1555492506295</created>
@@ -188,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573553999812</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Xamarin.forms update">
+      <created>1583354046354</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1583354046354</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,16 +212,21 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Integrate post into recipe" />
     <MESSAGE value="Refactoring" />
     <MESSAGE value="Using BasicCleanArch 1.0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Using BasicCleanArch 1.0.1" />
+    <MESSAGE value="Xamarin.forms update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Xamarin.forms update" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="240" y="153" key="Vcs.Push.Dialog.v2" timestamp="1583354051710">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="240" y="153" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1583354051710" />
     <state x="328" y="175" key="deploy.picker.dialog" timestamp="1583353303974">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

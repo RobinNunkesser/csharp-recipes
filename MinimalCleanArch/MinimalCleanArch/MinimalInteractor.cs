@@ -12,10 +12,11 @@ namespace MinimalCleanArch
             _presenter = presenter;
         }
 
-        public void Execute(object request, IDisplayer<string> displayer)
+        public void Execute(object request, IDisplayer<string> displayer,
+            int requestCode = 0)
         {
-            var viewModel = _presenter.present(42);
-            displayer.Display(new Result<string>(viewModel));
+            var viewModel = _presenter.Present(42);
+            displayer.Display(viewModel, requestCode);
         }
     }
 }

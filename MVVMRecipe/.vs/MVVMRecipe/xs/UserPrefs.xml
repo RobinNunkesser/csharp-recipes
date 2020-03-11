@@ -14,10 +14,9 @@
               <Node name="App.xaml" expanded="True">
                 <Node name="App.xaml.cs" selected="True" />
               </Node>
+              <Node name="DetailsPage.xaml" expanded="True" />
             </Node>
-            <Node name="MVVMRecipe.Android" expanded="True">
-              <Node name="Packages" expanded="True" />
-            </Node>
+            <Node name="MVVMRecipe.Android" expanded="True" />
           </Node>
         </State>
       </Pad>

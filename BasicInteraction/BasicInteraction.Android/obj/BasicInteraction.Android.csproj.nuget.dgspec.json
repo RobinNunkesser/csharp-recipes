@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nunkesser/Projects/BasicInteraction/BasicInteraction.Android/BasicInteraction.Android.csproj": {}
+    "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction.Android/BasicInteraction.Android.csproj": {}
   },
   "projects": {
-    "/Users/nunkesser/Projects/BasicInteraction/BasicInteraction.Android/BasicInteraction.Android.csproj": {
+    "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction.Android/BasicInteraction.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nunkesser/Projects/BasicInteraction/BasicInteraction.Android/BasicInteraction.Android.csproj",
+        "projectUniqueName": "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction.Android/BasicInteraction.Android.csproj",
         "projectName": "BasicInteraction.Android",
-        "projectPath": "/Users/nunkesser/Projects/BasicInteraction/BasicInteraction.Android/BasicInteraction.Android.csproj",
+        "projectPath": "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction.Android/BasicInteraction.Android.csproj",
         "packagesPath": "/Users/nunkesser/.nuget/packages/",
-        "outputPath": "/Users/nunkesser/Projects/BasicInteraction/BasicInteraction.Android/obj/",
+        "outputPath": "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction.Android/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -26,8 +26,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "/Users/nunkesser/Projects/BasicInteraction/BasicInteraction/BasicInteraction.csproj": {
-                "projectPath": "/Users/nunkesser/Projects/BasicInteraction/BasicInteraction/BasicInteraction.csproj"
+              "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/BasicInteraction.csproj": {
+                "projectPath": "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/BasicInteraction.csproj"
               }
             }
           }
@@ -48,14 +48,14 @@
         }
       }
     },
-    "/Users/nunkesser/Projects/BasicInteraction/BasicInteraction/BasicInteraction.csproj": {
+    "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/BasicInteraction.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nunkesser/Projects/BasicInteraction/BasicInteraction/BasicInteraction.csproj",
+        "projectUniqueName": "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/BasicInteraction.csproj",
         "projectName": "BasicInteraction",
-        "projectPath": "/Users/nunkesser/Projects/BasicInteraction/BasicInteraction/BasicInteraction.csproj",
+        "projectPath": "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/BasicInteraction.csproj",
         "packagesPath": "/Users/nunkesser/.nuget/packages/",
-        "outputPath": "/Users/nunkesser/Projects/BasicInteraction/BasicInteraction/obj/",
+        "outputPath": "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

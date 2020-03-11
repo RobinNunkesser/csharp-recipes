@@ -1,38 +1,30 @@
-﻿<Properties StartupConfiguration="{FE7032DB-CF2E-4BD0-A10F-5A3BB01CBE3C}|Default">
-  <MonoDevelop.Ide.ItemProperties.TableRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.501E44E2-83A6-4D33-93C7-26B53A137D46">
-    <MonoDevelop.MacDev.AppleDevelopmentTeam />
-  </MonoDevelop.Ide.ItemProperties.TableRecipe.iOS>
-  <MonoDevelop.Ide.Workbench ActiveDocument="TableRecipe/GroupedTablePage.xaml">
+﻿<Properties StartupConfiguration="{B9157FC6-F66B-46E1-B9B1-73D9309A894D}|Default">
+  <MonoDevelop.Ide.ItemProperties.TableRecipe.iOS FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TableRecipe/GroupedTablePage.xaml.cs">
     <Files>
-      <File FileName="TableRecipe/GroupedTableViewModel.cs" Line="11" Column="52" />
-      <File FileName="TableRecipe/MenuViewModel.cs" />
-      <File FileName="TableRecipe/GroupedTablePage.xaml" Line="10" Column="64" />
-      <File FileName="TableRecipe/GroupedTablePage.xaml.cs" />
-      <File FileName="TableRecipe/MenuPage.xaml" />
-      <File FileName="TableRecipe/TableRecipePage.xaml" />
-      <File FileName="TableRecipe/TableRecipeViewModel.cs" />
-      <File FileName="TableRecipe/ItemViewModel.cs" />
-      <File FileName="TableRecipe/TableRecipeSearchPage.xaml" />
-      <File FileName="TableRecipe/TableRecipeSearchPage.xaml.cs" />
+      <File FileName="TableRecipe/MenuPage.xaml.cs" Line="12" Column="13" />
+      <File FileName="TableRecipe/GroupedTablePage.xaml.cs" Line="9" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TableRecipe" expanded="True">
             <Node name="TableRecipe" expanded="True">
-              <Node name="GroupedTablePage.xaml" expanded="True" selected="True" />
-              <Node name="MenuPage.xaml" expanded="True" />
-              <Node name="TableRecipeSearchPage.xaml" expanded="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="GroupedTablePage.xaml" expanded="True">
+                <Node name="GroupedTablePage.xaml.cs" selected="True" />
+              </Node>
             </Node>
-            <Node name="TableRecipe.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.TableRecipe.Android PreferredExecutionTarget="Android.Pixel_2_API_28" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.TableRecipe.Droid AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.Pixel_2_API_28" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
