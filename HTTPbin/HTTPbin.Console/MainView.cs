@@ -8,7 +8,7 @@ namespace HTTPbin.Console
 {
     public class MainView : IDisplayer<string>
     {
-        private readonly IUseCase<HttpBinPostRequest, string> _interactor =
+        private readonly IQuery<HttpBinPostRequest, string> _interactor =
             new HttpBinPostInteractor(new HttpBinGateway(),
                 new HttpBinResponsePresenter());
 
@@ -19,7 +19,8 @@ namespace HTTPbin.Console
         {
             WriteLine("Term to post? ");
             var term = ReadLine();
-            _interactor.Execute(new HttpBinPostRequest {term = term}, this);
+            _interactor.Execute(new HttpBinPostRequest {term = term}, Write,
+                Write);
             WriteLine("\nAsync operation. Press key to abort");
             ReadKey();
         }

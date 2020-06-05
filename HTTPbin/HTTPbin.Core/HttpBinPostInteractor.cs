@@ -1,10 +1,11 @@
-﻿using HTTPbin.Common;
+﻿using System;
+using HTTPbin.Common;
 using Newtonsoft.Json;
 
 namespace HTTPbin.Core
 {
     public class HttpBinPostInteractor : HttpBinInteractor,
-        IUseCase<HttpBinPostRequest, string>
+        IQuery<HttpBinPostRequest, string>
     {
         public HttpBinPostInteractor(IHttpBinGateway gateway,
             IPresenter<HttpBinResponseModel, string> presenter) : base(gateway,
@@ -13,11 +14,15 @@ namespace HTTPbin.Core
         }
 
         public async void Execute(HttpBinPostRequest request,
-            IDisplayer<string> displayer, int requestCode = 0)
+            Action<string> successHandler, Action<Exception> errorHandler)
         {
             var json = JsonConvert.SerializeObject(request);
             var gatewayResponse = await _gateway.Post(json);
-            processResult(gatewayResponse, displayer);
+            gatewayResponse.Match(success =>
+            {
+                var viewModel = _presenter.Present(success);
+                successHandler(viewModel);
+            }, errorHandler);
         }
     }
 }

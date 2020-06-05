@@ -1,9 +1,10 @@
-﻿using HTTPbin.Common;
+﻿using System;
+using HTTPbin.Common;
 
 namespace HTTPbin.Core
 {
     public class HttpBinGetInteractor : HttpBinInteractor,
-        IUseCase<object, string>
+        IQuery<object, string>
     {
         public HttpBinGetInteractor(IHttpBinGateway gateway,
             IPresenter<HttpBinResponseModel, string> presenter) : base(gateway,
@@ -11,11 +12,15 @@ namespace HTTPbin.Core
         {
         }
 
-        public async void Execute(object request, IDisplayer<string> displayer,
-            int requestCode = 0)
+        public async void Execute(object request, Action<string> successHandler,
+            Action<Exception> errorHandler)
         {
             var gatewayResponse = await _gateway.Get();
-            processResult(gatewayResponse, displayer);
+            gatewayResponse.Match(success =>
+            {
+                var viewModel = _presenter.Present(success);
+                successHandler(viewModel);
+            }, errorHandler);
         }
     }
 }

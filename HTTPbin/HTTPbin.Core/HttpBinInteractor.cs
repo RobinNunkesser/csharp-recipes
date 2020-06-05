@@ -7,7 +7,7 @@ namespace HTTPbin.Core
             IPresenter<HttpBinResponseModel, string>>
     {
         protected readonly IHttpBinGateway _gateway;
-        private readonly IPresenter<HttpBinResponseModel, string> _presenter;
+        protected readonly IPresenter<HttpBinResponseModel, string> _presenter;
 
         protected HttpBinInteractor(IHttpBinGateway gateway,
             IPresenter<HttpBinResponseModel, string> presenter) : base(
