@@ -3,13 +3,18 @@ using HTTPbin.Common;
 
 namespace HTTPbin.Core
 {
-    public class HttpBinGetInteractor : HttpBinInteractor,
-        IQuery<object, string>
+    public class HttpBinGetInteractor : MustInitialize<
+        IPresenter<HttpBinResponseModel, string>>, IQuery<object, string>
     {
+        private readonly IHttpBinGateway _gateway;
+        private readonly IPresenter<HttpBinResponseModel, string> _presenter;
+
         public HttpBinGetInteractor(IHttpBinGateway gateway,
-            IPresenter<HttpBinResponseModel, string> presenter) : base(gateway,
+            IPresenter<HttpBinResponseModel, string> presenter) : base(
             presenter)
         {
+            _presenter = presenter;
+            _gateway = gateway;
         }
 
         public async void Execute(object request, Action<string> successHandler,
