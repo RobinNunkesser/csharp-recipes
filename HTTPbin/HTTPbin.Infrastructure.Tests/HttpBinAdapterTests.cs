@@ -3,15 +3,15 @@ using NUnit.Framework;
 
 namespace HTTPbin.Infrastructure.Tests
 {
-    public class HttpBinGatewayTests
+    public class HttpBinAdapterTests
     {
         [Test]
         public async Task TestGet()
         {
-            var gateway = new HttpBinGateway();
-            var gatewayResponse = await gateway.Get();
+            var httpBinAdapter = new HttpBinAdapter();
+            var response = await httpBinAdapter.Get();
 
-            gatewayResponse.Match(success =>
+            response.Match(success =>
             {
                 Assert.NotNull(success.Origin);
                 Assert.NotNull(success.Url);

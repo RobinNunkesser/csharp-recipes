@@ -3,7 +3,7 @@ using System.Globalization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace HTTPbin.Core
+namespace HTTPbin.Infrastructure
 {
     public partial class HttpBinResponseModel
     {
@@ -15,7 +15,7 @@ namespace HTTPbin.Core
 
         [JsonProperty("url")] public Uri Url { get; set; }
 
-        [JsonProperty("json")] public HttpBinPostRequest Json { get; set; }
+        [JsonProperty("json")] public string Json { get; set; }
     }
 
     public partial class Args
