@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using PlaceholderPosts.Common;
@@ -14,13 +15,21 @@ namespace HTTPbin.Infrastructure
         private const string Url = "https://jsonplaceholder.typicode.com";
         private const string MediaTypeJSON = "application/json";
 
+        private static readonly HttpClient HttpClient;
 
-        private async Task<Result<T>> Read<T>(string requestUri)
+        static JSONPlaceholderAPI()
         {
-            using var client = GetClient();
+            HttpClient = new HttpClient();
+            var media = new MediaTypeWithQualityHeaderValue(MediaTypeJSON);
+            HttpClient.DefaultRequestHeaders.Accept.Add(media);
+        }
+
+        private async Task<Result<T>> UseClientAsync<T>(
+            HttpRequestMessage message)
+        {
             try
             {
-                var response = await client.GetAsync(requestUri);
+                var response = await HttpClient.SendAsync(message);
                 response.EnsureSuccessStatusCode();
                 var content = await response.Content.ReadAsStringAsync();
                 var model = JsonConvert.DeserializeObject<T>(content);
@@ -34,22 +43,31 @@ namespace HTTPbin.Infrastructure
 
         public async Task<Result<List<Post>>> ReadAllPosts()
         {
-            var result = Read<List<Post>>($"{Url}/posts");
+            var message =
+                new HttpRequestMessage(HttpMethod.Get, $"{Url}/posts");
+            var result = UseClientAsync<List<Post>>(message);
             return await result;
         }
 
         public async Task<Result<Post>> ReadPost(int id)
         {
-            var result = Read<Post>($"{Url}/posts/{id}");
+            var message =
+                new HttpRequestMessage(HttpMethod.Get, $"{Url}/posts/{id}");
+            var result = UseClientAsync<Post>(message);
             return await result;
         }
 
-        private HttpClient GetClient()
+        public async Task<Result<Post>> CreatePost(Post post)
         {
-            var client = new HttpClient();
-            var media = new MediaTypeWithQualityHeaderValue(MediaTypeJSON);
-            client.DefaultRequestHeaders.Accept.Add(media);
-            return client;
+            var jsonPost = JsonConvert.SerializeObject(post);
+            var message =
+                new HttpRequestMessage(HttpMethod.Post, $"{Url}/posts")
+                {
+                    Content = new StringContent(jsonPost, Encoding.UTF8,
+                        MediaTypeJSON)
+                };
+            var result = UseClientAsync<Post>(message);
+            return await result;
         }
     }
 }

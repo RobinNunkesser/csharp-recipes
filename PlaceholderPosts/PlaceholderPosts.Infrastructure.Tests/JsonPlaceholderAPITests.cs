@@ -39,5 +39,23 @@ namespace PlaceholderPosts.Infrastructure.Tests
                     success.Body);
             }, failure => throw failure);
         }
+
+        [Test]
+        public async Task TestCreatePost()
+        {
+            var api = new JSONPlaceholderAPI();
+            var response = await api.CreatePost(new Post()
+            {
+                Title = "foo", Body = "bar", UserId = 1
+            });
+
+            response.Match(success =>
+            {
+                Assert.AreEqual(101, success.UserId);
+                Assert.AreEqual(1, success.Id);
+                Assert.AreEqual("foo", success.Title);
+                Assert.AreEqual("bar", success.Body);
+            }, failure => throw failure);
+        }
     }
 }
