@@ -51,8 +51,8 @@ namespace PlaceholderPosts.Infrastructure.Tests
 
             response.Match(success =>
             {
-                Assert.AreEqual(101, success.UserId);
-                Assert.AreEqual(1, success.Id);
+                Assert.AreEqual(1, success.UserId);
+                Assert.AreEqual(101, success.Id);
                 Assert.AreEqual("foo", success.Title);
                 Assert.AreEqual("bar", success.Body);
             }, failure => throw failure);
