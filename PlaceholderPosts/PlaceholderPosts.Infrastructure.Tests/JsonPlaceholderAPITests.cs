@@ -12,13 +12,32 @@ namespace PlaceholderPosts.Infrastructure.Tests
         }
 
         [Test]
-        public async Task TestReadAll()
+        public async Task TestReadAllPosts()
         {
             var api = new JSONPlaceholderAPI();
-            var response = await api.ReadAll();
+            var response = await api.ReadAllPosts();
 
             response.Match(success => { Assert.AreEqual(100, success.Count); },
                 failure => throw failure);
+        }
+
+        [Test]
+        public async Task TestReadPost()
+        {
+            var api = new JSONPlaceholderAPI();
+            var response = await api.ReadPost(1);
+
+            response.Match(success =>
+            {
+                Assert.AreEqual(1, success.UserId);
+                Assert.AreEqual(1, success.Id);
+                Assert.AreEqual(
+                    "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+                    success.Title);
+                Assert.AreEqual(
+                    "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+                    success.Body);
+            }, failure => throw failure);
         }
     }
 }
