@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using Xamarin.Forms;
 
 namespace PlaceholderPosts
@@ -11,6 +12,10 @@ namespace PlaceholderPosts
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private void Retrieve_Button_OnClicked(object sender, EventArgs e)
+        {
         }
     }
 }

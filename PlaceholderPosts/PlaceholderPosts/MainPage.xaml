@@ -5,8 +5,9 @@
      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
      mc:Ignorable="d" x:Class="PlaceholderPosts.MainPage">
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center"
-             VerticalOptions="CenterAndExpand" />
+        <Entry x:Name="IdEntry" Placeholder="Id" />
+        <Button Text="Test Retrieve Post" Clicked="Retrieve_Button_OnClicked" />
+        <Label x:Name="ResultLabel" HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
     </StackLayout>
 </ContentPage>
