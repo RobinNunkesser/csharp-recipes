@@ -1,17 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <OutputType>Exe</OutputType>
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Newtonsoft.Json" Version="12.0.3"/>
-        <PackageReference Include="System.Net.Http" Version="4.3.4"/>
-    </ItemGroup>
-
-    <ItemGroup>
-        <ProjectReference Include="..\PlaceholderPosts.Common\PlaceholderPosts.Common.csproj"/>
         <ProjectReference Include="..\PlaceholderPosts.Core\PlaceholderPosts.Core.csproj"/>
+        <ProjectReference Include="..\PlaceholderPosts.Infrastructure\PlaceholderPosts.Infrastructure.csproj"/>
     </ItemGroup>
 
 </Project>

@@ -2,6 +2,9 @@
 
 namespace PlaceholderPosts.Common
 {
+    public delegate TDestination ConvertDelegate<TSource, TDestination>(
+        TSource source);
+
     /// <summary>
     /// Class associated with a result or an error.
     /// </summary>
@@ -55,6 +58,17 @@ namespace PlaceholderPosts.Common
                 case 2:
                     errorHandler(_error);
                     break;
+                default: throw new InvalidOperationException();
+            }
+        }
+
+        public Result<TDestination> ConvertSuccess<TDestination>(
+            ConvertDelegate<T, TDestination> converter)
+        {
+            switch (_tag)
+            {
+                case 1: return new Result<TDestination>(converter(_value));
+                case 2: return new Result<TDestination>(_error);
                 default: throw new InvalidOperationException();
             }
         }
