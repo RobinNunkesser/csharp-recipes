@@ -1,6 +1,6 @@
 namespace PlaceholderPosts.Core
 {
-    public class PostRequest
+    public class GetPostCommandDTO
     {
         public int Id { get; set; }
     }

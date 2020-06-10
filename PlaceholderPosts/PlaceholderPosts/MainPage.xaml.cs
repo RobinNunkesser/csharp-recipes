@@ -12,8 +12,8 @@ namespace PlaceholderPosts
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
-        private readonly IAppService<PostRequest, PostEntity> _service =
-            new GetPostService(new PostRepositoryAdapter());
+        private readonly ICommandHandler<GetPostCommandDTO, PostEntity>
+            _service = new GetPostCommand(new PostRepositoryAdapter());
 
         public MainPage()
         {
@@ -22,7 +22,8 @@ namespace PlaceholderPosts
 
         private void Retrieve_Button_OnClicked(object sender, EventArgs e)
         {
-            _service.Execute(new PostRequest() {Id = int.Parse(IdEntry.Text)},
+            _service.Execute(
+                new GetPostCommandDTO() {Id = int.Parse(IdEntry.Text)},
                 success => ResultLabel.Text = success.ToString(),
                 async error =>
                     await DisplayAlert("Fehler", error.Message, "OK"));

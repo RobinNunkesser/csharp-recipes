@@ -3,19 +3,19 @@ using PlaceholderPosts.Common;
 
 namespace PlaceholderPosts.Core
 {
-    public class GetPostService : IAppService<PostRequest, PostEntity>
+    public class GetPostCommand : ICommandHandler<GetPostCommandDTO, PostEntity>
     {
         private readonly IRepository<int, PostEntity> _repository;
 
-        public GetPostService(IRepository<int, PostEntity> repository)
+        public GetPostCommand(IRepository<int, PostEntity> repository)
         {
             _repository = repository;
         }
 
-        public async void Execute(PostRequest request,
+        public async void Execute(GetPostCommandDTO commandDto,
             Action<PostEntity> successHandler, Action<Exception> errorHandler)
         {
-            var result = await _repository.Retrieve(request.Id);
+            var result = await _repository.Retrieve(commandDto.Id);
             result.Match(successHandler, errorHandler);
         }
     }
