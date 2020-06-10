@@ -4,19 +4,19 @@ using UltimateAnswer.Core.Ports;
 
 namespace UltimateAnswer.Core
 {
-    public class GetAnswerService : IAppService<AnswerRequest, string>
+    public class GetAnswerCommand : ICommandHandler<GetAnswerCommandDTO, string>
     {
         private readonly ISuperComputer _superComputer;
 
-        public GetAnswerService(ISuperComputer superComputer)
+        public GetAnswerCommand(ISuperComputer superComputer)
         {
             _superComputer = superComputer;
         }
 
-        public async void Execute(AnswerRequest request,
+        public async void Execute(GetAnswerCommandDTO inDTO,
             Action<string> successHandler, Action<Exception> errorHandler)
         {
-            var result = await _superComputer.answer(request.Question);
+            var result = await _superComputer.answer(inDTO.Question);
             result.Match(successHandler, errorHandler);
         }
     }

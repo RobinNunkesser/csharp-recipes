@@ -1,6 +1,6 @@
 namespace UltimateAnswer.Core
 {
-    public class AnswerRequest
+    public class GetAnswerCommandDTO
     {
         public string Question { get; set; }
     }
