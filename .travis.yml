@@ -1,0 +1,11 @@
+language:  csharp
+
+os: 
+    - osx
+env: 
+    - PROJECT="BasicInteraction"
+
+script:
+    - cd $PROJECT
+    - msbuild /p:Configuration=Release ${PROJECT}.sln
+    - cd ..
