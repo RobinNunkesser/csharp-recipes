@@ -12,7 +12,6 @@ env:
     - PROJECT="CleanArchRecipe"
     - PROJECT="ComplexNavigation"
     - PROJECT="DependencyInjectionRecipe"
-    - PROJECT="FilesRecipe"
     - PROJECT="GeolocationRecipe"
     - PROJECT="JSONRecipe"
     - PROJECT="LicenseRecipe"
