@@ -2,18 +2,20 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Droid/SaveAndLoad.cs">
     <Files>
       <File FileName="FilesRecipe/ISaveAndLoad.cs" Line="4" Column="22" />
-      <File FileName="FilesRecipe/FilesRecipePage.xaml.cs" Line="17" Column="34" />
-      <File FileName="iOS/SaveAndLoad.cs" Line="5" Column="1" />
-      <File FileName="Droid/SaveAndLoad.cs" Line="1" Column="1" />
+      <File FileName="FilesRecipe/FilesRecipePage.xaml.cs" />
+      <File FileName="iOS/SaveAndLoad.cs" />
+      <File FileName="Droid/SaveAndLoad.cs" Line="22" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FilesRecipe" expanded="True">
             <Node name="FilesRecipe" expanded="True">
+              <Node name="Packages" expanded="True" />
               <Node name="FilesRecipePage.xaml" expanded="True" />
             </Node>
             <Node name="FilesRecipe.Droid" expanded="True">
+              <Node name="Packages" expanded="True" />
               <Node name="SaveAndLoad.cs" selected="True" />
             </Node>
           </Node>
@@ -23,7 +25,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.FilesRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.88C567C2-1067-45A8-BC5A-69FF4D4E4955" />
+  <MonoDevelop.Ide.ItemProperties.FilesRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E98F5B41-A1DC-41AD-9A8C-72F775A52798" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
