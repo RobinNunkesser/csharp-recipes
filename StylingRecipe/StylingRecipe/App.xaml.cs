@@ -12,8 +12,7 @@ namespace StylingRecipe
 
             MainPage = new MainPage();
 
-            var newResources = new ResourceDictionary();
-            newResources.
+            var newResources = new ResourceDictionary();            
             this.Resources = newResources;
 
         }
