@@ -14,7 +14,7 @@
         <State name="__root__">
           <Node name="SettingsRecipe" expanded="True">
             <Node name="SettingsRecipe" expanded="True">
-              <Node name="Packages" expanded="True" />
+              <Node name="References" expanded="True" />
               <Node name="Settings.cs" selected="True" />
               <Node name="SettingsRecipePage.xaml" expanded="True" />
             </Node>
@@ -24,7 +24,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.SettingsRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.501E44E2-83A6-4D33-93C7-26B53A137D46">
+  <MonoDevelop.Ide.ItemProperties.SettingsRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E98F5B41-A1DC-41AD-9A8C-72F775A52798">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.SettingsRecipe.iOS>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
