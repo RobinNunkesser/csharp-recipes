@@ -3,38 +3,46 @@ mono: none
 dotnet: 3.1
 
 env: 
-    - PROJECT="AccelerometerRecipe"
-    - PROJECT="AppiumRecipe"
-    - PROJECT="BarcodeScanner"
-    - PROJECT="BasicInteraction"
-    - PROJECT="CRUDCleanArch"
-    - PROJECT="CameraRecipe"
-    - PROJECT="CleanArchRecipe"
-    - PROJECT="ComplexNavigation"
-    - PROJECT="DependencyInjectionRecipe"
-    - PROJECT="DeviceSensors"
-    - PROJECT="FilesRecipe"
-    - PROJECT="GeolocationRecipe"
-    - PROJECT="JSONRecipe"
-    - PROJECT="LicenseRecipe"
-    - PROJECT="MVVMRecipe"
-    - PROJECT="MapsRecipe"
-    - PROJECT="MinimalCleanArch"
+    # - PROJECT="AccelerometerRecipe"
+    # - PROJECT="AppiumRecipe"
+    # - PROJECT="BarcodeScanner"
+    # - PROJECT="BasicInteraction"
+    # - PROJECT="CRUDCleanArch"
+    # - PROJECT="CameraRecipe"
+    # - PROJECT="CleanArchRecipe"
+    # - PROJECT="ComplexNavigation"
+    # - PROJECT="DependencyInjectionRecipe"
+    # - PROJECT="DeviceSensors"
+    # - PROJECT="FilesRecipe"
+    # - PROJECT="GeolocationRecipe"
+    # - PROJECT="JSONRecipe"
+    # - PROJECT="LicenseRecipe"
+    # - PROJECT="MVVMRecipe"
+    # - PROJECT="MapsRecipe"
+    # - PROJECT="MinimalCleanArch"
     - PROJECT="MoneyExample"
-    - PROJECT="MvxTipCalc"
+    # - PROJECT="MvxTipCalc"
     - PROJECT="NavigationRecipe"
-    - PROJECT="PickerRecipe"
-    - PROJECT="PlaceholderPosts"
-    - PROJECT="PropertiesRecipe"
-    - PROJECT="RESTRecipe"
-    - PROJECT="SettingsRecipe"
-    - PROJECT="StylingRecipe"
-    - PROJECT="TableRecipe"
-    - PROJECT="UITestsRecipe"
-    - PROJECT="UltimateAnswer"
+    # - PROJECT="PickerRecipe"
+    # - PROJECT="PlaceholderPosts"
+    # - PROJECT="PropertiesRecipe"
+    # - PROJECT="RESTRecipe"
+    # - PROJECT="SettingsRecipe"
+    # - PROJECT="StylingRecipe"
+    # - PROJECT="TableRecipe"
+    # - PROJECT="UITestsRecipe"
+    # - PROJECT="UltimateAnswer"
 
 script:
-    - cd $PROJECT/$PROJECT
+    - cd $PROJECT
+    - cd $PROJECT
     - dotnet build
+    - cd ..
+    - | 
+        if [[ -d "$PROJECT.Tests" ]]
+        then 
+          cd ${PROJECT}.Tests
+          dotnet test
+        fi
     - cd ..
 
