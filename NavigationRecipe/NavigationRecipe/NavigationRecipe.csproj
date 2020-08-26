@@ -10,11 +10,6 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Remove="MyFirstTabPage.xaml.cs" />
-    <Compile Remove="MySecondTabPage.xaml.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Remove="MySecondTabPage.xaml" />
     <EmbeddedResource Remove="NavigationRecipePage.xaml" />
   </ItemGroup>
 </Project>

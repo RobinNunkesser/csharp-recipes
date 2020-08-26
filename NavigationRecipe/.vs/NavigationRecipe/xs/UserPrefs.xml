@@ -1,21 +1,22 @@
-﻿<Properties StartupConfiguration="{CA94046A-1083-4EDA-B0D8-53EE6FB16489}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="NavigationRecipe/MySecondTabPage.xaml.cs">
+﻿<Properties StartupConfiguration="{95AB8601-7B16-4317-9430-D81CE70C7DF9}|Default">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="NavigationRecipe/App.xaml.cs" Line="1" Column="1" />
       <File FileName="NavigationRecipe/AssemblyInfo.cs" />
       <File FileName="NavigationRecipe/NavigationRecipePage.xaml" />
-      <File FileName="NavigationRecipe/AppShell.xaml" />
+      <File FileName="NavigationRecipe/AppShell.xaml" Line="15" Column="39" />
       <File FileName="NavigationRecipe/MySecondTabPage.xaml" />
       <File FileName="NavigationRecipe/MySecondTabPage.xaml.cs" Line="7" Column="2" />
-      <File FileName="NavigationRecipe/MyFirstTabPage.xaml" />
+      <File FileName="NavigationRecipe/MyFirstTabPage.xaml" Line="1" Column="1" />
       <File FileName="NavigationRecipe/MyFirstTabPage.xaml.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NavigationRecipe" expanded="True">
-            <Node name="NavigationRecipe" expanded="True">
+            <Node name="NavigationRecipe" expanded="True" selected="True">
               <Node name="Dependencies" expanded="True" />
+              <Node name="SecondLevelPage.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -23,7 +24,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.NavigationRecipe.iOS FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.NavigationRecipe.iOS FirstBuild="True" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E98F5B41-A1DC-41AD-9A8C-72F775A52798" />
   <MonoDevelop.Ide.ItemProperties.NavigationRecipe.Android FirstBuild="True" PreferredExecutionTarget="Android.Pixel_2_API_28" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
