@@ -69,10 +69,10 @@
         <AndroidResource Include="Resources\values\colors.xml" />
     </ItemGroup>
     <ItemGroup>
-        <ProjectReference Include="..\DependencyInjectionRecipe\DependencyInjectionRecipe.csproj">
-            <Project>{91559083-B948-43FC-8AF0-2ECED8BE41EA}</Project>
-            <Name>DependencyInjectionRecipe</Name>
-        </ProjectReference>
+      <ProjectReference Include="..\DependencyInjectionRecipe\DependencyInjectionRecipe.csproj">
+        <Project>{9FC230B3-C1FF-4D2A-B443-A72A3CB4F5AB}</Project>
+        <Name>DependencyInjectionRecipe</Name>
+      </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
