@@ -4,9 +4,11 @@
      xmlns:d="http://xamarin.com/schemas/2014/forms/design"
      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
      mc:Ignorable="d" x:Class="UltimateAnswer.MainPage">
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center"
-             VerticalOptions="CenterAndExpand" />
+
+    <StackLayout HorizontalOptions="CenterAndExpand"
+                 VerticalOptions="CenterAndExpand">
+        <Entry x:Name="QuestionEntry" Placeholder="Enter question" />
+        <Button Text="Process" Clicked="Handle_Clicked" />
+        <Label x:Name="AnswerLabel" Text="" />
     </StackLayout>
 </ContentPage>
