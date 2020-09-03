@@ -11,8 +11,8 @@ namespace UltimateAnswer.Common
         /// Executes the use case.
         /// </summary>
         /// <param name="inDTO">Encapsulated inDTO parameters.</param>
-        /// <param name="successHandler">The action to use for a successful result.</param>
-        /// <param name="errorHandler">The action to use for an unsuccessful result.</param>
+        /// <param name="successHandler">The action for a successful result.</param>
+        /// <param name="errorHandler">The action for an unsuccessful result.</param>
         void Execute(TInDTO inDTO, Action<TOutDTO> successHandler,
             Action<Exception> errorHandler);
     }
