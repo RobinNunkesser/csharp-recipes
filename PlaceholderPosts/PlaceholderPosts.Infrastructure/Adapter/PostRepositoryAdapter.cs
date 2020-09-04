@@ -18,19 +18,19 @@ namespace PlaceholderPosts.Infrastructure
         public async Task<Result<int>> Create(PostEntity entity)
         {
             var result = await _api.CreatePost(entity.ToPost());
-            return result.ConvertSuccess(post => (int) post.Id);
+            return result.Map(post => (int) post.Id);
         }
 
         public async Task<Result<PostEntity>> Retrieve(int id)
         {
             var result = await _api.ReadPost(id);
-            return result.ConvertSuccess(post => post.ToPostEntity());
+            return result.Map(post => post.ToPostEntity());
         }
 
         public async Task<Result<List<PostEntity>>> RetrieveAll()
         {
             var result = await _api.ReadAllPosts();
-            return result.ConvertSuccess(posts =>
+            return result.Map(posts =>
                 posts.Select(post => post.ToPostEntity()).ToList());
         }
 
