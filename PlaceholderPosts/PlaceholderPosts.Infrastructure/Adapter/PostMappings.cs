@@ -2,7 +2,7 @@ using PlaceholderPosts.Core;
 
 namespace PlaceholderPosts.Infrastructure
 {
-    public static class Convert
+    public static class PostMappings
     {
         public static PostEntity ToPostEntity(this Post self) =>
             new PostEntity()
