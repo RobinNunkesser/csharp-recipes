@@ -31,12 +31,8 @@ namespace PlaceholderPosts.Infrastructure.Tests
             {
                 Assert.AreEqual(1, success.UserId);
                 Assert.AreEqual(1, success.Id);
-                Assert.AreEqual(
-                    "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-                    success.Title);
-                Assert.AreEqual(
-                    "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
-                    success.Body);
+                Assert.True(success.Title.StartsWith("sunt aut facere repella"));
+                Assert.True(success.Body.StartsWith("quia et suscipit\nsuscip"));
             }, failure => throw failure);
         }
 
