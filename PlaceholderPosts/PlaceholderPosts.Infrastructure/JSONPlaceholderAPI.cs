@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Net.Security;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
@@ -19,7 +20,15 @@ namespace HTTPbin.Infrastructure
 
         static JSONPlaceholderAPI()
         {
-            HttpClient = new HttpClient();
+            var handler = new HttpClientHandler();
+            handler.ServerCertificateCustomValidationCallback +=
+                (sender, certificate, chain, sslPolicyErrors) =>
+                {
+                    if (sslPolicyErrors == SslPolicyErrors.None) return true;
+                    return sender.RequestUri.Host ==
+                           "jsonplaceholder.typicode.com";
+                };
+            HttpClient = new HttpClient(handler);
             var media = new MediaTypeWithQualityHeaderValue(MediaTypeJSON);
             HttpClient.DefaultRequestHeaders.Accept.Add(media);
         }
