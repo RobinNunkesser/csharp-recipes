@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace UltimateAnswer.Common
 {
@@ -13,7 +14,7 @@ namespace UltimateAnswer.Common
         /// <param name="inDTO">Encapsulated inDTO parameters.</param>
         /// <param name="successHandler">The action for a successful result.</param>
         /// <param name="errorHandler">The action for an unsuccessful result.</param>
-        void Execute(TInDTO inDTO, Action<TOutDTO> successHandler,
+        Task Execute(TInDTO inDTO, Action<TOutDTO> successHandler,
             Action<Exception> errorHandler);
     }
 }

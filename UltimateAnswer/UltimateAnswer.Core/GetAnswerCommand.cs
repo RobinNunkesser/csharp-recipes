@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using UltimateAnswer.Common;
 using UltimateAnswer.Core.Ports;
 
@@ -13,11 +14,12 @@ namespace UltimateAnswer.Core
             _superComputer = superComputer;
         }
 
-        public async void Execute(GetAnswerCommandDTO inDTO,
+        public async Task Execute(GetAnswerCommandDTO inDTO,
             Action<string> successHandler, Action<Exception> errorHandler)
         {
             var result = await _superComputer.answer(inDTO.Question);
             result.Match(successHandler, errorHandler);
         }
+
     }
 }
