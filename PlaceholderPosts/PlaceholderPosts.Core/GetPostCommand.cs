@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using PlaceholderPosts.Common;
 
 namespace PlaceholderPosts.Core
@@ -12,7 +13,7 @@ namespace PlaceholderPosts.Core
             _repository = repository;
         }
 
-        public async void Execute(GetPostCommandDTO commandDto,
+        public async Task Execute(GetPostCommandDTO commandDto,
             Action<PostEntity> successHandler, Action<Exception> errorHandler)
         {
             var result = await _repository.Retrieve(commandDto.Id);

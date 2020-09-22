@@ -11,7 +11,7 @@ namespace PlaceholderPosts.Console
 
         public void Start()
         {
-            System.Console.WriteLine("Term to post? ");
+            System.Console.WriteLine("Id of post? ");
             var id = System.Console.ReadLine();
             _service.Execute(new GetPostCommandDTO() {Id = int.Parse(id)},
                 System.Console.Write, System.Console.Write);

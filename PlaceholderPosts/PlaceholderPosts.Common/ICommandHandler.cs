@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace PlaceholderPosts.Common
 {
@@ -13,7 +14,7 @@ namespace PlaceholderPosts.Common
         /// <param name="inDTO">Encapsulated inDTO parameters.</param>
         /// <param name="successHandler">The action to use for a successful result.</param>
         /// <param name="errorHandler">The action to use for an unsuccessful result.</param>
-        void Execute(TInDTO inDTO, Action<TOutDTO> successHandler,
+        Task Execute(TInDTO inDTO, Action<TOutDTO> successHandler,
             Action<Exception> errorHandler);
     }
 }
