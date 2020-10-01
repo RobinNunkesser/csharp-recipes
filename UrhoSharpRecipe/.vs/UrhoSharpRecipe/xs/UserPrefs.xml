@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{81D86564-3F34-4A5B-BB1A-CCEB92CD4DE5}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UrhoSharpRecipe/HelloWorld.cs">
+    <Files>
+      <File FileName="UrhoSharpRecipe/UrhoSharpRecipePage.xaml" Line="8" Column="15" />
+      <File FileName="UrhoSharpRecipe/HelloWorld.cs" Line="11" Column="40" />
+      <File FileName="UrhoSharpRecipe/UrhoSharpRecipePage.xaml.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="UrhoSharpRecipe" expanded="True">
+            <Node name="UrhoSharpRecipe" expanded="True">
+              <Node name="HelloWorld.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>this</Value>
+          <Value>Frage.Item1</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.UrhoSharpRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.CBC07E6C-0893-41CE-BA12-781C500F02CD">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.UrhoSharpRecipe.iOS>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

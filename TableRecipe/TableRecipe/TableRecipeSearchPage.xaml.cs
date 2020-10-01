@@ -5,7 +5,8 @@ namespace TableRecipe
 {
     public partial class TableRecipeSearchPage : ContentPage
     {
-        private readonly TableRecipeViewModel viewModel = new TableRecipeViewModel();
+        private readonly TableRecipeViewModel viewModel =
+            new TableRecipeViewModel();
 
         public TableRecipeSearchPage()
         {
@@ -17,16 +18,15 @@ namespace TableRecipe
         private void MainSearchBar_TextChanged(object sender,
             TextChangedEventArgs e)
         {
-            var filter = ((SearchBar)sender).Text;
+            var filter = ((SearchBar) sender).Text;
             if (string.IsNullOrWhiteSpace(filter))
             {
                 MainListView.ItemsSource = viewModel.Items;
             }
             else
             {
-                MainListView.ItemsSource = viewModel.Items
-                    .Where(x => x.Text.ToLower()
-                   .Contains(filter.ToLower()));
+                MainListView.ItemsSource = viewModel.Items.Where(x =>
+                    x.Text.ToLower().Contains(filter.ToLower()));
             }
         }
     }

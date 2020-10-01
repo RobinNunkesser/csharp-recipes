@@ -23,10 +23,12 @@ env:
     - PROJECT="PickerRecipe"
     - PROJECT="PlaceholderPosts"
     - PROJECT="RESTRecipe"
+    - PROJECT="SQLiteRecipe"
     - PROJECT="StylingRecipe"
     - PROJECT="TableRecipe"
     - PROJECT="UITestsRecipe"
     - PROJECT="UltimateAnswer"
+    - PROJECT="UrhoSharpRecipe"
 
 script:
     - cd $PROJECT
