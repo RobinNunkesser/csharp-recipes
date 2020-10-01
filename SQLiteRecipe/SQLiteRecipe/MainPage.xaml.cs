@@ -14,5 +14,18 @@ namespace SQLiteRecipe
         {
             InitializeComponent();
         }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            var todoItem = new TodoItem()
+            {
+                Name = "Test",
+                Notes = "Note",
+                Done = false
+            };
+            await App.Database.SaveItemAsync(todoItem);
+        }
+
     }
 }
