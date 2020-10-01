@@ -28,7 +28,6 @@ env:
     - PROJECT="TableRecipe"
     - PROJECT="UITestsRecipe"
     - PROJECT="UltimateAnswer"
-    - PROJECT="UrhoSharpRecipe"
 
 script:
     - cd $PROJECT
