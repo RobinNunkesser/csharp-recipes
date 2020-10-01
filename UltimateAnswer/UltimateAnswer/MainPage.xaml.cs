@@ -12,7 +12,7 @@ namespace UltimateAnswer
     public partial class MainPage : ContentPage
     {
         private readonly ICommandHandler<GetAnswerCommandDTO, string> _service =
-            new GetAnswerCommand(new SuperComputerAdapter());
+            GetAnswerCommand(new SuperComputerAdapter());
 
         public MainPage()
         {

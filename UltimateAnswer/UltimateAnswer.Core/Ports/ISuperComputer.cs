@@ -5,6 +5,6 @@ namespace UltimateAnswer.Core.Ports
 {
     public interface ISuperComputer
     {
-        Task<Result<string>> answer(string question);
+        Task<Result<string>> Answer(string question);
     }
 }
