@@ -15,11 +15,11 @@ namespace TableRecipe
             };
             Group1.Add(new ItemViewModel
             {
-                text = "Section 1, Item 1", detail = "Detail 1"
+                Text = "Section 1, Item 1", Detail = "Detail 1"
             });
             Group1.Add(new ItemViewModel
             {
-                text = "Section 1, Item 2", detail = "Detail 2"
+                Text = "Section 1, Item 2", Detail = "Detail 2"
             });
             Groups.Add(Group1);
             var Group2 = new SectionViewModel<ItemViewModel>
@@ -28,7 +28,7 @@ namespace TableRecipe
             };
             Group2.Add(new ItemViewModel
             {
-                text = "Section 2, Item 1", detail = "Detail 1"
+                Text = "Section 2, Item 1", Detail = "Detail 1"
             });
             Groups.Add(Group2);
         }

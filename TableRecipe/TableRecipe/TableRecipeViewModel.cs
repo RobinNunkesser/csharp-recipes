@@ -6,11 +6,11 @@ namespace TableRecipe
     {
         public TableRecipeViewModel()
         {
-            items = new ObservableCollection<ItemViewModel>();
-            items.Add(new ItemViewModel {text = "Item 1", detail = "Detail 1"});
-            items.Add(new ItemViewModel {text = "Item 2", detail = "Detail 2"});
+            Items = new ObservableCollection<ItemViewModel>();
+            Items.Add(new ItemViewModel {Text = "Item 1", Detail = "Detail 1"});
+            Items.Add(new ItemViewModel {Text = "Item 2", Detail = "Detail 2"});
         }
 
-        public ObservableCollection<ItemViewModel> items { get; set; }
+        public ObservableCollection<ItemViewModel> Items { get; set; }
     }
 }

@@ -6,16 +6,21 @@
              x:Class="TableRecipe.MenuPage">
     <TableView Intent="Menu">
         <TableRoot>
-            <TableSection Title="Simple Tables">
-                <TextCell Text="Simple Table"
+            <TableSection Title="Static Tables">
+                <TextCell Text="Static Table"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type local:StaticTablePage}" />
+            </TableSection>
+            <TableSection Title="Simple Lists">
+                <TextCell Text="Simple List"
                           Command="{Binding NavigateCommand}"
                           CommandParameter="{x:Type local:TableRecipePage}" />
-                <TextCell Text="Simple Table with Search"
+                <TextCell Text="Simple List with Search"
                           Command="{Binding NavigateCommand}"
                           CommandParameter="{x:Type local:TableRecipeSearchPage}" />
             </TableSection>
-            <TableSection Title="Grouped Tables">
-                <TextCell Text="Grouped Table"
+            <TableSection Title="Grouped Lists">
+                <TextCell Text="Grouped List"
                           Command="{Binding NavigateCommand}"
                           CommandParameter="{x:Type local:GroupedTablePage}" />
             </TableSection>

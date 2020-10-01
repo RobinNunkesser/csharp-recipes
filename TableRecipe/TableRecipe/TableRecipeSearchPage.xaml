@@ -3,14 +3,14 @@
      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
      xmlns:local="clr-namespace:TableRecipe"
      x:Class="TableRecipe.TableRecipeSearchPage">
-    <ListView x:Name="listView" BindingContext="{local:TableRecipeViewModel}"
-         ItemsSource="{Binding items}">
+    <ListView x:Name="MainListView" BindingContext="{local:TableRecipeViewModel}"
+         ItemsSource="{Binding Items}">
         <ListView.Header>
-            <SearchBar x:Name="searchbar" Placeholder="Name"/>
+            <SearchBar x:Name="MainSearchBar" Placeholder="Name"/>
         </ListView.Header>
         <ListView.ItemTemplate>
             <DataTemplate>
-                <TextCell Text="{Binding text}" Detail="{Binding detail}" />
+                <TextCell Text="{Binding Text}" Detail="{Binding Detail}" />
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>        

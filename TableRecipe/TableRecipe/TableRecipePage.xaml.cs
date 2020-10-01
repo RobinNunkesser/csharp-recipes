@@ -11,9 +11,12 @@ namespace TableRecipe
             InitializeComponent();
         }
 
-        void listSelection(object sender, SelectedItemChangedEventArgs e)
+        void ListSelection(object sender, SelectedItemChangedEventArgs e)
         {
-            ((ListView)sender).SelectedItem = null;
+            if (sender is ListView listView)
+            {
+                listView.SelectedItem = null;
+            }            
         }
     }
 }

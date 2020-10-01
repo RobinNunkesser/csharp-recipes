@@ -5,15 +5,14 @@
              xmlns:local="clr-namespace:TableRecipe"
              x:Class="TableRecipe.GroupedTablePage">
     <ContentPage.Content>
-        <ListView x:Name="listView"
-                  BindingContext="{local:GroupedTableViewModel}"
+        <ListView BindingContext="{local:GroupedTableViewModel}"
                   IsGroupingEnabled="true" HasUnevenRows="true"
                   ItemsSource="{Binding Groups}"
                   GroupDisplayBinding="{Binding LongName}"
                   GroupShortNameBinding="{Binding ShortName}">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding text}" Detail="{Binding detail}" />
+                    <TextCell Text="{Binding Text}" Detail="{Binding Detail}" />
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
