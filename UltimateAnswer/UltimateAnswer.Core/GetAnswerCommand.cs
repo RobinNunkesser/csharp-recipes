@@ -17,8 +17,9 @@ namespace UltimateAnswer.Core
         public async Task Execute(GetAnswerCommandDTO inDTO,
             Action<string> successHandler, Action<Exception> errorHandler)
         {
-            var result = await _superComputer.Answer(inDTO.Question);
+            var result = await _superComputer.answer(inDTO.Question);
             result.Match(successHandler, errorHandler);
         }
+
     }
 }

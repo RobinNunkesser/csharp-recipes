@@ -23,7 +23,6 @@ env:
     - PROJECT="PickerRecipe"
     - PROJECT="PlaceholderPosts"
     - PROJECT="RESTRecipe"
-    - PROJECT="SQLiteRecipe"
     - PROJECT="StylingRecipe"
     - PROJECT="TableRecipe"
     - PROJECT="UITestsRecipe"
