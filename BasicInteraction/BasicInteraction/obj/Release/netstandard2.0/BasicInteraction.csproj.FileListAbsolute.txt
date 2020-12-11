@@ -1,0 +1,14 @@
+/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/bin/Release/netstandard2.0/BasicInteraction.deps.json
+/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/bin/Release/netstandard2.0/BasicInteraction.dll
+/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/bin/Release/netstandard2.0/ref/BasicInteraction.dll
+/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/bin/Release/netstandard2.0/BasicInteraction.pdb
+/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/obj/Release/netstandard2.0/BasicInteraction.csprojAssemblyReference.cache
+/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/obj/Release/netstandard2.0/App.xaml.g.cs
+/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/obj/Release/netstandard2.0/MainPage.xaml.g.cs
+/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/obj/Release/netstandard2.0/BasicInteraction.AssemblyInfoInputs.cache
+/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/obj/Release/netstandard2.0/BasicInteraction.AssemblyInfo.cs
+/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/obj/Release/netstandard2.0/BasicInteraction.csproj.CoreCompileInputs.cache
+/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/obj/Release/netstandard2.0/XamlC.stamp
+/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/obj/Release/netstandard2.0/BasicInteraction.dll
+/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/obj/Release/netstandard2.0/ref/BasicInteraction.dll
+/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/obj/Release/netstandard2.0/BasicInteraction.pdb

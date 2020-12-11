@@ -1,22 +1,21 @@
 ﻿<Properties StartupConfiguration="{D94B086D-840E-4F25-85D1-432FCD8D5A3C}|Default">
-  <MonoDevelop.Ide.ItemProperties.TableRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.3D559A3C-1D68-4722-B8F8-0F0F4CED21E7" />
+  <MonoDevelop.Ide.ItemProperties.TableRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D63724A4-3E96-468D-8D67-BF61D42E9215" />
   <MonoDevelop.Ide.Workbench ActiveDocument="TableRecipe/TableRecipeSearchPage.xaml.cs">
     <Files>
-      <File FileName="TableRecipe/MainPage.xaml" Line="1" Column="1" />
       <File FileName="TableRecipe/MenuPage.xaml" Line="12" Column="67" />
-      <File FileName="TableRecipe/App.xaml.cs" Line="1" Column="1" />
-      <File FileName="TableRecipe/MenuViewModel.cs" Line="1" Column="1" />
-      <File FileName="TableRecipe/StaticTablePage.xaml" Line="4" Column="42" />
-      <File FileName="TableRecipe/StaticTablePage.xaml.cs" Line="1" Column="1" />
-      <File FileName="TableRecipe/TableRecipePage.xaml.cs" Line="20" Column="10" />
-      <File FileName="TableRecipe/TableRecipePage.xaml" Line="6" Column="15" />
-      <File FileName="TableRecipe/TableRecipeViewModel.cs" Line="10" Column="65" />
-      <File FileName="TableRecipe/TableRecipeSearchPage.xaml" Line="9" Column="43" />
-      <File FileName="TableRecipe/GroupedTablePage.xaml" Line="8" Column="19" />
-      <File FileName="TableRecipe/ItemViewModel.cs" Line="6" Column="29" />
-      <File FileName="TableRecipe/GroupedTableViewModel.cs" Line="1" Column="1" />
+      <File FileName="TableRecipe/App.xaml.cs" />
+      <File FileName="TableRecipe/MenuViewModel.cs" />
+      <File FileName="TableRecipe/StaticTablePage.xaml" />
+      <File FileName="TableRecipe/StaticTablePage.xaml.cs" />
+      <File FileName="TableRecipe/TableRecipePage.xaml.cs" />
+      <File FileName="TableRecipe/TableRecipePage.xaml" />
+      <File FileName="TableRecipe/TableRecipeViewModel.cs" />
+      <File FileName="TableRecipe/TableRecipeSearchPage.xaml" />
+      <File FileName="TableRecipe/GroupedTablePage.xaml" />
+      <File FileName="TableRecipe/ItemViewModel.cs" />
+      <File FileName="TableRecipe/GroupedTableViewModel.cs" />
       <File FileName="TableRecipe/TableRecipeSearchPage.xaml.cs" Line="18" Column="13" />
-      <File FileName="TableRecipe/GroupedTablePage.xaml.cs" Line="1" Column="1" />
+      <File FileName="TableRecipe/GroupedTablePage.xaml.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -40,12 +39,6 @@
               <Node name="Resources" expanded="True" />
             </Node>
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>this</Value>
-          <Value>Frage.Item1</Value>
         </State>
       </Pad>
     </Pads>

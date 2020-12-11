@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="{0C7F42D3-D79F-4B51-B5D7-8AF09C9C4CC0}|Default">
+﻿<Properties StartupConfiguration="{C57547C2-7852-4B96-853B-5C24B4AD5F18}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="BasicInteraction/MainPage.xaml.cs">
     <Files>
       <File FileName="BasicInteraction/App.xaml" Line="1" Column="1" />
@@ -19,8 +19,12 @@
                 <Node name="MainPage.xaml.cs" selected="True" />
               </Node>
             </Node>
-            <Node name="BasicInteraction.Android" expanded="True" />
-            <Node name="BasicInteraction.iOS" expanded="True" />
+            <Node name="BasicInteraction.Android" expanded="True">
+              <Node name="Packages" expanded="True" />
+            </Node>
+            <Node name="BasicInteraction.iOS" expanded="True">
+              <Node name="Packages" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -33,5 +37,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.BasicInteraction.iOS FirstBuild="True" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget." />
+  <MonoDevelop.Ide.ItemProperties.BasicInteraction.iOS TriggeredFromHotReload="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.49C5479F-E2AC-46E2-9A33-7FAC160F5AFA" />
 </Properties>
