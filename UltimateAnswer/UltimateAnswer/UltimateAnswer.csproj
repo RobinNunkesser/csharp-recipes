@@ -11,13 +11,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Xamarin.Forms" Version="4.5.0.495"/>
-        <PackageReference Include="Xamarin.Essentials" Version="1.3.1"/>
+        <PackageReference Include="Xamarin.Forms" Version="4.5.0.495" />
+        <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\UltimateAnswer.Common\UltimateAnswer.Common.csproj"/>
-        <ProjectReference Include="..\UltimateAnswer.Core\UltimateAnswer.Core.csproj"/>
-        <ProjectReference Include="..\UltimateAnswer.Infrastructure\UltimateAnswer.Infrastructure.csproj"/>
+        <ProjectReference Include="..\UltimateAnswer.Common\UltimateAnswer.Common.csproj" />
+        <ProjectReference Include="..\UltimateAnswer.Core\UltimateAnswer.Core.csproj" />
+        <ProjectReference Include="..\UltimateAnswer.Infrastructure\UltimateAnswer.Infrastructure.csproj" />
     </ItemGroup>
 </Project>

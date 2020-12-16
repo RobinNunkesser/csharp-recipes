@@ -5,7 +5,7 @@ using UltimateAnswer.Core.Ports;
 
 namespace UltimateAnswer.Core
 {
-    public class GetAnswerCommand : ICommandHandler<GetAnswerCommandDTO, string>
+    public class GetAnswerCommand : IGetAnswerService
     {
         private readonly ISuperComputer _superComputer;
 
@@ -14,11 +14,10 @@ namespace UltimateAnswer.Core
             _superComputer = superComputer;
         }
 
-        public async Task Execute(GetAnswerCommandDTO inDTO,
-            Action<string> successHandler, Action<Exception> errorHandler)
+        public async Task Execute(IQuestion inDTO, Action<IAnswer> successHandler, Action<Exception> errorHandler)
         {
             var result = await _superComputer.Answer(inDTO.Question);
-            result.Match(successHandler, errorHandler);
+            result.Match((success) => successHandler(new ConcreteAnswer() { Answer = success}), errorHandler);
         }
     }
 }

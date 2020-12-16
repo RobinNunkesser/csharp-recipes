@@ -14,7 +14,7 @@ namespace UltimateAnswer.Infrastructure.Adapters
         public SuperComputerAdapter() => _deepThought = new DeepThought();
 
         public async Task<Result<string>> Answer(string question) =>
-            (await _deepThought.provideAnswer()).ConvertSuccess(answer =>
+            (await _deepThought.ProvideAnswer()).ConvertSuccess(answer =>
                 answer.ToString());
     }
 }
