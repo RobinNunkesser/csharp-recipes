@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Net.Http.Json;
 using System.Net.Security;
 using System.Text;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
+using System.Text.Json;
 using PlaceholderPosts.Common;
 using PlaceholderPosts.Infrastructure;
 
@@ -20,63 +21,53 @@ namespace HTTPbin.Infrastructure
 
         static JSONPlaceholderAPI()
         {
-            var handler = new HttpClientHandler();
-            handler.ServerCertificateCustomValidationCallback +=
-                (sender, certificate, chain, sslPolicyErrors) =>
-                {
-                    if (sslPolicyErrors == SslPolicyErrors.None) return true;
-                    return sender.RequestUri.Host ==
-                           "jsonplaceholder.typicode.com";
-                };
-            HttpClient = new HttpClient(handler);
+            HttpClient = new HttpClient() {
+                BaseAddress = new Uri("https://jsonplaceholder.typicode.com")
+            };
             var media = new MediaTypeWithQualityHeaderValue(MediaTypeJSON);
             HttpClient.DefaultRequestHeaders.Accept.Add(media);
         }
 
-        private async Task<Result<T>> UseClientAsync<T>(
-            HttpRequestMessage message)
+        public async Task<Result<List<Post>>> ReadAllPosts()
         {
             try
             {
-                var response = await HttpClient.SendAsync(message);
-                response.EnsureSuccessStatusCode();
-                var content = await response.Content.ReadAsStringAsync();
-                var model = JsonConvert.DeserializeObject<T>(content);
-                return new Result<T>(model);
+                var posts = await HttpClient.GetFromJsonAsync<List<Post>>("posts");
+                return new Result<List<Post>>(posts);
             }
             catch (Exception ex)
             {
-                return new Result<T>(ex);
-            }
-        }
-
-        public async Task<Result<List<Post>>> ReadAllPosts()
-        {
-            var message =
-                new HttpRequestMessage(HttpMethod.Get, $"{Url}/posts");
-            var result = UseClientAsync<List<Post>>(message);
-            return await result;
+                return new Result<List<Post>>(ex);
+            }            
         }
 
         public async Task<Result<Post>> ReadPost(int id)
         {
-            var message =
-                new HttpRequestMessage(HttpMethod.Get, $"{Url}/posts/{id}");
-            var result = UseClientAsync<Post>(message);
-            return await result;
+            try
+            {
+                var post = await HttpClient.GetFromJsonAsync<Post>($"posts/{id}");
+                return new Result<Post>(post);
+            }
+            catch (Exception ex)
+            {
+                return new Result<Post>(ex);
+            }
         }
 
         public async Task<Result<Post>> CreatePost(Post post)
         {
-            var jsonPost = JsonConvert.SerializeObject(post);
-            var message =
-                new HttpRequestMessage(HttpMethod.Post, $"{Url}/posts")
-                {
-                    Content = new StringContent(jsonPost, Encoding.UTF8,
-                        MediaTypeJSON)
-                };
-            var result = UseClientAsync<Post>(message);
-            return await result;
+            try
+            {
+                var response = await HttpClient.PostAsJsonAsync("posts", post);
+                response.EnsureSuccessStatusCode();
+                var content = await response.Content.ReadAsStringAsync();
+                var model = JsonSerializer.Deserialize<Post>(content);
+                return new Result<Post>(model);
+            }
+            catch (Exception ex)
+            {
+                return new Result<Post>(ex);
+            }
         }
     }
 }
