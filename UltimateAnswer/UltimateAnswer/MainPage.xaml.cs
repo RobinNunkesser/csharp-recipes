@@ -12,7 +12,7 @@ namespace UltimateAnswer
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
-        private readonly ICommandHandler<IQuestion, IAnswer> _service =
+        private readonly ICommandHandler<String, String> _service =
             new GetAnswerCommand(new SuperComputerAdapter());
 
         public MainPage()
@@ -23,13 +23,13 @@ namespace UltimateAnswer
         private void Handle_Clicked(object sender, EventArgs e)
         {
             _service.Execute(
-                new QuestionDTO() {Question = QuestionEntry.Text},
+                QuestionEntry.Text,
                 Success, Failure);
         }
 
-        private void Success(IAnswer value)
+        private void Success(String value)
         {
-            AnswerLabel.Text = value.Answer;
+            AnswerLabel.Text = value;
         }
 
         private void Failure(Exception error)

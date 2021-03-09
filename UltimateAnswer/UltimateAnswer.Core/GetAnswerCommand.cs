@@ -14,10 +14,11 @@ namespace UltimateAnswer.Core
             _superComputer = superComputer;
         }
 
-        public async Task Execute(IQuestion inDTO, Action<IAnswer> successHandler, Action<Exception> errorHandler)
+        public async Task Execute(String inDTO, Action<String> successHandler,
+            Action<Exception> errorHandler)
         {
-            var result = await _superComputer.Answer(inDTO.Question);
-            result.Match((success) => successHandler(new ConcreteAnswer() { Answer = success}), errorHandler);
+            var result = await _superComputer.Answer(inDTO);
+            result.Match(successHandler, errorHandler);
         }
     }
 }

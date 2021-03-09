@@ -3,6 +3,6 @@ using UltimateAnswer.Common;
 
 namespace UltimateAnswer.Core.Ports
 {
-    public interface IGetAnswerService : ICommandHandler<IQuestion, IAnswer> {
+    public interface IGetAnswerService : ICommandHandler<string, string> {
     }
 }
