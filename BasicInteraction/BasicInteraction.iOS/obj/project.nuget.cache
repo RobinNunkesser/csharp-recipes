@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "sgcjoS84TY/EF8uApGd67E0QETN08TxigVogFGLC78MMMm8rOwmwpd9fDVHmYEwi+vqohse+lVdjwgQ/IQcxXA==",
+  "dgSpecHash": "CJveesciXsGewUW8h6E6VoXGph0lbIPoihTH+vqsmIEtdExsHCxt4RAHwbDloiS3bjIuGYZcbYTbxPIygk+BYA==",
   "success": true,
-  "projectFilePath": "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction.iOS/BasicInteraction.iOS.csproj",
+  "projectFilePath": "/Users/nunkesser/ISD/artifacts/csharp-recipes/BasicInteraction/BasicInteraction.iOS/BasicInteraction.iOS.csproj",
   "expectedPackageFiles": [
     "/Users/nunkesser/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
-    "/Users/nunkesser/.nuget/packages/xamarin.essentials/1.3.1/xamarin.essentials.1.3.1.nupkg.sha512",
-    "/Users/nunkesser/.nuget/packages/xamarin.forms/4.3.0.991250/xamarin.forms.4.3.0.991250.nupkg.sha512"
+    "/Users/nunkesser/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
+    "/Users/nunkesser/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],
   "logs": []
 }

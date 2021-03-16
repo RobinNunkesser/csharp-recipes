@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction.Android/BasicInteraction.Android.csproj": {}
+    "/Users/nunkesser/ISD/artifacts/csharp-recipes/BasicInteraction/BasicInteraction.Android/BasicInteraction.Android.csproj": {}
   },
   "projects": {
-    "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction.Android/BasicInteraction.Android.csproj": {
+    "/Users/nunkesser/ISD/artifacts/csharp-recipes/BasicInteraction/BasicInteraction.Android/BasicInteraction.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction.Android/BasicInteraction.Android.csproj",
+        "projectUniqueName": "/Users/nunkesser/ISD/artifacts/csharp-recipes/BasicInteraction/BasicInteraction.Android/BasicInteraction.Android.csproj",
         "projectName": "BasicInteraction.Android",
-        "projectPath": "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction.Android/BasicInteraction.Android.csproj",
+        "projectPath": "/Users/nunkesser/ISD/artifacts/csharp-recipes/BasicInteraction/BasicInteraction.Android/BasicInteraction.Android.csproj",
         "packagesPath": "/Users/nunkesser/.nuget/packages/",
-        "outputPath": "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction.Android/obj/",
+        "outputPath": "/Users/nunkesser/ISD/artifacts/csharp-recipes/BasicInteraction/BasicInteraction.Android/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -26,8 +26,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/BasicInteraction.csproj": {
-                "projectPath": "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/BasicInteraction.csproj"
+              "/Users/nunkesser/ISD/artifacts/csharp-recipes/BasicInteraction/BasicInteraction/BasicInteraction.csproj": {
+                "projectPath": "/Users/nunkesser/ISD/artifacts/csharp-recipes/BasicInteraction/BasicInteraction/BasicInteraction.csproj"
               }
             }
           }
@@ -38,24 +38,24 @@
           "dependencies": {
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.3.1, )"
+              "version": "[1.6.1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.3.0.991250, )"
+              "version": "[5.0.0.2012, )"
             }
           }
         }
       }
     },
-    "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/BasicInteraction.csproj": {
+    "/Users/nunkesser/ISD/artifacts/csharp-recipes/BasicInteraction/BasicInteraction/BasicInteraction.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/BasicInteraction.csproj",
+        "projectUniqueName": "/Users/nunkesser/ISD/artifacts/csharp-recipes/BasicInteraction/BasicInteraction/BasicInteraction.csproj",
         "projectName": "BasicInteraction",
-        "projectPath": "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/BasicInteraction.csproj",
+        "projectPath": "/Users/nunkesser/ISD/artifacts/csharp-recipes/BasicInteraction/BasicInteraction/BasicInteraction.csproj",
         "packagesPath": "/Users/nunkesser/.nuget/packages/",
-        "outputPath": "/Users/nunkesser/ISD/artifacts/xamarin-recipes/BasicInteraction/BasicInteraction/obj/",
+        "outputPath": "/Users/nunkesser/ISD/artifacts/csharp-recipes/BasicInteraction/BasicInteraction/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -93,11 +93,11 @@
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.3.1, )"
+              "version": "[1.6.1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.3.0.991250, )"
+              "version": "[5.0.0.2012, )"
             }
           },
           "imports": [
@@ -110,7 +110,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
         }
       }
     }
