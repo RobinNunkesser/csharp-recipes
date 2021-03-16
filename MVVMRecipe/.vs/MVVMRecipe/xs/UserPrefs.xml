@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{F5C6F9DF-E655-4200-A9B7-133033310512}|Default">
-  <MonoDevelop.Ide.ItemProperties.MVVMRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.49C5479F-E2AC-46E2-9A33-7FAC160F5AFA" />
+  <MonoDevelop.Ide.ItemProperties.MVVMRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.3EF7A3C2-A917-4E6B-9BD7-71FF7BB4DB04" />
   <MonoDevelop.Ide.ItemProperties.MVVMRecipe.Android PreferredExecutionTarget="Android.Pixel_2_API_28" />
   <MonoDevelop.Ide.Workbench ActiveDocument="MVVMRecipe/App.xaml.cs">
     <Files>
@@ -14,10 +14,7 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="App.xaml" expanded="True">
-                <Node name="App.xaml.cs" selected="True" />
-              </Node>
-              <Node name="DetailsPage.xaml" expanded="True" />
+              <Node name="App.xaml.cs" selected="True" />
             </Node>
             <Node name="MVVMRecipe.Android" expanded="True" />
           </Node>
