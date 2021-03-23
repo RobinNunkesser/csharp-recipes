@@ -13,7 +13,7 @@ namespace UltimateAnswer
     public partial class MainPage : ContentPage
     {
         private readonly ICommandHandler<String, String> _service =
-            new GetAnswerCommand(new SuperComputerAdapter());
+            new GetAnswerService(new SuperComputerAdapter());
 
         public MainPage()
         {

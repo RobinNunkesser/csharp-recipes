@@ -5,11 +5,11 @@ using UltimateAnswer.Core.Ports;
 
 namespace UltimateAnswer.Core
 {
-    public class GetAnswerCommand : IGetAnswerService
+    public class GetAnswerService : IGetAnswerService
     {
         private readonly ISuperComputer _superComputer;
 
-        public GetAnswerCommand(ISuperComputer superComputer)
+        public GetAnswerService(ISuperComputer superComputer)
         {
             _superComputer = superComputer;
         }
