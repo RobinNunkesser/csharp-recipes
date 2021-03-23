@@ -1,7 +1,8 @@
 ﻿using System;
 using System.ComponentModel;
-using PlaceholderPosts.Common;
+using ExplicitArchitecture;
 using PlaceholderPosts.Core;
+using PlaceholderPosts.Core.Ports;
 using PlaceholderPosts.Infrastructure;
 using Xamarin.Forms;
 
@@ -10,8 +11,8 @@ namespace PlaceholderPosts
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
-        private readonly ICommandHandler<GetPostCommandDTO, PostEntity>
-            _service = new GetPostCommand(new PostRepositoryAdapter());
+        private readonly IService<IPostID, IPost>
+            _service = new GetPostService(new PostRepositoryAdapter());
 
         public MainPage()
         {
@@ -21,7 +22,7 @@ namespace PlaceholderPosts
         private void Retrieve_Button_OnClicked(object sender, EventArgs e)
         {
             _service.Execute(
-                new GetPostCommandDTO() {Id = int.Parse(IdEntry.Text)},
+                new GetPostServiceDTO() {Id = int.Parse(IdEntry.Text)},
                 success => ResultLabel.Text = success.ToString(),
                 async error =>
                     await DisplayAlert("Fehler", error.Message, "OK"));

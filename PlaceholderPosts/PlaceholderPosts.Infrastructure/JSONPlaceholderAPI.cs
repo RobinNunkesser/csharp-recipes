@@ -3,18 +3,15 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
-using System.Net.Security;
-using System.Text;
 using System.Threading.Tasks;
 using System.Text.Json;
-using PlaceholderPosts.Common;
 using PlaceholderPosts.Infrastructure;
+using ExplicitArchitecture;
 
 namespace HTTPbin.Infrastructure
 {
     public class JSONPlaceholderAPI
     {
-        private const string Url = "https://jsonplaceholder.typicode.com";
         private const string MediaTypeJSON = "application/json";
 
         private static readonly HttpClient HttpClient;
@@ -41,7 +38,7 @@ namespace HTTPbin.Infrastructure
             }            
         }
 
-        public async Task<Result<Post>> ReadPost(int id)
+        public async Task<Result<Post>> ReadPost(long id)
         {
             try
             {

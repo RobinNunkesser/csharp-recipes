@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaceholderPosts.Infrastruc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaceholderPosts.Infrastructure", "PlaceholderPosts.Infrastructure\PlaceholderPosts.Infrastructure.csproj", "{EE7E4546-6C77-492D-831C-231A24AE6B25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaceholderPosts.Common", "PlaceholderPosts.Common\PlaceholderPosts.Common.csproj", "{851DFDAB-FD58-4B35-AA54-5A0A5B6B4CB5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaceholderPosts.Core", "PlaceholderPosts.Core\PlaceholderPosts.Core.csproj", "{F7A269F6-EEF7-4502-878B-9918FE5B438E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaceholderPosts.Core.Tests", "PlaceholderPosts.Core.Tests\PlaceholderPosts.Core.Tests.csproj", "{EB4246B2-AB4E-48AE-AE1F-6C05D4358D95}"
@@ -89,18 +87,6 @@ Global
 		{EE7E4546-6C77-492D-831C-231A24AE6B25}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{EE7E4546-6C77-492D-831C-231A24AE6B25}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{EE7E4546-6C77-492D-831C-231A24AE6B25}.Release|iPhone.Build.0 = Release|Any CPU
-		{851DFDAB-FD58-4B35-AA54-5A0A5B6B4CB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{851DFDAB-FD58-4B35-AA54-5A0A5B6B4CB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{851DFDAB-FD58-4B35-AA54-5A0A5B6B4CB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{851DFDAB-FD58-4B35-AA54-5A0A5B6B4CB5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{851DFDAB-FD58-4B35-AA54-5A0A5B6B4CB5}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{851DFDAB-FD58-4B35-AA54-5A0A5B6B4CB5}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{851DFDAB-FD58-4B35-AA54-5A0A5B6B4CB5}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{851DFDAB-FD58-4B35-AA54-5A0A5B6B4CB5}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
-		{851DFDAB-FD58-4B35-AA54-5A0A5B6B4CB5}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{851DFDAB-FD58-4B35-AA54-5A0A5B6B4CB5}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{851DFDAB-FD58-4B35-AA54-5A0A5B6B4CB5}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{851DFDAB-FD58-4B35-AA54-5A0A5B6B4CB5}.Release|iPhone.Build.0 = Release|Any CPU
 		{F7A269F6-EEF7-4502-878B-9918FE5B438E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F7A269F6-EEF7-4502-878B-9918FE5B438E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7A269F6-EEF7-4502-878B-9918FE5B438E}.Release|Any CPU.ActiveCfg = Release|Any CPU

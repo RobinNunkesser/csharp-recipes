@@ -19,7 +19,7 @@ namespace PlaceholderPosts.Core.Tests
             mock.Setup(f => f.Retrieve(1))
                 .ReturnsAsync(new Result<PostEntity>(mockEntity));
             var service = new GetPostCommand(mock.Object);
-            service.Execute(new GetPostCommandDTO() {Id = 1},
+            service.Execute(new GetPostServiceDTO() {Id = 1},
                 success => Assert.AreEqual(mockEntity, success), Assert.Null);
             mock.Verify(f => f.Retrieve(1), Times.AtMostOnce());
         }

@@ -11,12 +11,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Xamarin.Forms" Version="4.5.0.495"/>
-        <PackageReference Include="Xamarin.Essentials" Version="1.3.1"/>
+        <PackageReference Include="Xamarin.Forms" Version="4.5.0.495" />
+        <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\PlaceholderPosts.Core\PlaceholderPosts.Core.csproj"/>
-        <ProjectReference Include="..\PlaceholderPosts.Infrastructure\PlaceholderPosts.Infrastructure.csproj"/>
+        <ProjectReference Include="..\PlaceholderPosts.Core\PlaceholderPosts.Core.csproj" />
+        <ProjectReference Include="..\PlaceholderPosts.Infrastructure\PlaceholderPosts.Infrastructure.csproj" />
     </ItemGroup>
 </Project>

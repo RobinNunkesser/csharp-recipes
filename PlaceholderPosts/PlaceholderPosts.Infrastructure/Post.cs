@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace PlaceholderPosts.Infrastructure
 {
-    public class Post
+    public partial class Post
     {
         [JsonPropertyName("userId")]
         public long UserId { get; set; }
