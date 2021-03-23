@@ -6,9 +6,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\UltimateAnswer.Common\UltimateAnswer.Common.csproj"/>
-        <ProjectReference Include="..\UltimateAnswer.Core\UltimateAnswer.Core.csproj"/>
-        <ProjectReference Include="..\UltimateAnswer.Infrastructure\UltimateAnswer.Infrastructure.csproj"/>
+        <ProjectReference Include="..\UltimateAnswer.Core\UltimateAnswer.Core.csproj" />
+        <ProjectReference Include="..\UltimateAnswer.Infrastructure\UltimateAnswer.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

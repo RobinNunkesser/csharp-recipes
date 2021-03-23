@@ -5,7 +5,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\UltimateAnswer.Common\UltimateAnswer.Common.csproj" />
+      <PackageReference Include="ExplicitArchitecture" Version="0.1.0" />
     </ItemGroup>
-
 </Project>

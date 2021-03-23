@@ -1,9 +1,8 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
-using UltimateAnswer.Common;
+using ExplicitArchitecture;
 using UltimateAnswer.Core;
-using UltimateAnswer.Core.Ports;
 using UltimateAnswer.Infrastructure.Adapters;
 using Xamarin.Forms;
 
@@ -12,7 +11,7 @@ namespace UltimateAnswer
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
-        private readonly ICommandHandler<String, String> _service =
+        private readonly IService<String, String> _service =
             new GetAnswerService(new SuperComputerAdapter());
 
         public MainPage()

@@ -1,5 +1,5 @@
 using System.Threading.Tasks;
-using UltimateAnswer.Common;
+using ExplicitArchitecture;
 using UltimateAnswer.Core.Ports;
 
 namespace UltimateAnswer.Infrastructure.Adapters
@@ -14,7 +14,7 @@ namespace UltimateAnswer.Infrastructure.Adapters
         public SuperComputerAdapter() => _deepThought = new DeepThought();
 
         public async Task<Result<string>> Answer(string question) =>
-            (await _deepThought.ProvideAnswer()).ConvertSuccess(answer =>
+            (await _deepThought.ProvideAnswer()).Map(answer =>
                 answer.ToString());
     }
 }

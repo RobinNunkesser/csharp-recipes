@@ -5,7 +5,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\UltimateAnswer.Core\UltimateAnswer.Core.csproj"/>
+        <ProjectReference Include="..\UltimateAnswer.Core\UltimateAnswer.Core.csproj" />
     </ItemGroup>
 
 </Project>

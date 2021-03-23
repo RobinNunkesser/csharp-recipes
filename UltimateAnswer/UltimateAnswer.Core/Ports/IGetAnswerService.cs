@@ -1,8 +1,7 @@
-﻿using System;
-using UltimateAnswer.Common;
+﻿using ExplicitArchitecture;
 
 namespace UltimateAnswer.Core.Ports
 {
-    public interface IGetAnswerService : ICommandHandler<string, string> {
+    public interface IGetAnswerService : IService<string, string> {
     }
 }

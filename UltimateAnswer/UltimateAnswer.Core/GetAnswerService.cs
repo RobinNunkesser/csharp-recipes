@@ -1,6 +1,5 @@
 using System;
 using System.Threading.Tasks;
-using UltimateAnswer.Common;
 using UltimateAnswer.Core.Ports;
 
 namespace UltimateAnswer.Core
