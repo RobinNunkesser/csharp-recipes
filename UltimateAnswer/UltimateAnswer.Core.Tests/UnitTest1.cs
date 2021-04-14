@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
+using ExplicitArchitecture;
 using NUnit.Framework;
-using UltimateAnswer.Common;
 using UltimateAnswer.Core.Ports;
 
 namespace UltimateAnswer.Core.Tests
@@ -13,11 +13,10 @@ namespace UltimateAnswer.Core.Tests
         }
 
         [Test]
-        public void Test1()
+        public async Task Test1()
         {
-            var command = new GetAnswerCommand(new MockedSuperComputer());
-            command.Execute(
-                new GetAnswerCommandDTO {Question = "Ultimate Question"},
+            var service = new GetAnswerService(new MockedSuperComputer());
+            await service.Execute("Ultimate Question",
                 success => Assert.AreEqual("42", success),
                 error => Assert.Fail(error.Message));
 
@@ -27,8 +26,8 @@ namespace UltimateAnswer.Core.Tests
 
     public class MockedSuperComputer : ISuperComputer
     {
-        public async Task<Result<string>> Answer(string question)
-        {
+        async Task<Result<string>> ISuperComputer.Answer(string question)
+        {            
             return new Result<string>("42");
         }
     }
