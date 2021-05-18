@@ -3,10 +3,10 @@
      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
      xmlns:local="clr-namespace:TableRecipe"
      x:Class="TableRecipe.TableRecipeSearchPage">
-    <ListView x:Name="MainListView" BindingContext="{local:TableRecipeViewModel}"
+    <ListView x:Name="MainListView" BindingContext="{local:TableRecipeSearchViewModel}"
          ItemsSource="{Binding Items}">
         <ListView.Header>
-            <SearchBar x:Name="MainSearchBar" Placeholder="Name"/>
+            <SearchBar x:Name="MainSearchBar" Placeholder="Search term" Text="{Binding SearchTerm}"/>
         </ListView.Header>
         <ListView.ItemTemplate>
             <DataTemplate>
