@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using CommonPorts;
+using SQLiteRecipe.Core.Ports;
+using SQLiteRecipe.Infrastructure.Database.Adapters;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -9,17 +12,17 @@ namespace SQLiteRecipe
 {
     public partial class App : Application
     {
-        static TodoItemDatabase _database;
+        static IRepository<int,ITodoItem> _repository;
 
-        public static TodoItemDatabase Database
+        public static IRepository<int, ITodoItem> Repository
         {
             get
             {
-                if (_database != null) return _database;                
+                if (_repository != null) return _repository;                
                 var dbPath = Path.Combine(FileSystem.AppDataDirectory,"SQLite.db3");                
                 Debug.WriteLine(dbPath);
-                _database = new TodoItemDatabase(dbPath);
-                return _database;
+                _repository = new RepositoryAdapter(dbPath);
+                return _repository;
             }
         }
 

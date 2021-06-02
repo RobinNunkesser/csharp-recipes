@@ -24,7 +24,7 @@ namespace SQLiteRecipe
                 Notes = "Note",
                 Done = false
             };
-            await App.Database.SaveItemAsync(todoItem);
+            await App.Repository.Create(todoItem);
         }
 
     }
