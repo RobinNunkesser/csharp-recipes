@@ -13,6 +13,6 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <application android:label="MapsRecipe.Android">
         <meta-data android:name="com.google.android.maps.v2.API_KEY"
-                   android:value="AIzaSyB0L7ih1Xs-Y6q8x972AoOGEc1niAo1bfs"/>
+                   android:value=""/>
     </application>
 </manifest>
