@@ -4,17 +4,17 @@ using Microsoft.Maui.Essentials;
 
 namespace BasicInteraction
 {
-	public partial class MainPage : ContentPage
-	{
+    public partial class MainPage : ContentPage
+    {
 
-		public MainPage()
-		{
-			InitializeComponent();
-		}
+        public MainPage()
+        {
+            InitializeComponent();
+        }
 
         void Button_Clicked(System.Object sender, System.EventArgs e)
         {
-			TermLabel.Text = TermEntry.Text.ToUpper();
-		}
+            TermLabel.Text = TermEntry.Text.ToUpper();
+        }
     }
 }
