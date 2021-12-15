@@ -8,6 +8,7 @@ namespace LicenseRecipe
 {
     public partial class MainPage : ContentPage
     {
+        private const string Filename = "Resources/Raw/licenses.html";
 
         public MainPage()
         {
@@ -17,7 +18,7 @@ namespace LicenseRecipe
         protected async override void OnAppearing()
         {
             base.OnAppearing();
-            var stream = await FileSystem.OpenAppPackageFileAsync("Resources/Raw/licenses.html");
+            var stream = await FileSystem.OpenAppPackageFileAsync(Filename);
             string html = "";
             using (var reader = new System.IO.StreamReader(stream))
             {

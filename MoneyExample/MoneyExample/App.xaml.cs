@@ -1,28 +1,17 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Microsoft.Maui;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui.Controls.PlatformConfiguration.WindowsSpecific;
+using Application = Microsoft.Maui.Controls.Application;
 
 namespace MoneyExample
 {
-    public partial class App : Application
-    {
-        public App()
-        {
-            InitializeComponent();
+	public partial class App : Application
+	{
+		public App()
+		{
+			InitializeComponent();
 
-            MainPage = new MainPage();
-        }
-
-        protected override void OnStart()
-        {
-        }
-
-        protected override void OnSleep()
-        {
-        }
-
-        protected override void OnResume()
-        {
-        }
-    }
+			MainPage = new MainPage();
+		}
+	}
 }
