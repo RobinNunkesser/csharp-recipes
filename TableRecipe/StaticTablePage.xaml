@@ -1,0 +1,23 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+     x:Class="TableRecipe.StaticTablePage">
+    <TableView Intent="Form">
+        <TableRoot>
+            <TableSection Title="Presentation">
+                <TextCell Text="The text" Detail="The detail text"/>
+                <ImageCell ImageSource="tab_about.png" Text="Image cell text"/>
+            </TableSection>
+            <TableSection Title="Entry">
+                <SwitchCell Text="A switch cell" On="True"/>
+                <EntryCell Label="An entry cell" Placeholder="Enter text"/>
+            </TableSection>
+            <TableSection Title="Custom">
+                <ViewCell>
+                    <ViewCell.View>
+                        <Label Text="Completely Custom" FontSize="Large"/>
+                    </ViewCell.View>
+                </ViewCell>
+            </TableSection>
+        </TableRoot>
+    </TableView>
+</ContentPage>
