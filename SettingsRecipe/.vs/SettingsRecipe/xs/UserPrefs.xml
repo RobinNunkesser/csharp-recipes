@@ -1,10 +1,10 @@
-﻿<Properties StartupConfiguration="{4BCE75FE-2DB8-4D9D-9FED-95026A99503E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SettingsRecipe/MainViewModel.cs">
+﻿<Properties StartupConfiguration="{E10B923F-931A-46B8-AEF4-3F9168D20708}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MainViewModel.cs">
     <Files>
-      <File FileName="SettingsRecipe/MainPage.xaml" Line="12" Column="1" />
-      <File FileName="SettingsRecipe/MainViewModel.cs" Line="13" Column="16" />
-      <File FileName="SettingsRecipe/MainPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="SettingsRecipe/Settings.cs" Line="15" Column="59" />
+      <File FileName="Settings.cs" Line="7" Column="1" />
+      <File FileName="MainViewModel.cs" Line="25" Column="47" />
+      <File FileName="MainPage.xaml.cs" Line="10" Column="5" />
+      <File FileName="MainPage.xaml" Line="12" Column="17" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,17 +12,19 @@
           <Node name="SettingsRecipe" expanded="True">
             <Node name="SettingsRecipe" expanded="True">
               <Node name="MainPage.xaml" expanded="True" />
-              <Node name="MainViewModel.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.SettingsRecipe PreferredExecutionTarget="MyAppleMacCatalystID" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.SettingsRecipe.iOS FirstBuild="True" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.SettingsRecipe.Android PreferredExecutionTarget="Android.pixel_3_q_10_0_-_api_29" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
