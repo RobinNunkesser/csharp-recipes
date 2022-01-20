@@ -1,26 +1,11 @@
-﻿using Xamarin.Forms;
+﻿namespace PlaceholderPosts;
 
-namespace PlaceholderPosts
+public partial class App : Application
 {
-    public partial class App : Application
+    public App()
     {
-        public App()
-        {
-            InitializeComponent();
+        InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
-        }
-
-        protected override void OnStart()
-        {
-        }
-
-        protected override void OnSleep()
-        {
-        }
-
-        protected override void OnResume()
-        {
-        }
+        MainPage = new NavigationPage(new MainPage());
     }
 }

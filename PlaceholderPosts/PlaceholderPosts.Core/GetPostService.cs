@@ -1,15 +1,15 @@
 using System;
 using System.Threading.Tasks;
-using ExplicitArchitecture;
+using Italbytz.Ports.Common;
 using PlaceholderPosts.Core.Ports;
 
 namespace PlaceholderPosts.Core
 {
     public class GetPostService : IGetPostService
     {
-        private readonly IRepository<long, IPost> _repository;
+        private readonly ICrudRepository<long, IPost> _repository;
 
-        public GetPostService(IRepository<long, IPost> repository)
+        public GetPostService(ICrudRepository<long, IPost> repository)
         {
             _repository = repository;
         }
@@ -17,8 +17,14 @@ namespace PlaceholderPosts.Core
         public async Task Execute(IPostID commandDto,
             Action<IPost> successHandler, Action<Exception> errorHandler)
         {
-            var result = await _repository.Retrieve(commandDto.Id);
-            result.Match(successHandler, errorHandler);
+            try
+            {
+                successHandler(await _repository.Retrieve(commandDto.Id));
+            }
+            catch (Exception ex)
+            {
+                errorHandler(ex);
+            }
         }
     }
 }

@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ExplicitArchitecture;
 using HTTPbin.Infrastructure;
+using Italbytz.Ports.Common;
 using PlaceholderPosts.Core.Ports;
 
 namespace PlaceholderPosts.Infrastructure
 {
-    public class PostRepositoryAdapter : IRepository<long, IPost>
+    public class PostRepositoryAdapter : ICrudRepository<long, IPost>
     {
         private readonly JSONPlaceholderAPI _api;
 
@@ -15,35 +15,36 @@ namespace PlaceholderPosts.Infrastructure
 
         public PostRepositoryAdapter() => _api = new JSONPlaceholderAPI();
 
-        public async Task<Result<long>> Create(IPost entity)
+        public async Task<long> Create(IPost entity)
         {
-            var result = await _api.CreatePost(
-                new Post() {
+            var post = await _api.CreatePost(
+                new Post()
+                {
                     Id = entity.Id,
                     UserId = entity.UserId,
                     Title = entity.Title,
                     Body = entity.Body
                 });
-            return result.Map(post => (long) post.Id);
+            return (long)post.Id;
         }
 
-        public async Task<Result<IPost>> Retrieve(long id)
+        public async Task<IPost> Retrieve(long id)
         {
-            var result = await _api.ReadPost(id);
-            return result.Map(post => (IPost)post);
+            var post = await _api.ReadPost(id);
+            return (IPost)post;
         }
 
-        public async Task<Result<List<IPost>>> RetrieveAll()
+        public async Task<List<IPost>> RetrieveAll()
         {
-            var result = await _api.ReadAllPosts();
-            return result.Map(posts =>
-                posts.Select(post => (IPost)post).ToList());
+            var posts = await _api.ReadAllPosts();
+            return posts.Select(post => (IPost)post).ToList();
         }
 
-        public Task<Result<bool>> Update(long id, IPost entity) =>
+        public Task<bool> Update(long id, IPost entity) =>
             throw new System.NotImplementedException();
 
-        public Task<Result<bool>> Delete(long id) =>
+        public Task<bool> Delete(long id) =>
             throw new System.NotImplementedException();
+
     }
 }

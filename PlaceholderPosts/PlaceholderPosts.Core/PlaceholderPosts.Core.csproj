@@ -1,13 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-
-    <PropertyGroup>
-        <TargetFrameworks>netstandard2.0;netcoreapp3.1</TargetFrameworks>
-    </PropertyGroup>
-
-    <ItemGroup>
-      <Folder Include="Ports\" />
-    </ItemGroup>
-    <ItemGroup>
-      <PackageReference Include="ExplicitArchitecture" Version="0.1.0" />
-    </ItemGroup>
+	<PropertyGroup>
+		<TargetFrameworks>net6.0-maccatalyst;netstandard2.0;netcoreapp3.1</TargetFrameworks>
+	</PropertyGroup>
+	<ItemGroup>
+		<Folder Include="Ports\" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Remove="Italbytz.Ports.Common" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Italbytz.Ports.Common" Version="0.3.0" />
+	</ItemGroup>
 </Project>

@@ -6,7 +6,6 @@ using System.Net.Http.Json;
 using System.Threading.Tasks;
 using System.Text.Json;
 using PlaceholderPosts.Infrastructure;
-using ExplicitArchitecture;
 
 namespace HTTPbin.Infrastructure
 {
@@ -18,53 +17,26 @@ namespace HTTPbin.Infrastructure
 
         static JSONPlaceholderAPI()
         {
-            HttpClient = new HttpClient() {
+            HttpClient = new HttpClient()
+            {
                 BaseAddress = new Uri("https://jsonplaceholder.typicode.com")
             };
             var media = new MediaTypeWithQualityHeaderValue(MediaTypeJSON);
             HttpClient.DefaultRequestHeaders.Accept.Add(media);
         }
 
-        public async Task<Result<List<Post>>> ReadAllPosts()
-        {
-            try
-            {
-                var posts = await HttpClient.GetFromJsonAsync<List<Post>>("posts");
-                return new Result<List<Post>>(posts);
-            }
-            catch (Exception ex)
-            {
-                return new Result<List<Post>>(ex);
-            }            
-        }
+        public async Task<List<Post>> ReadAllPosts() =>
+            await HttpClient.GetFromJsonAsync<List<Post>>("posts");
 
-        public async Task<Result<Post>> ReadPost(long id)
-        {
-            try
-            {
-                var post = await HttpClient.GetFromJsonAsync<Post>($"posts/{id}");
-                return new Result<Post>(post);
-            }
-            catch (Exception ex)
-            {
-                return new Result<Post>(ex);
-            }
-        }
+        public async Task<Post> ReadPost(long id) =>
+            await HttpClient.GetFromJsonAsync<Post>($"posts/{id}");
 
-        public async Task<Result<Post>> CreatePost(Post post)
+        public async Task<Post> CreatePost(Post post)
         {
-            try
-            {
-                var response = await HttpClient.PostAsJsonAsync("posts", post);
-                response.EnsureSuccessStatusCode();
-                var content = await response.Content.ReadAsStringAsync();
-                var model = JsonSerializer.Deserialize<Post>(content);
-                return new Result<Post>(model);
-            }
-            catch (Exception ex)
-            {
-                return new Result<Post>(ex);
-            }
+            var response = await HttpClient.PostAsJsonAsync("posts", post);
+            response.EnsureSuccessStatusCode();
+            var content = await response.Content.ReadAsStringAsync();
+            return JsonSerializer.Deserialize<Post>(content);
         }
     }
 }

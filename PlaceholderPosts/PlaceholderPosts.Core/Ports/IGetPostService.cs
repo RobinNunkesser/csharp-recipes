@@ -1,5 +1,5 @@
 ﻿using System;
-using ExplicitArchitecture;
+using Italbytz.Ports.Common;
 
 namespace PlaceholderPosts.Core.Ports
 {

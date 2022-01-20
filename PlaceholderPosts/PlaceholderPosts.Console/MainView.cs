@@ -1,4 +1,4 @@
-﻿using ExplicitArchitecture;
+﻿using Italbytz.Ports.Common;
 using PlaceholderPosts.Core;
 using PlaceholderPosts.Core.Ports;
 using PlaceholderPosts.Infrastructure;
@@ -14,7 +14,7 @@ namespace PlaceholderPosts.Console
         {
             System.Console.WriteLine("Id of post? ");
             var id = System.Console.ReadLine();
-            _service.Execute(new GetPostServiceDTO() {Id = int.Parse(id)},
+            _service.Execute(new GetPostServiceDTO() { Id = int.Parse(id) },
                 System.Console.Write, System.Console.Write);
             System.Console.WriteLine("\nAsync operation. Press key to abort");
             System.Console.ReadKey();

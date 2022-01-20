@@ -15,43 +15,38 @@ namespace PlaceholderPosts.Infrastructure.Tests
         public async Task TestReadAllPosts()
         {
             var api = new JSONPlaceholderAPI();
-            var response = await api.ReadAllPosts();
+            var result = await api.ReadAllPosts();
 
-            response.Match(success => { Assert.AreEqual(100, success.Count); },
-                failure => throw failure);
+            Assert.AreEqual(100, result.Count);
         }
 
         [Test]
         public async Task TestReadPost()
         {
             var api = new JSONPlaceholderAPI();
-            var response = await api.ReadPost(1);
+            var result = await api.ReadPost(1);
 
-            response.Match(success =>
-            {
-                Assert.AreEqual(1, success.UserId);
-                Assert.AreEqual(1, success.Id);
-                Assert.True(success.Title.StartsWith("sunt aut facere repella"));
-                Assert.True(success.Body.StartsWith("quia et suscipit\nsuscip"));
-            }, failure => throw failure);
+            Assert.AreEqual(1, result.UserId);
+            Assert.AreEqual(1, result.Id);
+            Assert.True(result.Title.StartsWith("sunt aut facere repella"));
+            Assert.True(result.Body.StartsWith("quia et suscipit\nsuscip"));
         }
 
         [Test]
         public async Task TestCreatePost()
         {
             var api = new JSONPlaceholderAPI();
-            var response = await api.CreatePost(new Post()
+            var result = await api.CreatePost(new Post()
             {
-                Title = "foo", Body = "bar", UserId = 1
+                Title = "foo",
+                Body = "bar",
+                UserId = 1
             });
 
-            response.Match(success =>
-            {
-                Assert.AreEqual(1, success.UserId);
-                Assert.AreEqual(101, success.Id);
-                Assert.AreEqual("foo", success.Title);
-                Assert.AreEqual("bar", success.Body);
-            }, failure => throw failure);
+            Assert.AreEqual(1, result.UserId);
+            Assert.AreEqual(101, result.Id);
+            Assert.AreEqual("foo", result.Title);
+            Assert.AreEqual("bar", result.Body);
         }
     }
 }
