@@ -5,6 +5,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="ExplicitArchitecture" Version="0.1.0" />
+      <None Remove="Italbytz.Ports.Common" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="Italbytz.Ports.Common" Version="0.2.1" />
     </ItemGroup>
 </Project>

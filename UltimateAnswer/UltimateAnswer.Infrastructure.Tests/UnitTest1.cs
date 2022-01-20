@@ -16,8 +16,7 @@ namespace UltimateAnswer.Infrastructure.Tests
         {
             var deepThought = new DeepThought();
             var answer = await deepThought.ProvideAnswer();
-            answer.Match((success) => Assert.AreEqual(42, success),
-                (failure) => Assert.Fail(failure.Message));
+            Assert.AreEqual(42, answer);
         }
 
         [Test]
@@ -25,8 +24,7 @@ namespace UltimateAnswer.Infrastructure.Tests
         {
             var superComputer = new SuperComputerAdapter();
             var answer = await superComputer.Answer("");
-            answer.Match((success) => Assert.AreEqual("42", success),
-                (failure) => Assert.Fail(failure.Message));
+            Assert.AreEqual("42", answer);
         }
 
     }

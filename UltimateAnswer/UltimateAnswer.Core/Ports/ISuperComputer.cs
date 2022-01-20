@@ -1,10 +1,10 @@
 using System.Threading.Tasks;
-using ExplicitArchitecture;
+using Italbytz.Ports.Common;
 
 namespace UltimateAnswer.Core.Ports
 {
     public interface ISuperComputer
     {
-        Task<Result<string>> Answer(string question);
+        Task<string> Answer(string question);
     }
 }

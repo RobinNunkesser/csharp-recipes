@@ -1,7 +1,8 @@
-﻿using ExplicitArchitecture;
+﻿using Italbytz.Ports.Common;
 
 namespace UltimateAnswer.Core.Ports
 {
-    public interface IGetAnswerService : IService<string, string> {
+    public interface IGetAnswerService : IService<string, string>
+    {
     }
 }

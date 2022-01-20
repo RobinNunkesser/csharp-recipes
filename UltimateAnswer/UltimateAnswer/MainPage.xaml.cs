@@ -1,39 +1,35 @@
-﻿using System;
-using System.ComponentModel;
+﻿namespace UltimateAnswer;
+
 using System.Diagnostics;
-using ExplicitArchitecture;
+using Italbytz.Ports.Common;
 using UltimateAnswer.Core;
 using UltimateAnswer.Infrastructure.Adapters;
-using Xamarin.Forms;
 
-namespace UltimateAnswer
+public partial class MainPage : ContentPage
 {
-    [DesignTimeVisible(false)]
-    public partial class MainPage : ContentPage
-    {
-        private readonly IService<String, String> _service =
+    private readonly IService<String, String> _service =
             new GetAnswerService(new SuperComputerAdapter());
 
-        public MainPage()
-        {
-            InitializeComponent();
-        }
+    public MainPage()
+    {
+        InitializeComponent();
+    }
 
-        private void Handle_Clicked(object sender, EventArgs e)
-        {
-            _service.Execute(
-                QuestionEntry.Text,
-                Success, Failure);
-        }
+    private void Button_Clicked(object sender, EventArgs e)
+    {
+        _service.Execute(
+            QuestionEntry.Text,
+            Success, Failure);
+    }
 
-        private void Success(String value)
-        {
-            AnswerLabel.Text = value;
-        }
+    private void Success(String value)
+    {
+        AnswerLabel.Text = value;
+    }
 
-        private void Failure(Exception error)
-        {
-            Debug.WriteLine(error);
-        }
+    private void Failure(Exception error)
+    {
+        Debug.WriteLine(error);
     }
 }
+
