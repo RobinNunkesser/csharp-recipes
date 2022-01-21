@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFrameworks>net6.0-maccatalyst;netstandard2.0;netcoreapp3.1</TargetFrameworks>
+		<TargetFrameworks>net6.0;netstandard2.0;netcoreapp3.1</TargetFrameworks>
 	</PropertyGroup>
 	<ItemGroup>
 		<Folder Include="Ports\" />
