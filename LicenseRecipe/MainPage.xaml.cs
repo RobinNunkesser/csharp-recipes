@@ -8,11 +8,14 @@ namespace LicenseRecipe
 {
     public partial class MainPage : ContentPage
     {
-        private const string Filename = "Resources/Raw/licenses.html";
+        private string Filename = "Resources/Raw/licenses.html";
 
         public MainPage()
         {
             InitializeComponent();
+#if WINDOWS
+            Filename = "Assets/" + Filename;
+#endif
         }
 
         protected async override void OnAppearing()
