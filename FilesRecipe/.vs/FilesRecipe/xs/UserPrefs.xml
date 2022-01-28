@@ -1,23 +1,24 @@
 ﻿<Properties StartupConfiguration="{4FB891C3-3CFE-4D84-B529-9E662C04C6C8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/SaveAndLoad.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FilesRecipe/FilesRecipePage.xaml.cs">
     <Files>
-      <File FileName="FilesRecipe/ISaveAndLoad.cs" Line="4" Column="22" />
-      <File FileName="FilesRecipe/FilesRecipePage.xaml.cs" />
-      <File FileName="iOS/SaveAndLoad.cs" />
+      <File FileName="FilesRecipe/ISaveAndLoad.cs" Line="10" Column="1" />
+      <File FileName="FilesRecipe/FilesRecipePage.xaml.cs" Line="11" Column="35" />
+      <File FileName="iOS/SaveAndLoad.cs" Line="6" Column="44" />
       <File FileName="Droid/SaveAndLoad.cs" Line="22" Column="1" />
+      <File FileName="FilesRecipe/App.xaml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FilesRecipe" expanded="True">
             <Node name="FilesRecipe" expanded="True">
-              <Node name="Packages" expanded="True" />
-              <Node name="FilesRecipePage.xaml" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
+              <Node name="FilesRecipePage.xaml" expanded="True">
+                <Node name="FilesRecipePage.xaml.cs" selected="True" />
+              </Node>
             </Node>
-            <Node name="FilesRecipe.Droid" expanded="True">
-              <Node name="Packages" expanded="True" />
-              <Node name="SaveAndLoad.cs" selected="True" />
-            </Node>
+            <Node name="FilesRecipe.Droid" expanded="True" />
+            <Node name="FilesRecipe.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -25,7 +26,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.FilesRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E98F5B41-A1DC-41AD-9A8C-72F775A52798" />
+  <MonoDevelop.Ide.ItemProperties.FilesRecipe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5F4C3945-331B-48A9-9794-6A597D585AA7" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

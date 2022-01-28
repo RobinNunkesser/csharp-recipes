@@ -14,7 +14,7 @@
       <File FileName="TableRecipePage.xaml.cs" Line="11" Column="57" />
       <File FileName="TableRecipeSearchPage.xaml" Line="8" Column="66" />
       <File FileName="TableRecipeSearchPage.xaml.cs" Line="11" Column="63" />
-      <File FileName="TableRecipeSearchViewModel.cs" Line="32" Column="38" />
+      <File FileName="TableRecipeSearchViewModel.cs" Line="41" Column="48" />
       <File FileName="TableRecipeViewModel.cs" Line="18" Column="2" />
       <File FileName="MainViewModel.cs" Line="1" Column="1" />
       <File FileName="SectionViewModel.cs" Line="1" Column="1" />
@@ -24,8 +24,8 @@
         <State name="__root__">
           <Node name="TableRecipe" expanded="True">
             <Node name="TableRecipe" expanded="True">
+              <Node name="Dependencies" expanded="True" />
               <Node name="TableRecipeSearchPage.xaml" expanded="True" />
-              <Node name="TableRecipeSearchViewModel.cs" selected="True" />
             </Node>
           </Node>
         </State>

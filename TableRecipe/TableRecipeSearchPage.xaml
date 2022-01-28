@@ -5,7 +5,8 @@
      x:Class="TableRecipe.TableRecipeSearchPage">
     <ListView x:Name="MainListView" ItemsSource="{Binding Items}">
         <ListView.Header>
-            <SearchBar x:Name="MainSearchBar" Placeholder="Search term" Text="{Binding SearchTerm}"/>
+            <SearchBar x:Name="MainSearchBar" Placeholder="Search term" 
+            Text="{Binding SearchTerm}"/>
         </ListView.Header>
         <ListView.ItemTemplate>
             <DataTemplate>

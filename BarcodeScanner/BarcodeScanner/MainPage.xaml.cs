@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using ZXing.Mobile;
 using ZXing.Net.Mobile.Forms;
 
 namespace BarcodeScanner
@@ -18,6 +19,7 @@ namespace BarcodeScanner
 
         async void Handle_Clicked(object sender, System.EventArgs e)
         {
+
             var scanPage = new ZXingScannerPage();
             scanPage.OnScanResult += (result) =>
             {
