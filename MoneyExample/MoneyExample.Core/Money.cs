@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MoneyExample.Tests
+namespace MoneyExample.Core
 {
     public class Money 
     {

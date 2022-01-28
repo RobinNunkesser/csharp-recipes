@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MoneyExample\MoneyExample.csproj" />
+    <ProjectReference Include="..\MoneyExample.Core\MoneyExample.Core.csproj" />
   </ItemGroup>
+
 </Project>

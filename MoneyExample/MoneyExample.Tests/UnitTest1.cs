@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+using MoneyExample.Core;
+using NUnit.Framework;
 
 namespace MoneyExample.Tests
 {
