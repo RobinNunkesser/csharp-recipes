@@ -20,10 +20,5 @@ namespace AsyncRecipe
             return builder.Build();
         }
 
-#if (__MACCATALYST__ == false) && (__MOBILE__ == false)
-        // Needed to let the local unit tests run
-        static public void Main(System.String[] args) { }
-#endif
-
     }
 }

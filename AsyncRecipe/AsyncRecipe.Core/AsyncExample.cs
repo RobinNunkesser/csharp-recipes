@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace AsyncRecipe
+namespace AsyncRecipe.Core
 {
     public class AsyncExample
     {

@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using AsyncRecipe.Core;
 using NUnit.Framework;
 
 namespace AsyncRecipe.Tests;

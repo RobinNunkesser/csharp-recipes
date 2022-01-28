@@ -15,6 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AsyncRecipe\AsyncRecipe.csproj" />
+    <ProjectReference Include="..\AsyncRecipe.Core\AsyncRecipe.Core.csproj" />
   </ItemGroup>
 </Project>
