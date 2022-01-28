@@ -7,26 +7,22 @@ namespace TableRecipe
 {
     public class TableRecipeSearchViewModel : INotifyPropertyChanged
     {
+        public List<ItemViewModel> Items { get; set; } = new List<ItemViewModel>
+            {
+                new ItemViewModel { Text = "Sponge", Detail = "Detail 1" },
+                new ItemViewModel { Text = "Banana", Detail = "Detail 2" },
+                new ItemViewModel { Text = "Laptop", Detail = "Detail 3" },
+                new ItemViewModel { Text = "Teddy Bear", Detail = "Detail 4" }
+            };
 
-        private ObservableCollection<ItemViewModel> items;
-        public ObservableCollection<ItemViewModel> Items
-        {
+        public List<ItemViewModel> FilteredItems { 
             get
             {
-                if (string.IsNullOrEmpty(searchTerm)) return items;
-                var filteredItems = items.Where(
+                if (string.IsNullOrEmpty(searchTerm)) return Items;
+                return Items.Where(
                     item => item.Text.ToLower().Contains(searchTerm.ToLower()) ||
-                    item.Detail.ToLower().Contains(searchTerm.ToLower()));
-                return new ObservableCollection<ItemViewModel>(filteredItems);
-            }
-            set
-            {
-                if (items != value)
-                {
-                    items = value;
-                    OnPropertyChanged();
-                }
-            }
+                    item.Detail.ToLower().Contains(searchTerm.ToLower())).ToList();
+            }           
         }
 
         private string searchTerm = "";
@@ -38,7 +34,7 @@ namespace TableRecipe
                 if (searchTerm != value)
                 {
                     searchTerm = value;
-                    OnPropertyChanged("Items");
+                    OnPropertyChanged("FilteredItems");
                 }
             }
         }
@@ -46,13 +42,6 @@ namespace TableRecipe
 
         public TableRecipeSearchViewModel()
         {
-            Items = new ObservableCollection<ItemViewModel>
-            {
-                new ItemViewModel { Text = "Sponge", Detail = "Detail 1" },
-                new ItemViewModel { Text = "Banana", Detail = "Detail 2" },
-                new ItemViewModel { Text = "Laptop", Detail = "Detail 3" },
-                new ItemViewModel { Text = "Teddy Bear", Detail = "Detail 4" }
-            };
         }
 
         #region INotifyPropertyChanged implementation
