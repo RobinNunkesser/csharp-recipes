@@ -2,6 +2,7 @@
 using PlaceholderPosts.Core;
 using PlaceholderPosts.Core.Ports;
 using PlaceholderPosts.Infrastructure;
+using System.Threading.Tasks;
 
 namespace PlaceholderPosts.Console
 {
@@ -10,13 +11,20 @@ namespace PlaceholderPosts.Console
         private readonly IService<IPostID, IPost>
             _service = new GetPostService(new PostRepositoryAdapter());
 
-        public void Start()
+        public async Task StartAsync()
         {
             System.Console.WriteLine("Id of post? ");
             var id = System.Console.ReadLine();
-            _service.Execute(new GetPostServiceDTO() { Id = int.Parse(id) },
-                System.Console.Write, System.Console.Write);
-            System.Console.WriteLine("\nAsync operation. Press key to abort");
+            try
+            {
+                System.Console.Write(await
+                    _service.Execute(new GetPostServiceDTO() { Id = int.Parse(id) }));
+
+            }
+            catch (System.Exception ex)
+            {
+                System.Console.Error.WriteLine(ex.Message);
+            }
             System.Console.ReadKey();
         }
     }

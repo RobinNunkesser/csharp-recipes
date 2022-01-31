@@ -2,6 +2,7 @@ using Italbytz.Ports.Common;
 using Moq;
 using NUnit.Framework;
 using PlaceholderPosts.Core.Ports;
+using System.Threading.Tasks;
 
 namespace PlaceholderPosts.Core.Tests
 {
@@ -13,15 +14,14 @@ namespace PlaceholderPosts.Core.Tests
         }
 
         [Test]
-        public void TestExecute()
+        public async Task TestExecute()
         {
             var mock = new Mock<ICrudRepository<long, IPost>>();
             var mockEntity = new MockPost();
             mock.Setup(f => f.Retrieve(1))
                 .ReturnsAsync(mockEntity);
             var service = new GetPostService(mock.Object);
-            service.Execute(new MockPostID() { Id = 1 },
-                success => Assert.AreEqual(mockEntity, success), Assert.Null);
+            Assert.AreEqual(mockEntity, await service.Execute(new MockPostID() { Id = 1 }));
             mock.Verify(f => f.Retrieve(1), Times.AtMostOnce());
         }
     }

@@ -15,13 +15,18 @@ public partial class MainPage : ContentPage
         InitializeComponent();
     }
 
-    private void Retrieve_Button_OnClicked(object sender, EventArgs e)
+    private async void Retrieve_Button_Clicked(object sender, EventArgs e)
     {
-        _service.Execute(
-            new GetPostServiceDTO() { Id = int.Parse(IdEntry.Text) },
-            success => ResultLabel.Text = success.ToString(),
-            async error =>
-                await DisplayAlert("Fehler", error.Message, "OK"));
+        try
+        {
+            ResultLabel.Text = (await _service.Execute(
+                new GetPostServiceDTO() { Id = int.Parse(IdEntry.Text) })).ToString();
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Fehler", ex.Message, "OK");
+        }    
     }
+
 }
 
