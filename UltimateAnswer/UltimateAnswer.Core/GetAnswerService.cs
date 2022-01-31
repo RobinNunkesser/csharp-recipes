@@ -13,17 +13,7 @@ namespace UltimateAnswer.Core
             _superComputer = superComputer;
         }
 
-        public async Task Execute(String inDTO, Action<String> successHandler,
-            Action<Exception> errorHandler)
-        {
-            try
-            {
-                successHandler(await _superComputer.Answer(inDTO));
-            }
-            catch (Exception ex)
-            {
-                errorHandler(ex);
-            }
-        }
+        public async Task<String> Execute(String inDTO) => 
+            await _superComputer.Answer(inDTO);
     }
 }

@@ -15,11 +15,7 @@ namespace UltimateAnswer.Core.Tests
         public async Task Test1()
         {
             var service = new GetAnswerService(new MockedSuperComputer());
-            await service.Execute("Ultimate Question",
-                success => Assert.AreEqual("42", success),
-                error => Assert.Fail(error.Message));
-
-            Assert.Pass();
+            Assert.AreEqual("42", await service.Execute("Ultimate Question"));
         }
     }
 

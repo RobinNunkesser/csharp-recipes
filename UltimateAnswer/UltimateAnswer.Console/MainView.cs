@@ -1,4 +1,5 @@
-﻿using ExplicitArchitecture;
+﻿using Italbytz.Ports.Common;
+using System.Threading.Tasks;
 using UltimateAnswer.Core;
 using UltimateAnswer.Infrastructure.Adapters;
 
@@ -9,13 +10,18 @@ namespace UltimateAnswer.Console
         private readonly IService<string, string> _service =
             new GetAnswerService(new SuperComputerAdapter());
 
-        public void Start()
+        public async Task StartAsync()
         {
             System.Console.WriteLine("Question? ");
             var question = System.Console.ReadLine();
-            _service.Execute(question,
-                System.Console.Write, System.Console.Write);
-            System.Console.WriteLine("\nAsync operation. Press key to abort");
+            try
+            {
+                System.Console.Write(await _service.Execute(question));        
+            }
+            catch (System.Exception ex)
+            {
+                System.Console.Error.WriteLine(ex.Message);
+            }  
             System.Console.ReadKey();
         }
     }

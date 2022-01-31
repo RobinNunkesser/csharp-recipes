@@ -15,12 +15,17 @@ public partial class MainPage : ContentPage
         InitializeComponent();
     }
 
-    private void Button_Clicked(object sender, EventArgs e)
+    private async void Button_Clicked(object sender, EventArgs e)
     {
-        _service.Execute(
-            QuestionEntry.Text,
-            Success, Failure);
-    }
+        try
+        {
+            Success(await _service.Execute(QuestionEntry.Text));
+        }
+        catch (Exception ex)
+        {
+            Failure(ex);
+        }
+     }
 
     private void Success(String value)
     {

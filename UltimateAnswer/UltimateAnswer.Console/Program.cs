@@ -1,7 +1,9 @@
-﻿namespace UltimateAnswer.Console
+﻿using System.Threading.Tasks;
+
+namespace UltimateAnswer.Console
 {
     class Program
     {
-        private static void Main(string[] args) => new MainView().Start();
+        private static Task Main(string[] args) => new MainView().StartAsync();
     }
 }

@@ -14,7 +14,7 @@
 		<ApplicationTitle>UltimateAnswer</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.ultimateanswer</ApplicationId>
+		<ApplicationId>com.companyname.UltimateAnswer</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationVersion>1</ApplicationVersion>
@@ -53,9 +53,12 @@
 	  <ProjectReference Include="..\UltimateAnswer.Core\UltimateAnswer.Core.csproj" />
 	  <ProjectReference Include="..\UltimateAnswer.Infrastructure\UltimateAnswer.Infrastructure.csproj" />
 	</ItemGroup>
+
 	<PropertyGroup Condition="$(TargetFramework.Contains('-windows'))">
 		<OutputType>WinExe</OutputType>
 		<RuntimeIdentifier>win10-x64</RuntimeIdentifier>
 	</PropertyGroup>
 	
 </Project>
+
+
