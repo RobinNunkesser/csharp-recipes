@@ -7,7 +7,7 @@ namespace TableRecipe
         public VerticalListGroupingViewModel()
         {
             Groups =
-                new ObservableCollection<SectionViewModel<ItemViewModel>>();
+                 new ObservableCollection<SectionViewModel<ItemViewModel>>();
             var Group1 = new SectionViewModel<ItemViewModel>
             {
                 LongName = "Section 1",

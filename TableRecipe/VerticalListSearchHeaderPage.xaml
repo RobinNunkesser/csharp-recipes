@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:TableRecipe"
+             x:DataType="local:VerticalListSearchHeaderViewModel"
              x:Class="TableRecipe.VerticalListSearchHeaderPage"
              Title="Vertical list (Search Header)">
     <CollectionView ItemsSource="{Binding FilteredItems}">
@@ -12,11 +13,9 @@
         <CollectionView.ItemTemplate>
             <DataTemplate>
                 <StackLayout>
-                    <Label Text="{Binding Text}" 
-                           FontAttributes="Bold" />
-                    <Label Text="{Binding Detail}"
-                               FontAttributes="Italic" 
-                               VerticalOptions="End" />
+                    <Label Text="{Binding Text}" FontAttributes="Bold" />
+                    <Label Text="{Binding Detail}" FontAttributes="Italic"
+                           VerticalOptions="End" />
                 </StackLayout>
             </DataTemplate>
         </CollectionView.ItemTemplate>
