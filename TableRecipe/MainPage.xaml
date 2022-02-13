@@ -12,6 +12,11 @@
                           Command="{Binding NavigateCommand}"
                           CommandParameter="{x:Type tablerecipe:StaticTablePage}" />
             </TableSection>
+            <TableSection Title="Simple Collections">
+                <TextCell Text="Simple Vertical Collection"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type tablerecipe:VerticalListPage}" />
+            </TableSection>
             <TableSection Title="Simple Lists">
                 <TextCell Text="Simple List"
                           Command="{Binding NavigateCommand}"
