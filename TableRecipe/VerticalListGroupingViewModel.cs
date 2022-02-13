@@ -2,9 +2,9 @@
 
 namespace TableRecipe
 {
-    public class GroupedTableViewModel
+    public class VerticalListGroupingViewModel
     {
-        public GroupedTableViewModel()
+        public VerticalListGroupingViewModel()
         {
             Groups =
                 new ObservableCollection<SectionViewModel<ItemViewModel>>();

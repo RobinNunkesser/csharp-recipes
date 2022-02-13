@@ -2,9 +2,16 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
      xmlns:local="clr-namespace:TableRecipe"
-     x:Class="TableRecipe.VerticalListPage"
-             Title="Vertical list">
-    <CollectionView ItemsSource="{Binding Items}">
+     x:Class="TableRecipe.VerticalListGroupingPage"
+             Title="Grouping">
+    <CollectionView ItemsSource="{Binding Groups}"
+                    IsGrouped="true">
+        <CollectionView.GroupHeaderTemplate>
+            <DataTemplate>
+                <Label Text="{Binding LongName}" BackgroundColor="LightGray"
+                       FontSize="Large" FontAttributes="Bold"/>
+            </DataTemplate>
+        </CollectionView.GroupHeaderTemplate>
         <CollectionView.ItemTemplate>
             <DataTemplate>
                 <StackLayout>

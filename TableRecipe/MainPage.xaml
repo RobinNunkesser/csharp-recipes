@@ -16,6 +16,14 @@
                 <TextCell Text="Simple Vertical Collection"
                           Command="{Binding NavigateCommand}"
                           CommandParameter="{x:Type tablerecipe:VerticalListPage}" />
+                <TextCell Text="Simple Vertical Collection with Search"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type tablerecipe:VerticalListSearchHeaderPage}" />
+            </TableSection>
+            <TableSection Title="Grouped Collections">
+                <TextCell Text="Grouped Vertical Collection"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type tablerecipe:VerticalListGroupingPage}" />
             </TableSection>
             <TableSection Title="Simple Lists">
                 <TextCell Text="Simple List"

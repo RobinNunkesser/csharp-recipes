@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace TableRecipe
 {
-    public class TableRecipeSearchViewModel : INotifyPropertyChanged
+    public class VerticalListSearchHeaderViewModel : INotifyPropertyChanged
     {
         public List<ItemViewModel> Items { get; set; } = new List<ItemViewModel>
             {
@@ -39,7 +39,7 @@ namespace TableRecipe
         }
 
 
-        public TableRecipeSearchViewModel()
+        public VerticalListSearchHeaderViewModel()
         {
         }
 

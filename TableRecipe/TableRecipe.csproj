@@ -49,6 +49,24 @@
 		<PackageReference Include="Microsoft.Graphics.Win2D" Version="1.0.0.30" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="VerticalListGroupingPage.xaml.cs">
+	    <DependentUpon>VerticalListGroupingPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="VerticalListSearchHeaderPage.xaml.cs">
+	    <DependentUpon>VerticalListSearchHeaderPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="VerticalListGroupingPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="VerticalListSearchHeaderPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 	<PropertyGroup Condition="$(TargetFramework.Contains('-windows'))">
 		<OutputType>WinExe</OutputType>
 		<RuntimeIdentifier>win10-x64</RuntimeIdentifier>
