@@ -1,23 +1,26 @@
-﻿<Properties StartupConfiguration="{5D33C5D0-FDD1-4218-9587-2CA634D571DD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TableRecipeSearchViewModel.cs">
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="VerticalListGroupingPage.xaml">
     <Files>
-      <File FileName="App.xaml.cs" Line="14" Column="58" />
-      <File FileName="MainPage.xaml" Line="7" Column="1" />
-      <File FileName="MainPage.xaml.cs" Line="9" Column="1" />
-      <File FileName="GroupedTablePage.xaml" Line="14" Column="63" />
-      <File FileName="GroupedTablePage.xaml.cs" Line="11" Column="58" />
-      <File FileName="GroupedTableViewModel.cs" Line="1" Column="1" />
-      <File FileName="ItemViewModel.cs" Line="1" Column="1" />
-      <File FileName="StaticTablePage.xaml" Line="3" Column="44" />
-      <File FileName="StaticTablePage.xaml.cs" Line="7" Column="47" />
-      <File FileName="TableRecipePage.xaml" Line="3" Column="68" />
-      <File FileName="TableRecipePage.xaml.cs" Line="11" Column="57" />
-      <File FileName="TableRecipeSearchPage.xaml" Line="8" Column="66" />
-      <File FileName="TableRecipeSearchPage.xaml.cs" Line="11" Column="63" />
-      <File FileName="TableRecipeSearchViewModel.cs" Line="41" Column="48" />
-      <File FileName="TableRecipeViewModel.cs" Line="18" Column="2" />
-      <File FileName="MainViewModel.cs" Line="1" Column="1" />
-      <File FileName="SectionViewModel.cs" Line="1" Column="1" />
+      <File FileName="App.xaml.cs" Line="14" Column="2" />
+      <File FileName="MainPage.xaml" />
+      <File FileName="MainPage.xaml.cs" />
+      <File FileName="GroupedTablePage.xaml" />
+      <File FileName="GroupedTablePage.xaml.cs" />
+      <File FileName="GroupedTableViewModel.cs" />
+      <File FileName="ItemViewModel.cs" />
+      <File FileName="StaticTablePage.xaml" />
+      <File FileName="StaticTablePage.xaml.cs" />
+      <File FileName="TableRecipePage.xaml" />
+      <File FileName="TableRecipePage.xaml.cs" />
+      <File FileName="TableRecipeSearchPage.xaml" />
+      <File FileName="TableRecipeSearchPage.xaml.cs" />
+      <File FileName="TableRecipeSearchViewModel.cs" />
+      <File FileName="TableRecipeViewModel.cs" />
+      <File FileName="MainViewModel.cs" />
+      <File FileName="SectionViewModel.cs" />
+      <File FileName="VerticalListPage.xaml" />
+      <File FileName="VerticalListPage.xaml.cs" />
+      <File FileName="VerticalListGroupingPage.xaml" Line="8" Column="38" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,13 +28,10 @@
           <Node name="TableRecipe" expanded="True">
             <Node name="TableRecipe" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="TableRecipeSearchPage.xaml" expanded="True" />
+              <Node name="VerticalListGroupingPage.xaml" selected="True" />
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
