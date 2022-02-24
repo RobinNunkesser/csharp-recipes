@@ -1,4 +1,4 @@
-﻿namespace GeolocationRecipe;
+﻿namespace TextToSpeechRecipe;
 
 public partial class App : Application
 {

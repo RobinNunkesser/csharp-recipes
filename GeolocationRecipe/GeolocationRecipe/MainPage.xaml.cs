@@ -1,28 +1,58 @@
-﻿using System;
-using System.Diagnostics;
-using Plugin.Geolocator;
-using Xamarin.Forms;
+﻿using System.Diagnostics;
 
-namespace GeolocationRecipe
+namespace GeolocationRecipe;
+
+public partial class MainPage : ContentPage
 {
-    public partial class MainPage : ContentPage
+	public MainPage()
+	{
+		InitializeComponent();
+	}
+
+    protected async override void OnAppearing()
     {
-        public MainPage()
+        base.OnAppearing();
+        await GetCurrentLocation();
+    }
+
+    CancellationTokenSource cts;
+
+    async Task GetCurrentLocation()
+    {
+        try
         {
-            InitializeComponent();
+            var request = new GeolocationRequest(GeolocationAccuracy.Medium, TimeSpan.FromSeconds(10));
+            cts = new CancellationTokenSource();
+            var location = await Geolocation.GetLocationAsync(request, cts.Token);
+
+            if (location != null)
+            {
+                Debug.WriteLine($"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}");
+            }
         }
-
-        protected async override void OnAppearing()
+        catch (FeatureNotSupportedException fnsEx)
         {
-            base.OnAppearing();
-            var locator = CrossGeolocator.Current;
-
-            var position =
-                await locator.GetPositionAsync(TimeSpan.FromSeconds(10));
-
-            Debug.WriteLine("Position Status: {0}", position.Timestamp);
-            Debug.WriteLine("Position Latitude: {0}", position.Latitude);
-            Debug.WriteLine("Position Longitude: {0}", position.Longitude);
+            // Handle not supported on device exception
+        }
+        catch (FeatureNotEnabledException fneEx)
+        {
+            // Handle not enabled on device exception
+        }
+        catch (PermissionException pEx)
+        {
+            // Handle permission exception
+        }
+        catch (Exception ex)
+        {
+            // Unable to get location
         }
     }
+
+    protected override void OnDisappearing()
+    {
+        if (cts != null && !cts.IsCancellationRequested)
+            cts.Cancel();
+        base.OnDisappearing();
+    }
 }
+

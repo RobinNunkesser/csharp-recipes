@@ -1,4 +1,4 @@
-﻿namespace GeolocationRecipe;
+﻿namespace ConnectivityRecipe;
 
 public partial class App : Application
 {
