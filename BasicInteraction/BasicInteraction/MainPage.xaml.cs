@@ -1,8 +1,4 @@
-﻿using System;
-using Microsoft.Maui.Controls;
-using Microsoft.Maui.Essentials;
-
-namespace BasicInteraction
+﻿namespace BasicInteraction
 {
     public partial class MainPage : ContentPage
     {
