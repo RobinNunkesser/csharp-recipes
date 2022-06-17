@@ -1,7 +1,4 @@
-﻿using System;
-using AsyncRecipe.Core;
-using Microsoft.Maui.Controls;
-using Microsoft.Maui.Essentials;
+﻿using AsyncRecipe.Core;
 
 namespace AsyncRecipe
 {
