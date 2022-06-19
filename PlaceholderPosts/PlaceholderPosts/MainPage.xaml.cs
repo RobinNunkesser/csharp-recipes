@@ -25,7 +25,7 @@ public partial class MainPage : ContentPage
         catch (Exception ex)
         {
             await DisplayAlert("Fehler", ex.Message, "OK");
-        }    
+        }
     }
 
 }
