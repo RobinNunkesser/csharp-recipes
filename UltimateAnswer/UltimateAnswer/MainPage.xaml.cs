@@ -25,7 +25,7 @@ public partial class MainPage : ContentPage
         {
             Failure(ex);
         }
-     }
+    }
 
     private void Success(String value)
     {
