@@ -4,6 +4,9 @@
              x:Class="NavigationRecipe.MyFirstTabPage"
              Title="Tab 1"
              BackgroundColor="{DynamicResource SecondaryColor}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="dotnet_bot" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <Button Text="Navigate deeper" Clicked="Button_Clicked"
                 VerticalOptions="Center" HorizontalOptions="Center"/>
