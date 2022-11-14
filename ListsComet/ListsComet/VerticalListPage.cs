@@ -13,10 +13,7 @@ public class VerticalListPage : View
     [Body]
     View body() => new ListView<ItemViewModel>(Items)
     {
-        ViewFor = (item) => new VStack(LayoutAlignment.Start, spacing: 2) {
-            new Text (item.Text).FontSize(17),
-            new Text (item.Detail).Color(Colors.Grey),
-        },
+        ViewFor = (item) => new ItemView(item),
     }.OnSelected((item) => { Debug.WriteLine($"{item.Text} Selected"); });
 
 }
