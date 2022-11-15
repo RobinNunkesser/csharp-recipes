@@ -9,9 +9,9 @@ namespace PlaceholderPosts.Infrastructure
         [JsonPropertyName("id")]
         public long Id { get; set; }
         [JsonPropertyName("title")]
-        public string Title { get; set; }
+        public string? Title { get; set; }
         [JsonPropertyName("body")]
-        public string Body { get; set; }
+        public string? Body { get; set; }
     }
 
 

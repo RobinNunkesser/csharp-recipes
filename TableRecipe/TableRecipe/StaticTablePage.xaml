@@ -5,7 +5,7 @@
         <TableRoot>
             <TableSection Title="Presentation">
                 <TextCell Text="The text" Detail="The detail text"/>
-                <ImageCell ImageSource="tab_about.png" Text="Image cell text"/>
+                <ImageCell ImageSource="dotnet_bot.png" Text="Image cell text"/>
             </TableSection>
             <TableSection Title="Entry">
                 <SwitchCell Text="A switch cell" On="True"/>

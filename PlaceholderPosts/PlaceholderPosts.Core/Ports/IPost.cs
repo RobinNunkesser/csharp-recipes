@@ -5,7 +5,7 @@ namespace PlaceholderPosts.Core.Ports
     {
         long UserId { get; set; }
         long Id { get; set; }
-        string Title { get; set; }
-        string Body { get; set; }
+        string? Title { get; set; }
+        string? Body { get; set; }
     }
 }

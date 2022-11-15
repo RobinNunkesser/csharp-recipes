@@ -6,7 +6,7 @@ namespace MVVMRecipe
 {
     public class MainViewModel : INotifyPropertyChanged
     {
-        string forename, surname;
+        private string forename = string.Empty;
         public string Forename
         {
             get => forename;
@@ -19,6 +19,7 @@ namespace MVVMRecipe
                 }
             }
         }
+        private string surname = string.Empty;
         public string Surname
         {
             get => surname;
@@ -41,12 +42,12 @@ namespace MVVMRecipe
 
         public void Reset()
         {
-            Forename = "";
-            Surname = "";
+            Forename = string.Empty;
+            Surname = string.Empty;
         }
 
         #region INotifyPropertyChanged implementation
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler? PropertyChanged;
         public void OnPropertyChanged([CallerMemberName] string name = "") =>
           PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         #endregion

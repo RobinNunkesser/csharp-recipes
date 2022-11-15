@@ -43,7 +43,7 @@ namespace TableRecipe
         {
             this.NavigateCommand = new Command<Type>(async (Type pageType) =>
             {
-                Page page = (Page)Activator.CreateInstance(pageType);
+                Page? page = (Page?)Activator.CreateInstance(pageType);
                 await navigation.PushAsync(page);
             });
         }

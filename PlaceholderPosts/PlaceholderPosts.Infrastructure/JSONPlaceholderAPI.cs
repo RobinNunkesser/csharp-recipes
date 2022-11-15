@@ -25,13 +25,13 @@ namespace HTTPbin.Infrastructure
             HttpClient.DefaultRequestHeaders.Accept.Add(media);
         }
 
-        public async Task<List<Post>> ReadAllPosts() =>
+        public async Task<List<Post>?> ReadAllPosts() =>
             await HttpClient.GetFromJsonAsync<List<Post>>("posts");
 
-        public async Task<Post> ReadPost(long id) =>
+        public async Task<Post?> ReadPost(long id) =>
             await HttpClient.GetFromJsonAsync<Post>($"posts/{id}");
 
-        public async Task<Post> CreatePost(Post post)
+        public async Task<Post?> CreatePost(Post post)
         {
             var response = await HttpClient.PostAsJsonAsync("posts", post);
             response.EnsureSuccessStatusCode();
