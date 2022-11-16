@@ -14,7 +14,7 @@ namespace PlaceholderPosts.Core
             _repository = repository;
         }
 
-        public async Task<IPost> Execute(IPostID commandDto) => 
-            await _repository.Retrieve(commandDto.Id);            
+        public async Task<IPost?> Execute(IPostID commandDto) =>
+            await _repository.Retrieve(commandDto.Id);
     }
 }

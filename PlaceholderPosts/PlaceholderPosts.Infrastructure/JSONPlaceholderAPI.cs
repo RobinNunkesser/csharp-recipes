@@ -9,7 +9,7 @@ using PlaceholderPosts.Infrastructure;
 
 namespace HTTPbin.Infrastructure
 {
-    public class JSONPlaceholderAPI
+    public static class JSONPlaceholderAPI
     {
         private const string MediaTypeJSON = "application/json";
 
@@ -25,13 +25,13 @@ namespace HTTPbin.Infrastructure
             HttpClient.DefaultRequestHeaders.Accept.Add(media);
         }
 
-        public async Task<List<Post>?> ReadAllPosts() =>
+        public static async Task<List<Post>?> ReadAllPosts() =>
             await HttpClient.GetFromJsonAsync<List<Post>>("posts");
 
-        public async Task<Post?> ReadPost(long id) =>
+        public static async Task<Post?> ReadPost(long id) =>
             await HttpClient.GetFromJsonAsync<Post>($"posts/{id}");
 
-        public async Task<Post?> CreatePost(Post post)
+        public static async Task<Post?> CreatePost(Post post)
         {
             var response = await HttpClient.PostAsJsonAsync("posts", post);
             response.EnsureSuccessStatusCode();

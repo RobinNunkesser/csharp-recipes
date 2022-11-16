@@ -9,15 +9,9 @@ namespace PlaceholderPosts.Infrastructure
 {
     public class PostRepositoryAdapter : ICrudRepository<long, IPost>
     {
-        private readonly JSONPlaceholderAPI _api;
-
-        public PostRepositoryAdapter(JSONPlaceholderAPI api) => _api = api;
-
-        public PostRepositoryAdapter() => _api = new JSONPlaceholderAPI();
-
         public async Task<long> Create(IPost entity)
         {
-            var post = await _api.CreatePost(
+            var post = await JSONPlaceholderAPI.CreatePost(
                 new Post()
                 {
                     Id = entity.Id,
@@ -25,19 +19,19 @@ namespace PlaceholderPosts.Infrastructure
                     Title = entity.Title,
                     Body = entity.Body
                 });
-            return (long)post.Id;
+            return ((long?)post?.Id) ?? -1;
         }
 
-        public async Task<IPost> Retrieve(long id)
+        public async Task<IPost?> Retrieve(long id)
         {
-            var post = await _api.ReadPost(id);
-            return (IPost)post;
+            var post = await JSONPlaceholderAPI.ReadPost(id);
+            return (IPost?)post;
         }
 
-        public async Task<List<IPost>> RetrieveAll()
+        public async Task<List<IPost>?> RetrieveAll()
         {
-            var posts = await _api.ReadAllPosts();
-            return posts.Select(post => (IPost)post).ToList();
+            var posts = await JSONPlaceholderAPI.ReadAllPosts();
+            return posts?.Select(post => (IPost)post).ToList();
         }
 
         public Task<bool> Update(long id, IPost entity) =>
