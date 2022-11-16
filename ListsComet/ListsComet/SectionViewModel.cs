@@ -5,7 +5,7 @@ namespace ListsComet
 {
     public class SectionViewModel<T> : List<T>
     {
-        public string Header { get; set; }
+        public string Header { get; set; } = string.Empty;
     }
 }
 
