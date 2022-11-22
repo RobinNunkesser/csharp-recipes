@@ -1,5 +1,6 @@
 ﻿using System;
-using Microsoft.Msagl.Drawing;
+using Microsoft.Msagl.Core.Geometry.Curves;
+using Microsoft.Msagl.Core.Layout;
 
 namespace GraphDrawing
 {
@@ -11,17 +12,43 @@ namespace GraphDrawing
 
         public void Draw(ICanvas canvas, RectF dirtyRect)
         {
-            foreach (var node in DummyGraph.Graph.Nodes)
+            var graph = DummyGraph.Graph;
+            // Move model to positive axis.
+            graph.UpdateBoundingBox();
+            graph.Translate(new Microsoft.Msagl.Core.Geometry.Point(-graph.Left, -graph.Bottom));
+
+            foreach (var node in graph.Nodes)
             {
-                System.Console.WriteLine($"{node.Center.X} {node.Center.Y} {node.BoundingBox.Left} {node.BoundingBox.Top}");
-
-
+                DrawNode(canvas, node);
             }
 
+            foreach (var edge in DummyGraph.Graph.Edges)
+            {
+                DrawEdge(canvas, edge);
+            }
+
+
+        }
+
+        private static void DrawNode(ICanvas canvas, Node node)
+        {
             canvas.StrokeColor = Colors.Red;
             canvas.StrokeSize = 6;
-            canvas.DrawLine(10, 10, 90, 100);
+            canvas.DrawEllipse((float)node.Center.X, (float)node.Center.Y, 5, 5);
+        }
 
+        private static void DrawEdge(ICanvas canvas, Edge edge)
+        {
+            canvas.StrokeColor = Colors.Red;
+            canvas.StrokeSize = 4;
+            //canvas.DrawArc();
+
+            // When curve is a line segment.
+            if (edge.Curve is LineSegment)
+            {
+                var line = edge.Curve as LineSegment;
+                canvas.DrawLine((float)line.Start.X, (float)line.Start.Y, (float)line.End.X, (float)line.End.Y);
+            }
         }
     }
 }
