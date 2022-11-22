@@ -41,13 +41,56 @@ namespace GraphDrawing
         {
             canvas.StrokeColor = Colors.Red;
             canvas.StrokeSize = 4;
-            //canvas.DrawArc();
 
             // When curve is a line segment.
             if (edge.Curve is LineSegment)
             {
                 var line = edge.Curve as LineSegment;
                 canvas.DrawLine((float)line.Start.X, (float)line.Start.Y, (float)line.End.X, (float)line.End.Y);
+            }
+            // When curve is a complex segment.
+            // TODO: solve with canvas.DrawPath
+            else if (edge.Curve is Curve)
+            {
+                Point? pt = null;
+                foreach (var segment in (edge.Curve as Curve).Segments)
+                {
+                    if (edge.Curve is LineSegment)
+                    {
+                        var line = edge.Curve as LineSegment;
+                        canvas.DrawLine((float)line.Start.X, (float)line.Start.Y, (float)line.End.X, (float)line.End.Y);
+                        pt = new Point((float)line.End.X, (float)line.End.Y);
+                    }
+                    else if (segment is CubicBezierSegment)
+                    {
+                        var bezier = segment as CubicBezierSegment;
+                        var p0 = bezier.B(0);
+                        var p1 = bezier.B(1);
+                        var p2 = bezier.B(2);
+                        var p3 = bezier.B(3);
+                        canvas.DrawLine((float)p0.X, (float)p0.Y, (float)p1.X, (float)p1.Y);
+                        canvas.DrawLine((float)p1.X, (float)p1.Y, (float)p2.X, (float)p2.Y);
+                        canvas.DrawLine((float)p2.X, (float)p2.Y, (float)p3.X, (float)p3.Y);
+                    }
+                    else if (segment is Ellipse)
+                    {
+
+                        var ellipse = segment as Ellipse;
+                        for (var i = ellipse.ParStart;
+                                    i < ellipse.ParEnd;
+                                    i += (ellipse.ParEnd - ellipse.ParStart) / 5.0)
+                        {
+                            var p = ellipse.Center
+                                + (Math.Cos(i) * ellipse.AxisA)
+                                + (Math.Sin(i) * ellipse.AxisB);
+                            if (pt != null)
+                            {
+                                canvas.DrawLine((float)pt.Value.X, (float)pt.Value.Y, (float)p.X, (float)p.Y);
+                            }
+                            pt = new Point(p.X, p.Y);
+                        }
+                    }
+                }
             }
         }
     }
