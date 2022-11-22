@@ -13,6 +13,11 @@ namespace GraphDrawing
         public void Draw(ICanvas canvas, RectF dirtyRect)
         {
             var graph = DummyGraph.Graph;
+            DrawGraph(canvas, dirtyRect, graph);
+        }
+
+        private static void DrawGraph(ICanvas canvas, RectF dirtyRect, GeometryGraph graph)
+        {
             // Move model to positive axis.
             graph.UpdateBoundingBox();
             graph.Translate(new Microsoft.Msagl.Core.Geometry.Point(-graph.Left, -graph.Bottom));
@@ -26,8 +31,6 @@ namespace GraphDrawing
             {
                 DrawEdge(canvas, edge);
             }
-
-
         }
 
         private static void DrawNode(ICanvas canvas, Node node)
@@ -45,37 +48,36 @@ namespace GraphDrawing
             // When curve is a line segment.
             if (edge.Curve is LineSegment)
             {
+                canvas.StrokeColor = Colors.Blue;
                 var line = edge.Curve as LineSegment;
                 canvas.DrawLine((float)line.Start.X, (float)line.Start.Y, (float)line.End.X, (float)line.End.Y);
             }
-            // When curve is a complex segment.
-            // TODO: solve with canvas.DrawPath
+            // When curve is a complex segment.            
             else if (edge.Curve is Curve)
             {
-                Point? pt = null;
+                PathF path = new PathF();
+                System.Console.WriteLine($"Starting Path from ({edge.Curve.Start.X},{edge.Curve.Start.Y}) to ({edge.Curve.End.X},{edge.Curve.End.Y})");
+                path.MoveTo((float)edge.Curve.Start.X, (float)edge.Curve.Start.Y);
                 foreach (var segment in (edge.Curve as Curve).Segments)
                 {
                     if (edge.Curve is LineSegment)
                     {
                         var line = edge.Curve as LineSegment;
-                        canvas.DrawLine((float)line.Start.X, (float)line.Start.Y, (float)line.End.X, (float)line.End.Y);
-                        pt = new Point((float)line.End.X, (float)line.End.Y);
+                        System.Console.WriteLine($"Adding line from ({line.Start.X},{line.Start.Y}) to ({line.End.X},{line.End.Y})");
+                        path.LineTo((float)line.End.X, (float)line.End.Y);
                     }
                     else if (segment is CubicBezierSegment)
                     {
                         var bezier = segment as CubicBezierSegment;
-                        var p0 = bezier.B(0);
-                        var p1 = bezier.B(1);
-                        var p2 = bezier.B(2);
-                        var p3 = bezier.B(3);
-                        canvas.DrawLine((float)p0.X, (float)p0.Y, (float)p1.X, (float)p1.Y);
-                        canvas.DrawLine((float)p1.X, (float)p1.Y, (float)p2.X, (float)p2.Y);
-                        canvas.DrawLine((float)p2.X, (float)p2.Y, (float)p3.X, (float)p3.Y);
+                        System.Console.WriteLine($"Adding curve from ({bezier.B(0).X},{bezier.B(0).Y}) to ({bezier.B(3).X},{bezier.B(3).Y})");
+                        path.CurveTo((float)bezier.B(1).X, (float)bezier.B(1).Y, (float)bezier.B(2).X, (float)bezier.B(2).Y, (float)bezier.B(3).X, (float)bezier.B(3).Y);
                     }
                     else if (segment is Ellipse)
                     {
-
                         var ellipse = segment as Ellipse;
+                        // TODO: Use path.AddArc instead?
+                        System.Console.WriteLine($"Adding ellipse from ({ellipse.Start.X},{ellipse.Start.Y}) to ({ellipse.End.X},{ellipse.End.Y})");
+
                         for (var i = ellipse.ParStart;
                                     i < ellipse.ParEnd;
                                     i += (ellipse.ParEnd - ellipse.ParStart) / 5.0)
@@ -83,14 +85,12 @@ namespace GraphDrawing
                             var p = ellipse.Center
                                 + (Math.Cos(i) * ellipse.AxisA)
                                 + (Math.Sin(i) * ellipse.AxisB);
-                            if (pt != null)
-                            {
-                                canvas.DrawLine((float)pt.Value.X, (float)pt.Value.Y, (float)p.X, (float)p.Y);
-                            }
-                            pt = new Point(p.X, p.Y);
+                            path.LineTo((float)p.X, (float)p.Y);
                         }
                     }
                 }
+                path.LineTo((float)edge.Curve.End.X, (float)edge.Curve.End.Y);
+                canvas.DrawPath(path);
             }
         }
     }

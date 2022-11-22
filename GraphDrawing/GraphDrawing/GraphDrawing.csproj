@@ -60,5 +60,6 @@
 	  <None Remove="Microsoft.Msagl" />
 	  <None Remove="Microsoft.Msagl.GraphViewerGDI" />
 	  <None Remove="System.Drawing.Common" />
+	  <None Remove="AutomaticGraphLayout.GraphViewerGDI" />
 	</ItemGroup>
 </Project>

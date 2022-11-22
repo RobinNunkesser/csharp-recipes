@@ -20,14 +20,63 @@ namespace GraphDrawing
 
             var nodeA = new Node(CurveFactory.CreateRectangle(1.0, 1.0, new Point()));
             var nodeB = new Node(CurveFactory.CreateRectangle(1.0, 1.0, new Point()));
+            var nodeC = new Node(CurveFactory.CreateRectangle(1.0, 1.0, new Point()));
+            var nodeD = new Node(CurveFactory.CreateRectangle(1.0, 1.0, new Point()));
+            var nodeE = new Node(CurveFactory.CreateRectangle(1.0, 1.0, new Point()));
+            var nodeF = new Node(CurveFactory.CreateRectangle(1.0, 1.0, new Point()));
 
             Graph.Nodes.Add(nodeA);
             Graph.Nodes.Add(nodeB);
+            Graph.Nodes.Add(nodeC);
+            Graph.Nodes.Add(nodeD);
+            Graph.Nodes.Add(nodeE);
+            Graph.Nodes.Add(nodeF);
 
             Graph.Edges.Add(new Edge(nodeA, nodeB)
             {
                 Weight = 1
             });
+
+            Graph.Edges.Add(new Edge(nodeA, nodeC)
+            {
+                Weight = 1
+            });
+
+            Graph.Edges.Add(new Edge(nodeA, nodeD)
+            {
+                Weight = 1
+            });
+
+            Graph.Edges.Add(new Edge(nodeA, nodeE)
+            {
+                Weight = 1
+            });
+
+            Graph.Edges.Add(new Edge(nodeA, nodeF)
+            {
+                Weight = 1
+            });
+
+            Graph.Edges.Add(new Edge(nodeB, nodeC)
+            {
+                Weight = 1
+            });
+
+            Graph.Edges.Add(new Edge(nodeB, nodeD)
+            {
+                Weight = 1
+            });
+
+            Graph.Edges.Add(new Edge(nodeC, nodeE)
+            {
+                Weight = 1
+            });
+
+            Graph.Edges.Add(new Edge(nodeE, nodeF)
+            {
+                Weight = 1
+            });
+
 
             LayoutHelpers.CalculateLayout(Graph, settings, null);
 
