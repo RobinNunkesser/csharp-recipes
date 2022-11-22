@@ -1,6 +1,8 @@
 ﻿using System;
+using Microsoft.Maui.Graphics;
 using Microsoft.Msagl.Core.Geometry.Curves;
 using Microsoft.Msagl.Core.Layout;
+using Font = Microsoft.Maui.Graphics.Font;
 
 namespace GraphDrawing
 {
@@ -18,6 +20,9 @@ namespace GraphDrawing
 
         private static void DrawGraph(ICanvas canvas, RectF dirtyRect, GeometryGraph graph)
         {
+            canvas.FontColor = Colors.Gray;
+            canvas.FontSize = 18;
+            canvas.Font = Font.Default;
             // Move model to positive axis.
             graph.UpdateBoundingBox();
             graph.Translate(new Microsoft.Msagl.Core.Geometry.Point(-graph.Left, -graph.Bottom));
@@ -35,9 +40,14 @@ namespace GraphDrawing
 
         private static void DrawNode(ICanvas canvas, Node node)
         {
-            canvas.StrokeColor = Colors.Red;
-            canvas.StrokeSize = 6;
-            canvas.DrawEllipse((float)node.Center.X, (float)node.Center.Y, 5, 5);
+            canvas.StrokeColor = Colors.Gray;
+            canvas.StrokeSize = 1;
+            canvas.DrawEllipse((float)node.BoundingBox.LeftBottom.X, (float)node.BoundingBox.LeftBottom.Y, (float)node.Width, (float)node.Height);
+            //canvas.DrawString("42", (float)node.Center.X, (float)node.Center.Y, 380, 100, HorizontalAlignment.Left, VerticalAlignment.Top);
+            if (node.UserData is String)
+            {
+                canvas.DrawString((string)node.UserData, (float)node.Center.X, (float)node.Center.Y, 380, 100, HorizontalAlignment.Left, VerticalAlignment.Top);
+            }
         }
 
         private static void DrawEdge(ICanvas canvas, Edge edge)

@@ -18,12 +18,12 @@ namespace GraphDrawing
         {
             var settings = new SugiyamaLayoutSettings();
 
-            var nodeA = new Node(CurveFactory.CreateRectangle(1.0, 1.0, new Point()));
-            var nodeB = new Node(CurveFactory.CreateRectangle(1.0, 1.0, new Point()));
-            var nodeC = new Node(CurveFactory.CreateRectangle(1.0, 1.0, new Point()));
-            var nodeD = new Node(CurveFactory.CreateRectangle(1.0, 1.0, new Point()));
-            var nodeE = new Node(CurveFactory.CreateRectangle(1.0, 1.0, new Point()));
-            var nodeF = new Node(CurveFactory.CreateRectangle(1.0, 1.0, new Point()));
+            var nodeA = new Node(CurveFactory.CreateRectangle(10.0, 10.0, new Point()), "A");
+            var nodeB = new Node(CurveFactory.CreateRectangle(10.0, 10.0, new Point()), "B");
+            var nodeC = new Node(CurveFactory.CreateRectangle(10.0, 10.0, new Point()), "C");
+            var nodeD = new Node(CurveFactory.CreateRectangle(10.0, 10.0, new Point()), "D");
+            var nodeE = new Node(CurveFactory.CreateRectangle(10.0, 10.0, new Point()), "E");
+            var nodeF = new Node(CurveFactory.CreateRectangle(10.0, 10.0, new Point()), "F");
 
             Graph.Nodes.Add(nodeA);
             Graph.Nodes.Add(nodeB);
