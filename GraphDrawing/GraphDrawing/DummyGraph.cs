@@ -16,14 +16,24 @@ namespace GraphDrawing
 
         static DummyGraph()
         {
-            var settings = new SugiyamaLayoutSettings();
+            var nodeSize = 30.0;
+            var aspectRatio = 1.5;
+            var minimalHeight = 0.0;
+            var minimalWidth = 0.0;
 
-            var nodeA = new Node(CurveFactory.CreateRectangle(10.0, 10.0, new Point()), "A");
-            var nodeB = new Node(CurveFactory.CreateRectangle(10.0, 10.0, new Point()), "B");
-            var nodeC = new Node(CurveFactory.CreateRectangle(10.0, 10.0, new Point()), "C");
-            var nodeD = new Node(CurveFactory.CreateRectangle(10.0, 10.0, new Point()), "D");
-            var nodeE = new Node(CurveFactory.CreateRectangle(10.0, 10.0, new Point()), "E");
-            var nodeF = new Node(CurveFactory.CreateRectangle(10.0, 10.0, new Point()), "F");
+            var settings = new SugiyamaLayoutSettings()
+            {
+                AspectRatio = aspectRatio,
+                MinimalHeight = minimalHeight,
+                MinimalWidth = minimalWidth
+            };
+
+            var nodeA = new Node(CurveFactory.CreateRectangle(nodeSize, nodeSize, new Point()), "A");
+            var nodeB = new Node(CurveFactory.CreateRectangle(nodeSize, nodeSize, new Point()), "B");
+            var nodeC = new Node(CurveFactory.CreateRectangle(nodeSize, nodeSize, new Point()), "C");
+            var nodeD = new Node(CurveFactory.CreateRectangle(nodeSize, nodeSize, new Point()), "D");
+            var nodeE = new Node(CurveFactory.CreateRectangle(nodeSize, nodeSize, new Point()), "E");
+            var nodeF = new Node(CurveFactory.CreateRectangle(nodeSize, nodeSize, new Point()), "F");
 
             Graph.Nodes.Add(nodeA);
             Graph.Nodes.Add(nodeB);
@@ -34,49 +44,48 @@ namespace GraphDrawing
 
             Graph.Edges.Add(new Edge(nodeA, nodeB)
             {
-                Weight = 1
+                Label = new Microsoft.Msagl.Core.Layout.Label()
             });
 
             Graph.Edges.Add(new Edge(nodeA, nodeC)
             {
-                Weight = 1
+                Label = new Microsoft.Msagl.Core.Layout.Label()
             });
 
             Graph.Edges.Add(new Edge(nodeA, nodeD)
             {
-                Weight = 1
+                Label = new Microsoft.Msagl.Core.Layout.Label()
             });
 
             Graph.Edges.Add(new Edge(nodeA, nodeE)
             {
-                Weight = 1
+                Label = new Microsoft.Msagl.Core.Layout.Label()
             });
 
             Graph.Edges.Add(new Edge(nodeA, nodeF)
             {
-                Weight = 1
+                Label = new Microsoft.Msagl.Core.Layout.Label()
             });
 
             Graph.Edges.Add(new Edge(nodeB, nodeC)
             {
-                Weight = 1
+                Label = new Microsoft.Msagl.Core.Layout.Label()
             });
 
             Graph.Edges.Add(new Edge(nodeB, nodeD)
             {
-                Weight = 1
+                Label = new Microsoft.Msagl.Core.Layout.Label()
             });
 
             Graph.Edges.Add(new Edge(nodeC, nodeE)
             {
-                Weight = 1
+                Label = new Microsoft.Msagl.Core.Layout.Label()
             });
 
             Graph.Edges.Add(new Edge(nodeE, nodeF)
             {
-                Weight = 1
+                Label = new Microsoft.Msagl.Core.Layout.Label()
             });
-
 
             LayoutHelpers.CalculateLayout(Graph, settings, null);
 

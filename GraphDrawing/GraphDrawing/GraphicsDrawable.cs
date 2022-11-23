@@ -3,6 +3,7 @@ using Microsoft.Maui.Graphics;
 using Microsoft.Msagl.Core.Geometry.Curves;
 using Microsoft.Msagl.Core.Layout;
 using Font = Microsoft.Maui.Graphics.Font;
+using Label = Microsoft.Msagl.Core.Layout.Label;
 
 namespace GraphDrawing
 {
@@ -43,11 +44,15 @@ namespace GraphDrawing
             canvas.StrokeColor = Colors.Gray;
             canvas.StrokeSize = 1;
             canvas.DrawEllipse((float)node.BoundingBox.LeftBottom.X, (float)node.BoundingBox.LeftBottom.Y, (float)node.Width, (float)node.Height);
-            //canvas.DrawString("42", (float)node.Center.X, (float)node.Center.Y, 380, 100, HorizontalAlignment.Left, VerticalAlignment.Top);
             if (node.UserData is String)
             {
-                canvas.DrawString((string)node.UserData, (float)node.Center.X, (float)node.Center.Y, 380, 100, HorizontalAlignment.Left, VerticalAlignment.Top);
+                canvas.DrawString((string)node.UserData, (float)node.BoundingBox.LeftBottom.X, (float)node.BoundingBox.LeftBottom.Y, (float)node.BoundingBox.Width, (float)node.BoundingBox.Height, HorizontalAlignment.Center, VerticalAlignment.Center);
             }
+        }
+
+        private static void DrawLabel(ICanvas canvas, Label label)
+        {
+            canvas.DrawString("X", (float)label.BoundingBox.LeftBottom.X, (float)label.BoundingBox.LeftBottom.Y, (float)label.BoundingBox.Width, (float)label.BoundingBox.Height, HorizontalAlignment.Center, VerticalAlignment.Center);
         }
 
         private static void DrawEdge(ICanvas canvas, Edge edge)
@@ -66,27 +71,23 @@ namespace GraphDrawing
             else if (edge.Curve is Curve)
             {
                 PathF path = new PathF();
-                System.Console.WriteLine($"Starting Path from ({edge.Curve.Start.X},{edge.Curve.Start.Y}) to ({edge.Curve.End.X},{edge.Curve.End.Y})");
                 path.MoveTo((float)edge.Curve.Start.X, (float)edge.Curve.Start.Y);
                 foreach (var segment in (edge.Curve as Curve).Segments)
                 {
                     if (edge.Curve is LineSegment)
                     {
                         var line = edge.Curve as LineSegment;
-                        System.Console.WriteLine($"Adding line from ({line.Start.X},{line.Start.Y}) to ({line.End.X},{line.End.Y})");
                         path.LineTo((float)line.End.X, (float)line.End.Y);
                     }
                     else if (segment is CubicBezierSegment)
                     {
                         var bezier = segment as CubicBezierSegment;
-                        System.Console.WriteLine($"Adding curve from ({bezier.B(0).X},{bezier.B(0).Y}) to ({bezier.B(3).X},{bezier.B(3).Y})");
                         path.CurveTo((float)bezier.B(1).X, (float)bezier.B(1).Y, (float)bezier.B(2).X, (float)bezier.B(2).Y, (float)bezier.B(3).X, (float)bezier.B(3).Y);
                     }
                     else if (segment is Ellipse)
                     {
                         var ellipse = segment as Ellipse;
                         // TODO: Use path.AddArc instead?
-                        System.Console.WriteLine($"Adding ellipse from ({ellipse.Start.X},{ellipse.Start.Y}) to ({ellipse.End.X},{ellipse.End.Y})");
 
                         for (var i = ellipse.ParStart;
                                     i < ellipse.ParEnd;
@@ -102,6 +103,7 @@ namespace GraphDrawing
                 path.LineTo((float)edge.Curve.End.X, (float)edge.Curve.End.Y);
                 canvas.DrawPath(path);
             }
+            DrawLabel(canvas, edge.Label);
         }
     }
 }
