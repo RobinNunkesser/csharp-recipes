@@ -17,16 +17,8 @@ namespace GraphDrawing
         static DummyGraph()
         {
             var nodeSize = 30.0;
-            var aspectRatio = 1.5;
-            var minimalHeight = 0.0;
-            var minimalWidth = 0.0;
-
-            var settings = new SugiyamaLayoutSettings()
-            {
-                AspectRatio = aspectRatio,
-                MinimalHeight = minimalHeight,
-                MinimalWidth = minimalWidth
-            };
+            var labelWidth = 60.0;
+            var labelHeight = 30.0;
 
             var nodeA = new Node(CurveFactory.CreateRectangle(nodeSize, nodeSize, new Point()), "A");
             var nodeB = new Node(CurveFactory.CreateRectangle(nodeSize, nodeSize, new Point()), "B");
@@ -45,49 +37,83 @@ namespace GraphDrawing
             Graph.Edges.Add(new Edge(nodeA, nodeB)
             {
                 Label = new Microsoft.Msagl.Core.Layout.Label()
+                {
+                    Width = labelWidth,
+                    Height = labelHeight
+                }
             });
 
             Graph.Edges.Add(new Edge(nodeA, nodeC)
             {
                 Label = new Microsoft.Msagl.Core.Layout.Label()
+                {
+                    Width = labelWidth,
+                    Height = labelHeight
+                }
             });
 
             Graph.Edges.Add(new Edge(nodeA, nodeD)
             {
                 Label = new Microsoft.Msagl.Core.Layout.Label()
+                {
+                    Width = labelWidth,
+                    Height = labelHeight
+                }
             });
 
             Graph.Edges.Add(new Edge(nodeA, nodeE)
             {
                 Label = new Microsoft.Msagl.Core.Layout.Label()
+                {
+                    Width = labelWidth,
+                    Height = labelHeight
+                }
             });
 
             Graph.Edges.Add(new Edge(nodeA, nodeF)
             {
                 Label = new Microsoft.Msagl.Core.Layout.Label()
+                {
+                    Width = labelWidth,
+                    Height = labelHeight
+                }
             });
 
             Graph.Edges.Add(new Edge(nodeB, nodeC)
             {
                 Label = new Microsoft.Msagl.Core.Layout.Label()
+                {
+                    Width = labelWidth,
+                    Height = labelHeight
+                }
             });
 
             Graph.Edges.Add(new Edge(nodeB, nodeD)
             {
                 Label = new Microsoft.Msagl.Core.Layout.Label()
+                {
+                    Width = labelWidth,
+                    Height = labelHeight
+                }
             });
 
             Graph.Edges.Add(new Edge(nodeC, nodeE)
             {
                 Label = new Microsoft.Msagl.Core.Layout.Label()
+                {
+                    Width = labelWidth,
+                    Height = labelHeight
+                }
             });
 
             Graph.Edges.Add(new Edge(nodeE, nodeF)
             {
                 Label = new Microsoft.Msagl.Core.Layout.Label()
+                {
+                    Width = labelWidth,
+                    Height = labelHeight
+                }
             });
-
-            LayoutHelpers.CalculateLayout(Graph, settings, null);
 
         }
     }

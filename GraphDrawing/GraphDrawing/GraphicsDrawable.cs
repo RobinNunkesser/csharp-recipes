@@ -1,9 +1,13 @@
 ﻿using System;
-using Microsoft.Maui.Graphics;
 using Microsoft.Msagl.Core.Geometry.Curves;
 using Microsoft.Msagl.Core.Layout;
+using Microsoft.Msagl.Drawing;
+using Microsoft.Msagl.Layout.Layered;
+using Microsoft.Msagl.Miscellaneous;
 using Font = Microsoft.Maui.Graphics.Font;
 using Label = Microsoft.Msagl.Core.Layout.Label;
+using Node = Microsoft.Msagl.Core.Layout.Node;
+using Edge = Microsoft.Msagl.Core.Layout.Edge;
 
 namespace GraphDrawing
 {
@@ -16,16 +20,38 @@ namespace GraphDrawing
         public void Draw(ICanvas canvas, RectF dirtyRect)
         {
             var graph = DummyGraph.Graph;
-            DrawGraph(canvas, dirtyRect, graph);
+            LayoutGraph(graph, dirtyRect);
+            DrawGraph(canvas, graph);
         }
 
-        private static void DrawGraph(ICanvas canvas, RectF dirtyRect, GeometryGraph graph)
+        private static void LayoutGraph(GeometryGraph graph, RectF dirtyRect)
+        {
+            var aspectRatio = dirtyRect.Width / dirtyRect.Height;
+            var minimalHeight = 0.0;
+            var minimalWidth = 0.0;
+
+            var settings = new SugiyamaLayoutSettings()
+            {
+                AspectRatio = aspectRatio,
+                MinimalHeight = minimalHeight,
+                MinimalWidth = minimalWidth
+            };
+
+            LayoutHelpers.CalculateLayout(graph, settings, null);
+            graph.UpdateBoundingBox();
+            var scale = Math.Min(dirtyRect.Height / graph.BoundingBox.Height, dirtyRect.Width / graph.BoundingBox.Width);
+            graph.Transform(PlaneTransformation.ScaleAroundCenterTransformation(scale, new Microsoft.Msagl.Core.Geometry.Point(graph.BoundingBox.Center.X, graph.BoundingBox.Center.Y)));
+            graph.UpdateBoundingBox();
+
+        }
+
+        private static void DrawGraph(ICanvas canvas, GeometryGraph graph)
         {
             canvas.FontColor = Colors.Gray;
-            canvas.FontSize = 18;
+            canvas.FontSize = 12;
             canvas.Font = Font.Default;
             // Move model to positive axis.
-            graph.UpdateBoundingBox();
+
             graph.Translate(new Microsoft.Msagl.Core.Geometry.Point(-graph.Left, -graph.Bottom));
 
             foreach (var node in graph.Nodes)
@@ -52,7 +78,7 @@ namespace GraphDrawing
 
         private static void DrawLabel(ICanvas canvas, Label label)
         {
-            canvas.DrawString("X", (float)label.BoundingBox.LeftBottom.X, (float)label.BoundingBox.LeftBottom.Y, (float)label.BoundingBox.Width, (float)label.BoundingBox.Height, HorizontalAlignment.Center, VerticalAlignment.Center);
+            canvas.DrawString("X", (float)label.BoundingBox.LeftBottom.X, (float)label.BoundingBox.LeftBottom.Y, (float)label.BoundingBox.Width, (float)label.BoundingBox.Height, HorizontalAlignment.Left, VerticalAlignment.Center);
         }
 
         private static void DrawEdge(ICanvas canvas, Edge edge)
