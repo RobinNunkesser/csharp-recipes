@@ -13,6 +13,8 @@ namespace GraphDrawing
 {
     public class GraphicsDrawable : IDrawable
     {
+        public static double Scale { get; set; } = 1.0;
+
         public GraphicsDrawable()
         {
         }
@@ -21,7 +23,7 @@ namespace GraphDrawing
         {
             var graph = DummyGraph.Graph;
             LayoutGraph(graph, dirtyRect);
-            DrawGraph(canvas, graph);
+            DrawGraph(canvas, graph, (edge) => 3.0, (edge) => false);
         }
 
         private static void LayoutGraph(GeometryGraph graph, RectF dirtyRect)
@@ -40,15 +42,19 @@ namespace GraphDrawing
             LayoutHelpers.CalculateLayout(graph, settings, null);
             graph.UpdateBoundingBox();
             var scale = Math.Min(dirtyRect.Height / graph.BoundingBox.Height, dirtyRect.Width / graph.BoundingBox.Width);
-            graph.Transform(PlaneTransformation.ScaleAroundCenterTransformation(scale, new Microsoft.Msagl.Core.Geometry.Point(graph.BoundingBox.Center.X, graph.BoundingBox.Center.Y)));
-            graph.UpdateBoundingBox();
+            if (scale < 1.0)
+            {
+                Scale = scale;
+                graph.Transform(PlaneTransformation.ScaleAroundCenterTransformation(scale, new Microsoft.Msagl.Core.Geometry.Point(graph.BoundingBox.Center.X, graph.BoundingBox.Center.Y)));
+                graph.UpdateBoundingBox();
+            }
 
         }
 
-        private static void DrawGraph(ICanvas canvas, GeometryGraph graph)
+        private static void DrawGraph(ICanvas canvas, GeometryGraph graph, Func<Edge, double> weights, Func<Edge, bool> mark)
         {
             canvas.FontColor = Colors.Gray;
-            canvas.FontSize = 12;
+            canvas.FontSize = (float)(16 * Scale);
             canvas.Font = Font.Default;
             // Move model to positive axis.
 
@@ -61,7 +67,7 @@ namespace GraphDrawing
 
             foreach (var edge in DummyGraph.Graph.Edges)
             {
-                DrawEdge(canvas, edge);
+                DrawEdge(canvas, edge, weights(edge), mark(edge));
             }
         }
 
@@ -76,20 +82,19 @@ namespace GraphDrawing
             }
         }
 
-        private static void DrawLabel(ICanvas canvas, Label label)
+        private static void DrawLabel(ICanvas canvas, Label label, String text)
         {
-            canvas.DrawString("X", (float)label.BoundingBox.LeftBottom.X, (float)label.BoundingBox.LeftBottom.Y, (float)label.BoundingBox.Width, (float)label.BoundingBox.Height, HorizontalAlignment.Left, VerticalAlignment.Center);
+            canvas.DrawString(text, (float)(label.BoundingBox.LeftBottom.X + 10.0), (float)label.BoundingBox.LeftBottom.Y, (float)label.BoundingBox.Width, (float)label.BoundingBox.Height, HorizontalAlignment.Left, VerticalAlignment.Center);
         }
 
-        private static void DrawEdge(ICanvas canvas, Edge edge)
+        private static void DrawEdge(ICanvas canvas, Edge edge, double weight, bool mark)
         {
-            canvas.StrokeColor = Colors.Red;
-            canvas.StrokeSize = 4;
+            canvas.StrokeColor = mark ? Colors.Blue : Colors.Grey;
+            canvas.StrokeSize = 2;
 
             // When curve is a line segment.
             if (edge.Curve is LineSegment)
             {
-                canvas.StrokeColor = Colors.Blue;
                 var line = edge.Curve as LineSegment;
                 canvas.DrawLine((float)line.Start.X, (float)line.Start.Y, (float)line.End.X, (float)line.End.Y);
             }
@@ -129,7 +134,7 @@ namespace GraphDrawing
                 path.LineTo((float)edge.Curve.End.X, (float)edge.Curve.End.Y);
                 canvas.DrawPath(path);
             }
-            DrawLabel(canvas, edge.Label);
+            DrawLabel(canvas, edge.Label, weight.ToString());
         }
     }
 }
