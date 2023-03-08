@@ -21,6 +21,7 @@ namespace GraphDrawing
 
         public void Draw(ICanvas canvas, RectF dirtyRect)
         {
+            Console.WriteLine($"Breite: {dirtyRect.Width}, Höhe: {dirtyRect.Height}");
             var graph = DummyGraph.Graph;
             LayoutGraph(graph, dirtyRect);
             DrawGraph(canvas, graph, (edge) => 3.0, (edge) => false);

@@ -8,12 +8,11 @@
         <local:GraphicsDrawable x:Key="drawable"/>
 
     </ContentPage.Resources>
-        <VerticalStackLayout>
-            <GraphicsView Drawable="{StaticResource drawable}"
-                          HeightRequest="300"
-                          WidthRequest="400"/>
-
-        </VerticalStackLayout>
+    <ScrollView>
+            <GraphicsView Drawable="{StaticResource drawable}"                          
+                          HorizontalOptions="FillAndExpand"
+                          VerticalOptions="FillAndExpand"/>
+    </ScrollView>
 
 </ContentPage>
 
